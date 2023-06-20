@@ -38,7 +38,8 @@
     title: {
       text(font: body-font, 1.5em, weight: 700, "Contents")
       v(15mm)
-    }
+    },
+    indent: true
   )
   
   
