@@ -35,11 +35,11 @@ Typst's CLI is available from different sources:
 ## Usage
 Once you have installed Typst, you can use it like this:
 ```sh
-# Creates `file.pdf` in working directory.
-typst compile file.typ
+# Creates `thesis.pdf` in working directory.
+typst compile thesis.typ
 
 # Creates PDF file at the desired path.
-typst compile path/to/source.typ path/to/output.pdf
+typst compile thesis.typ path/to/output.pdf
 ```
 
 You can also watch source files and automatically recompile on changes. This is
@@ -47,7 +47,7 @@ faster than compiling from scratch each time because Typst has incremental
 compilation.
 ```sh
 # Watches source files and recompiles on changes.
-typst watch file.typ
+typst watch thesis.typ
 ```
 
 If you prefer an integrated IDE-like experience with autocompletion and instant
