@@ -57,3 +57,4 @@ If you prefer an integrated IDE-like experience with autocompletion and instant 
 
 - [Typst Documentation](https://typst.app/docs/)
 - [Typst Guide for LaTeX Users](https://typst.app/docs/guides/guide-for-latex-users/)
+- [Typst VS Code Extension (inofficial)](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp)
