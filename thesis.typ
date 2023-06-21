@@ -7,30 +7,42 @@
 #import "thesis_typ/abstract_de.typ": *
 
 
+// Enter your thesis data here:
+#let titleEnglish = "(Title English)"
+#let titleGerman = "(Title German)"
+#let degree = "Bachelor"
+#let program = "Information Systems"
+#let supervisor = "Prof. Dr. Stephan Krusche"
+#let advisors = ("Jolanda Krümelmonster, M.Sc.",)
+#let author = "(Author)"
+#let startDate = "(Start Date)"
+#let submissionDate = "(Handover Date)"
+
+
 #cover(
-  title: "(Title English)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  author: "(Author)",
+  title: titleEnglish,
+  degree: degree,
+  program: program,
+  author: author,
 )
 
 #titlepage(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 #disclaimer(
-  title: "(Title English)",
-  degree: "Bachelor",
-  author: "(Author)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  degree: degree,
+  author: author,
+  submissionDate: submissionDate
 )
 
 #acknowledgement()
@@ -40,15 +52,15 @@
 #abstract_de()
 
 #show: project.with(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 = Introduction
