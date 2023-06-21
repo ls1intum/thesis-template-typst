@@ -1,5 +1,5 @@
 # thesis-template-typst
-A Typst template for your Bachelor's or Master's thesis.
+This repository provides a comprehensive Typst template for writing your Bachelor's or Master's thesis at the CIT School of TUM (Technical University of Munich). It includes two types of documents: a proposal template and a thesis template, both specifically designed for students in the field of Informatics. For more information about writing a thesis at the CIT School, please visit the [official CIT website](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/).
 
 **Note:** This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor!
 
@@ -13,7 +13,7 @@ __Please thorougly read our guidelines and hints on [confluence](https://conflue
 
 For detailed installation instructions, please refer to the [official installation guide](https://github.com/typst/typst). Here, we provide basic steps for installing Typst's CLI:
 
-- You can get sources and pre-built binaries from our [releases page](https://github.com/typst/typst/releases).
+- You can get sources and pre-built binaries from the [releases page](https://github.com/typst/typst/releases).
 - Use package managers like `brew` or `pacman` to install Typst. Be aware that the versions in the package managers might lag behind the latest release.
 - If you have a [Rust](https://rustup.rs/) toolchain installed, you can also install the latest development version.
 
@@ -24,6 +24,9 @@ Once you have installed Typst, you can use it like this:
 ```sh
 # Creates `thesis.pdf` in working directory.
 typst compile thesis.typ
+
+# Creates `proposal.pdf` in working directory.
+typst compile proposal.typ
 
 # Creates PDF file at the desired path.
 typst compile thesis.typ path/to/output.pdf
