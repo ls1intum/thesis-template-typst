@@ -20,6 +20,16 @@ For detailed installation instructions, please refer to the [official installati
 Nix and Docker users, please refer to the official installation guide for detailed instructions.
 
 ## Usage
+### Set thesis metadata 
+Fill in your thesis details in the `common/metadata.typ` file: 
+* Degree (Bachelor or Master)
+* Your study program
+* English and German title
+* Advisor and supervisor
+* Your name (without e-mail address or matriculation number)
+* The start and submission date
+
+### Build PDFs locally 
 Once you have installed Typst, you can use it like this:
 ```sh
 # Creates `thesis.pdf` in working directory.

@@ -5,32 +5,33 @@
 #import "thesis_typ/acknowledgement.typ": *
 #import "thesis_typ/abstract_en.typ": *
 #import "thesis_typ/abstract_de.typ": *
+#import "common/metadata.typ": *
 
 
 #cover(
-  title: "(Title English)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  author: "(Author)",
+  title: titleEnglish,
+  degree: degree,
+  program: program,
+  author: author,
 )
 
 #titlepage(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 #disclaimer(
-  title: "(Title English)",
-  degree: "Bachelor",
-  author: "(Author)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  degree: degree,
+  author: author,
+  submissionDate: submissionDate
 )
 
 #acknowledgement()
@@ -40,15 +41,15 @@
 #abstract_de()
 
 #show: project.with(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 = Introduction

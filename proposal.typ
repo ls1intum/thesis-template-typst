@@ -1,28 +1,30 @@
 #import "proposal_template.typ": *
 #import "common/titlepage.typ": *
+#import "common/metadata.typ": *
+
 
 #titlepage(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 #show: project.with(
-  title: "(Title English)",
-  titleGerman: "(Title German)",
-  degree: "Bachelor",
-  program: "Information Systems",
-  supervisor: "Prof. Dr. Stephan Krusche",
-  advisors: ("Jolanda Krümelmonster, M.Sc.",),
-  author: "(Author)",
-  startDate: "(Start Date)",
-  submissionDate: "(Handover Date)"
+  title: titleEnglish,
+  titleGerman: titleGerman,
+  degree: degree,
+  program: program,
+  supervisor: supervisor,
+  advisors: advisors,
+  author: author,
+  startDate: startDate,
+  submissionDate: submissionDate
 )
 
 
