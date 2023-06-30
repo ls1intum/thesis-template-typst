@@ -20,6 +20,7 @@ jobs:
           if [ -z "$(git tag -l 'v*')" ]; then
             git tag v0.0.0
           fi
+
       - name: Bump version and push tag
         id: bump
         uses: anothrNick/github-tag-action@1.67.0
@@ -27,6 +28,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
           DEFAULT_BUMP: 'patch'
+
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v1
@@ -35,6 +37,7 @@ jobs:
           name: Version ${{ steps.bump.outputs.new_tag }}
           draft: false
           prerelease: false
+  
       - name: Compile Typst
         uses: lvignoli/typst-action@main
         with:
