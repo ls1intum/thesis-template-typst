@@ -1,10 +1,10 @@
 // Enter your thesis data here:
 #let titleEnglish = "(Title English)"
 #let titleGerman = "(Title German)"
-#let degree = "Bachelor"
-#let program = "Information Systems"
+#let degree = "Master"
+#let program = "Informatics"
 #let supervisor = "Prof. Dr. Stephan Krusche"
-#let advisors = ("Jolanda Krümelmonster, M.Sc.",)
-#let author = "(Author)"
-#let startDate = "(Start Date)"
-#let submissionDate = "(Handover Date)"
+#let advisors = ()
+#let author = "Nityananda Zbil"
+#let startDate = "August 15th 2023"
+#let submissionDate = "February 15th 2024"
