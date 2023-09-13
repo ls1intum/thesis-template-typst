@@ -31,13 +31,16 @@
     size: 12pt, 
     lang: "en"
   )
-  show math.equation: set text(weight: 400)
-  show heading: set text(font: body-font)
+
+  // Set heading settings
   set heading(numbering: "1.1")
-  set par(leading: 1em)
+  
+  show math.equation: set text(weight: 400)
+
+  show figure: set text(size: 0.85em)
 
   // Main body.
-  set par(justify: true)
+  set par(leading: 1em, justify: true)
 
   body
 
