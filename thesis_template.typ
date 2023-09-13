@@ -25,13 +25,19 @@
     size: 12pt, 
     lang: "en"
   )
+  
   show math.equation: set text(weight: 400)
+
+  // --- Headings ---
+  show heading: set block(below: 0.85em, above: 1em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
+
+  // --- Paragraphs ---
   set par(leading: 1em)
 
-  
-
+  // --- Figures ---
+  show figure: set text(size: 0.85em)
   
   // --- Table of Contents ---
   outline(

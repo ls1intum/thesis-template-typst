@@ -32,15 +32,18 @@
     lang: "en"
   )
 
-  // Set heading settings
-  set heading(numbering: "1.1")
-  
   show math.equation: set text(weight: 400)
 
-  show figure: set text(size: 0.85em)
+  // --- Headings ---
+  show heading: set block(below: 0.85em, above: 1em)
+  show heading: set text(font: body-font)
+  set heading(numbering: "1.1")
 
-  // Main body.
+  // --- Paragraphs ---
   set par(leading: 1em, justify: true)
+
+  // --- Figures ---
+  show figure: set text(size: 0.85em)
 
   body
 
