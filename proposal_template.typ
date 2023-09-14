@@ -35,7 +35,7 @@
   show math.equation: set text(weight: 400)
 
   // --- Headings ---
-  show heading: set block(below: 0.85em, above: 1.25em)
+  show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
 
