@@ -38,6 +38,23 @@
   Before you start with your thesis, have a look at our guides on confluence! \ https://confluence.ase.in.tum.de/display/EduResStud/How+to+thesis
 ]
 
+#set heading(numbering: none)
+= Abstract
+// TODO: Remove this block
+#rect(
+  width: 100%,
+  radius: 10%,
+  stroke: 0.5pt,
+  fill: yellow,
+)[
+  *Abstract*
+  
+  - Provide a brief summary of the proposed work 
+  - What is the main content, the main contribution?
+  - What is your methodology? How do you proceed?
+]
+
+#set heading(numbering: "1.1")
 = Introduction
 
 // TODO: Remove this block

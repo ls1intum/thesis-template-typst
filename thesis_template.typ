@@ -25,7 +25,11 @@
     size: 12pt, 
     lang: "en"
   )
+  
   show math.equation: set text(weight: 400)
+
+  // --- Headings ---
+  show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
   // Reference first-level headings as "chapters"
@@ -42,10 +46,14 @@
     }
   }
 
+  // --- Paragraphs ---
   set par(leading: 1em)
 
-  
+  // --- Citations ---
+  set cite(style: "alphanumerical")
 
+  // --- Figures ---
+  show figure: set text(size: 0.85em)
   
   // --- Table of Contents ---
   outline(
