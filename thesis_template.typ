@@ -32,6 +32,19 @@
   show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
+  // Reference first-level headings as "chapters"
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == heading and el.level == 1 {
+      [Chapter ]
+      numbering(
+        el.numbering,
+        ..counter(heading).at(el.location())
+      )
+    } else {
+      it
+    }
+  }
 
   // --- Paragraphs ---
   set par(leading: 1em)
