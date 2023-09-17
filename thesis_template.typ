@@ -74,6 +74,27 @@
 
   body
 
+  // List of figures.
+  pagebreak()
+  heading(numbering: none)[List of Figures]
+  outline(
+    title:"",
+    target: figure.where(kind: image),
+  )
+
+  // List of tables.
+  pagebreak()
+  heading(numbering: none)[List of Tables]
+  outline(
+    title: "",
+    target: figure.where(kind: table)
+  )
+
+  // Appendix.
+  pagebreak()
+  heading(numbering: none)[Appendix A: Supplementary Material]
+  include("thesis_typ/appendix.typ")
+
   pagebreak()
   bibliography("thesis.bib")
 }
