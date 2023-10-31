@@ -50,7 +50,7 @@
   set par(leading: 1em)
 
   // --- Citations ---
-  set cite(style: "alphanumerical")
+  set cite(style: "alphanumeric")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
