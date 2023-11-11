@@ -14,19 +14,19 @@
     lang: "en"
   )
   
-  set par(leading: 1em)
+  set par(
+    leading: 1em,
+    justify: true
+  )
 
   
   // --- Abstract (EN) ---
   v(1fr)
   align(center, text(font: body-font, 1em, weight: "semibold", "Zusammenfassung"))
   
-  align(
-    center, 
-    text[
-      Note: Insert the German translation of the English abstract here.
-    ]
-  )
+  text[
+    Note: Insert the German translation of the English abstract here.
+  ]
   
   v(1fr)
 }

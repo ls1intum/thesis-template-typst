@@ -14,7 +14,10 @@
     lang: "en"
   )
 
-  set par(leading: 1em)
+  set par(
+    leading: 1em,
+    justify: true
+  )
 
   
   // --- Abstract (DE) ---
