@@ -40,7 +40,7 @@
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---
-  set par(leading: 1em, justify: true)
+  set par(leading: 1em, justify: true, first-line-indent: 2em)
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
