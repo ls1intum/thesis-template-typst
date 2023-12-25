@@ -53,6 +53,7 @@
 )
 
 = Introduction
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -61,6 +62,22 @@
 )[
   Note: Introduce the topic of your thesis, e.g. with a little historical overview.
 ]
+
+Artemis is a teaching platform that allows instructors and tutors to publish exercises to students, e.g., programming exercises.
+Students create solutions by iteratively applying techniques of version control and continuous integration
+#cite("10.1145/3159450.3159602").
+Artemis not only supports programming exercises, but modeling-, quiz-, text-, and file upload exercises, as well as, an exam mode.
+The exercises help students learn the teaching material hands-on and keep them involved in the lecture.
+Interactive learning is a teaching philosophy, where students are at the center of a repeated cycle.
+In one iteration, the students follow five steps: Theory, example, practice, feedback, and reflection
+#cite("krusche2021IL").
+
+Mobile applications enable students to practice interactive learning, alongside laptops and tablets
+#cite("10.1145/3159450.3159602").
+Until recently, Artemis revolved around the Artemis application, namely a server program and a web client.
+The Artemis project gained two native mobile applications, one Android client and one iOS client
+#footnote[https://github.com/ls1intum/Artemis/blob/develop/docs/user/mobile-applications.rst].
+The mobile applications do not support the same features and they do not support all the web client's features.
 
 == Problem
 #rect(
