@@ -73,6 +73,12 @@
 
 ]
 
+Several university courses, where Bachelor's and Master's students enroll alike, use Artemis
+#cite("krusche2021IL").
+Hence, the development of Artemis must take into account learners that are novice or advanced users of learning management systems.
+The Artemis client's usability might deter novice users from using it, if it is unsatisfactory.
+Similarly, advanced users might not want to use it either, if they cannot rely on the Artemis client to do common tasks, i.e., participating in exercises.
+We discuss the problems of participation and usability in the following subsections.
 
 = Motivation
 
