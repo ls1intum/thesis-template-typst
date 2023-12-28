@@ -80,6 +80,7 @@ The Artemis project gained two native mobile applications, one Android client an
 The mobile applications do not support the same features and they do not support all the web client's features.
 
 == Problem
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -88,6 +89,75 @@ The mobile applications do not support the same features and they do not support
 )[
   Note: Describe the problem that you like to address in your thesis to show the importance of your work. Focus on the negative symptoms of the currently available solution.
 ]
+
+Several university courses, where Bachelor's and Master's students enroll alike, use Artemis
+#cite("krusche2021IL").
+Hence, the development of Artemis must take into account learners who are novice or advanced users of learning management systems.
+The Artemis client's usability might deter novice users from using it, if it is unsatisfactory.
+Similarly, advanced users might not want to use it either, if they cannot rely on the Artemis client to do common tasks, i.e., participating in exercises.
+We discuss the problems of participation and usability in the following subsections.
+
+== Participation
+
+In its current state, the iOS application enables users to view their courses, communicate with peers, and receive notifications.
+However, it is lacking the functionality to participate in any exercises.
+The iOS application does not support participating in "programming, text-, quiz-, file upload-, [and] modeling exercises"
+#cite("andabaka2023app").
+As a consequence, users need to navigate to the same exercise with a suitable client to work on it,
+if they receive the corresponding notification on their smartphone. 
+At best, they do not need to switch to another device and open Artemis in the browser on their smartphone,
+but the usability depends on the exercise's type.
+Quiz and modeling exercises are more difficult to complete on a small screen because of drag-and-drop.
+At worst, they need to switch to a device with a larger screen and the appropriate input methods, e.g., a laptop.
+Users need to find the exercise that they have received a notification for and complete it on the second device.
+
+The need to use multiple clients and devices makes the task of participating in exercises more complex.
+The ability to complete a task in the same environment, where the user receives a notification, a single device and a single client, makes the task simpler.
+
+== Usability
+
+The Artemis web client adapts its layout for smartphone screen sizes in some view components, but not all.
+For instance, the design of the modeling editor and drag-and-drop quiz questions demands a keyboard and mouse
+#cite("ortel2023app").
+So far, the iOS application enables navigating exercises, lectures, and messages in a layout that is more suitable for smartphone screens.
+However, the iOS application lacks user satisfaction.
+Satisfaction is one component of Nielsen's
+#cite("nielsen1993UE")
+definition of usability.
+@messages shows that comparable functionality, i.e., that of messaging, is more satisfactory in other iOS applications.
+
+@exercises shows that the same functionality's layout appears different in the iOS application from the web client, even if the web client adapts to smartphone screen sizes.
+These dissimilarities put a burden on the user of both the iOS application and the web client to navigate the same content but with two different presentations.
+
+#figure(
+  stack(
+    dir: ltr,
+    spacing: 1em,
+    image("figures/proposal/messages_artemis.jpg", height: 60%),
+    image("figures/proposal/messages_slack.jpg", height: 60%)
+  ),
+  caption: [
+    The left screenshot shows the Messages tab in the Artemis iOS application.
+    The right screenshot shows the Home tab in the Slack iOS application.
+    Slack's layout appears more visually refined than that of Artemis.
+  ]
+) <messages>
+
+#figure(
+  stack(
+    dir: ltr,
+    spacing: 1em,
+    image("figures/proposal/exercises_native_a.jpg", height: 40%),
+    image("figures/proposal/exercises_native_b.jpg", height: 40%),
+    image("figures/proposal/exercises_web.png", height: 40%)
+  ),
+  caption: [
+    The left screenshot shows the list of groups of exercises with an associated date.
+    The middle screenshot shows the list of a course's exercises in the iOS application.
+    The right screenshot shows the list of a course's exercises in the web client.
+    The layout in the iOS application is different from the web client.
+  ]
+) <exercises>
 
 == Motivation
 #rect(
