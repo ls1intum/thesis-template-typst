@@ -160,6 +160,7 @@ These dissimilarities put a burden on the user of both the iOS application and t
 ) <exercises>
 
 == Motivation
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -168,6 +169,33 @@ These dissimilarities put a burden on the user of both the iOS application and t
 )[
   Note: Motivate scientifically why solving this problem is necessary. What kind of benefits do we have by solving the problem?
 ]
+
+About 94% of young persons own and use a smartphone, as of 2021
+#footnote[https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-der-smartphone-nutzer-in-deutschland-nach-altersgruppe/].
+On the other hand, the young persons' share that owns a PC or laptop is, at about three quarters, lower, as of 2022
+#footnote[https://de.statista.com/statistik/daten/studie/29432/umfrage/anteil-der-jugendlichen-der-einen-computer-oder-laptop-besitzt/].
+Therefore, we reckon that almost every student has a smartphone available during the lecture and one-quarter of students would need to rely on a mobile operating system, such as Android or iOS/iPadOS, to solve an exercise during a lecture.
+Although nearly every student uses their smartphone every day, technical barriers may limit smartphone usage for academic purposes.
+Still, students' willingness suggests that there is more potential to participate in an academic context using a smartphone
+#cite("al2018smartphone").
+Consequently, the Artemis iOS application can enable more students to participate in an interactive lecture environment, if it provides the necessary functionality.
+
+Students learn meaningfully when they manage the teaching material consciously
+#cite("moreno2007interactive"),
+e.g., they integrate new information within exercises.
+However, humans can only bear so much cognitive load.
+Students might exceed their processing capacity when learning in an interactive environment
+#cite("moreno2007interactive").
+Artemis makes participating in exercises more streamlined through one system.
+However, Artemis requires users to maneuver multiple clients, i.e., receiving notifications through the iOS application and completing an exercise in the web client.
+Handling multiple clients might strain the users of Artemis.
+
+Furthermore, mobile learning applications can bring measurable benefits to learners due to their ability to blend into users' daily lives.
+One such example is Duolingo, the number one free app on the iOS App Store in the Education category, as of 2023
+#footnote[https://apps.apple.com/us/app/duolingo-language-lessons/id570060128].
+Research at Duolingo shows that an intelligent algorithm to send timely notifications has a positive impact on their users' retention
+#cite("yancey2020sleeping").
+Similarly, the Artemis iOS client's further development to improve usability and extend the functionality should have a positive impact on students.
 
 == Objectives
 #rect(
