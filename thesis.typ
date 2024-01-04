@@ -198,6 +198,7 @@ Research at Duolingo shows that an intelligent algorithm to send timely notifica
 Similarly, the Artemis iOS client's further development to improve usability and extend the functionality should have a positive impact on students.
 
 == Objectives
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -206,6 +207,44 @@ Similarly, the Artemis iOS client's further development to improve usability and
 )[
   Note: Describe the research goals and/or research questions and how you address them by summarizing what you want to achieve in your thesis, e.g. developing a system and then evaluating it.
 ]
+
+This thesis aims to evolve the Artemis iOS application in two areas.
+We discuss the topics of evolving the communication feature and enabling participation in exercises in the subsections below.
+
+=== Evolve the Communication Feature
+
+We iterate the communication feature's user interface to provide a more satisfactory experience for students.
+The user interface's appearance is only one of several difficulties in the communication feature.
+We cannot assume that all students only post constructive and friendly messages to lecture-, exercise-, or private channels.
+We add a reporting mechanism to the iOS application and the Artemis server.
+Furthermore, the App Store Review Guidelines determine: "A mechanism to report offensive content and timely responses to concerns"
+#footnote[https://developer.apple.com/app-store/review/guidelines/#user-generated-content]
+must exist in the app anyway.
+
+Moreover, users can enable notifications for the communication feature.
+That is, this setting enables notifications for every lecture or no lecture.
+The option to mute notifications for one lecture independent of the other lectures does not exist.
+We add a mechanism to set notification settings for communication channels in a more granular way.
+//The communication feature's sound state allows us to recommend the iOS application to the web client's users if they are visiting it on a capable device.
+
+=== Enable Participation in Exercises
+
+We enable participating in exercises through the iOS application.
+Quiz exercises, text exercises, and modeling exercises require new user interface components, which we create leveraging the native components of iOS.
+
+SwiftUI's TextEditor lets users create input for text exercises
+#footnote[https://developer.apple.com/documentation/swiftui/texteditor].
+We use SwiftUI's drag-and-drop capabilities for filling out quiz exercises
+#footnote[https://developer.apple.com/documentation/swiftui/drag-and-drop].
+
+The editor for modeling exercises poses the biggest challenge.
+The Themis app for Artemis is incorporating rendering UML diagrams for assessment by a tutor
+#footnote[https://github.com/ls1intum/Themis/pull/163].
+We do not plan to repeat the Themis team's development efforts but work with them to enable viewing diagrams in the iOS application.
+Therefore, working on modeling exercises through the iOS application is not in the scope of this thesis.
+
+The development will affect the server and client components as shown in @participation.
+Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
 
 == Outline
 #rect(
