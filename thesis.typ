@@ -243,8 +243,16 @@ The Themis app for Artemis is incorporating rendering UML diagrams for assessmen
 We do not plan to repeat the Themis team's development efforts but work with them to enable viewing diagrams in the iOS application.
 Therefore, working on modeling exercises through the iOS application is not in the scope of this thesis.
 
-// The development will affect the server and client components as shown in @participation.
+The development will affect the server and client components as shown in @participation.
 Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
+
+#figure(
+  image("figures/export/deployment_diagram.jpg"),
+  caption: [
+    The diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
+    The exercise services communicate via the HTTPS protocol.
+  ]
+) <participation>
 
 == Outline
 #rect(
