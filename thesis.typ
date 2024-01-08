@@ -65,15 +65,15 @@
 
 Artemis is a teaching platform that allows instructors and tutors to publish exercises to students, e.g., programming exercises.
 Students create solutions by iteratively applying techniques of version control and continuous integration
-#cite("10.1145/3159450.3159602").
+#cite(<krusche2018artemis>).
 Artemis not only supports programming exercises, but modeling-, quiz-, text-, and file upload exercises, as well as, an exam mode.
 The exercises help students learn the teaching material hands-on and keep them involved in the lecture.
 Interactive learning is a teaching philosophy, where students are at the center of a repeated cycle.
 In one iteration, the students follow five steps: Theory, example, practice, feedback, and reflection
-#cite("krusche2021IL").
+#cite(<krusche2021IL>).
 
 Mobile applications enable students to practice interactive learning, alongside laptops and tablets
-#cite("10.1145/3159450.3159602").
+#cite(<krusche2018artemis>).
 Until recently, Artemis revolved around the Artemis application, namely a server program and a web client.
 The Artemis project gained two native mobile applications, one Android client and one iOS client
 #footnote[https://github.com/ls1intum/Artemis/blob/develop/docs/user/mobile-applications.rst].
@@ -91,7 +91,7 @@ The mobile applications do not support the same features and they do not support
 ]
 
 Several university courses, where Bachelor's and Master's students enroll alike, use Artemis
-#cite("krusche2021IL").
+#cite(<krusche2021IL>).
 Hence, the development of Artemis must take into account learners who are novice or advanced users of learning management systems.
 The Artemis client's usability might deter novice users from using it, if it is unsatisfactory.
 Similarly, advanced users might not want to use it either, if they cannot rely on the Artemis client to do common tasks, i.e., participating in exercises.
@@ -102,7 +102,7 @@ We discuss the problems of participation and usability in the following subsecti
 In its current state, the iOS application enables users to view their courses, communicate with peers, and receive notifications.
 However, it is lacking the functionality to participate in any exercises.
 The iOS application does not support participating in "programming, text-, quiz-, file upload-, [and] modeling exercises"
-#cite("andabaka2023app").
+#cite(<andabaka2023app>).
 As a consequence, users need to navigate to the same exercise with a suitable client to work on it,
 if they receive the corresponding notification on their smartphone. 
 At best, they do not need to switch to another device and open Artemis in the browser on their smartphone,
@@ -118,11 +118,11 @@ The ability to complete a task in the same environment, where the user receives 
 
 The Artemis web client adapts its layout for smartphone screen sizes in some view components, but not all.
 For instance, the design of the modeling editor and drag-and-drop quiz questions demands a keyboard and mouse
-#cite("ortel2023app").
+#cite(<ortel2023app>).
 So far, the iOS application enables navigating exercises, lectures, and messages in a layout that is more suitable for smartphone screens.
 However, the iOS application lacks user satisfaction.
 Satisfaction is one component of Nielsen's
-#cite("nielsen1993UE")
+#cite(<nielsen1993UE>)
 definition of usability.
 @messages shows that comparable functionality, i.e., that of messaging, is more satisfactory in other iOS applications.
 
@@ -177,15 +177,15 @@ On the other hand, the young persons' share that owns a PC or laptop is, at abou
 Therefore, we reckon that almost every student has a smartphone available during the lecture and one-quarter of students would need to rely on a mobile operating system, such as Android or iOS/iPadOS, to solve an exercise during a lecture.
 Although nearly every student uses their smartphone every day, technical barriers may limit smartphone usage for academic purposes.
 Still, students' willingness suggests that there is more potential to participate in an academic context using a smartphone
-#cite("al2018smartphone").
+#cite(<al2018smartphone>).
 Consequently, the Artemis iOS application can enable more students to participate in an interactive lecture environment, if it provides the necessary functionality.
 
 Students learn meaningfully when they manage the teaching material consciously
-#cite("moreno2007interactive"),
+#cite(<moreno2007interactive>),
 e.g., they integrate new information within exercises.
 However, humans can only bear so much cognitive load.
 Students might exceed their processing capacity when learning in an interactive environment
-#cite("moreno2007interactive").
+#cite(<moreno2007interactive>).
 Artemis makes participating in exercises more streamlined through one system.
 However, Artemis requires users to maneuver multiple clients, i.e., receiving notifications through the iOS application and completing an exercise in the web client.
 Handling multiple clients might strain the users of Artemis.
@@ -194,7 +194,7 @@ Furthermore, mobile learning applications can bring measurable benefits to learn
 One such example is Duolingo, the number one free app on the iOS App Store in the Education category, as of 2023
 #footnote[https://apps.apple.com/us/app/duolingo-language-lessons/id570060128].
 Research at Duolingo shows that an intelligent algorithm to send timely notifications has a positive impact on their users' retention
-#cite("yancey2020sleeping").
+#cite(<yancey2020sleeping>).
 Similarly, the Artemis iOS client's further development to improve usability and extend the functionality should have a positive impact on students.
 
 == Objectives
@@ -245,6 +245,14 @@ Therefore, working on modeling exercises through the iOS application is not in t
 
 The development will affect the server and client components as shown in @participation.
 Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
+
+#figure(
+  image("figures/export/deployment_diagram.jpg"),
+  caption: [
+    The diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
+    The exercise services communicate via the HTTPS protocol.
+  ]
+) <participation>
 
 == Outline
 #rect(
@@ -313,7 +321,7 @@ Fortunately, the existing implementations for the Android application and web cl
   stroke: 0.5pt,
   fill: yellow,
 )[
-  Note: This chapter follows the Requirements Analysis Document Template in @bruegge2004object. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite @bruegge2004object several times in this chapter.
+  Note: This chapter follows the Requirements Analysis Document Template in <bruegge2004object>. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite <bruegge2004object> several times in this chapter.
 
 ]
 
@@ -368,7 +376,7 @@ Fortunately, the existing implementations for the Android application and web cl
   stroke: 0.5pt,
   fill: yellow,
 )[
-  Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
+  Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in <bruegge2004object> without the category functionality that was already covered with the functional requirements.
 
   - NFR1 Category: Short Description. 
   - NFR2 Category: Short Description. 
@@ -422,7 +430,7 @@ Fortunately, the existing implementations for the Android application and web cl
   stroke: 0.5pt,
   fill: yellow,
 )[
-  Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see @bruegge2004object). Do not insert objects, attributes or methods of the solution domain. *Important:* Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.
+  Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see <bruegge2004object>). Do not insert objects, attributes or methods of the solution domain. *Important:* Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.
 
 ]
 
@@ -453,7 +461,7 @@ Fortunately, the existing implementations for the Android application and web cl
   stroke: 0.5pt,
   fill: yellow,
 )[
-  Note: This chapter follows the System Design Document Template in @bruegge2004object. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite @bruegge2004object several times in this chapter.
+  Note: This chapter follows the System Design Document Template in <bruegge2004object>. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite <bruegge2004object> several times in this chapter.
 ]
 
 == Overview
