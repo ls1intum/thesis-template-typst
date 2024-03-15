@@ -1,0 +1,68 @@
+name: Build and release thesis
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build_release_thesis:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: '0'
+
+      - name: Create initial tag
+        run: |
+          if [ -z "$(git tag -l 'v*')" ]; then
+            git tag v0.0.0
+          fi
+
+      - name: Bump version and push tag
+        id: bump
+        uses: anothrNick/github-tag-action@1.67.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          DEFAULT_BUMP: 'patch'
+
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.bump.outputs.new_tag }}
+          name: Version ${{ steps.bump.outputs.new_tag }}
+          draft: false
+          prerelease: false
+  
+      - name: Compile Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            thesis.typ
+            proposal.typ
+
+      - name: Upload Release Asset - Thesis
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./thesis.pdf
+          asset_name: thesis.pdf
+          asset_content_type: application/pdf
+
+      - name: Upload Release Asset - Proposal
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./proposal.pdf
+          asset_name: proposal.pdf
+          asset_content_type: application/pdf

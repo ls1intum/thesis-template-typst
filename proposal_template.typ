@@ -31,13 +31,19 @@
     size: 12pt, 
     lang: "en"
   )
+
   show math.equation: set text(weight: 400)
+
+  // --- Headings ---
+  show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
-  set par(leading: 1em)
 
-  // Main body.
-  set par(justify: true)
+  // --- Paragraphs ---
+  set par(leading: 1em, justify: true, first-line-indent: 2em)
+
+  // --- Figures ---
+  show figure: set text(size: 0.85em)
 
   body
 
