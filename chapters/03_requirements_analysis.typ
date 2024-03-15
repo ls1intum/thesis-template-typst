@@ -9,6 +9,10 @@
 
 ]
 
+This chapter documents the results of requirements elicitation according to the Requirements Analysis Document template
+#cite(<bruegge2004OOSE>). // 152
+We describe the current system in 'Current System', which we plan to replace with the 'Proposed System'.
+
 == Overview
 #rect(
   width: 100%,
@@ -18,6 +22,20 @@
 )[
   Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
 ]
+
+The current system is mostly a "Reader" app
+#footnote("https://developer.apple.com/app-store/review/guidelines/#reader-apps").
+The iOS app provides the capability to write messages, too.
+We plan to extend the participation features of the app.
+Scope are exercises and the communication feature.
+
+The objectives of this thesis are to:
+
+- provide students participate in exercise through the iOS app.
+- provide students with the infrastructure to communicate through the iOS app and navigate to interesting content.
+- provide instructors with the infrastructure to efficiently let students sign their attendance at an exam.
+
+We deem the proposed system successful if users are satisfied with our improvements to usability.
 
 == Current System
 #rect(
@@ -29,6 +47,31 @@
   Note: This section is only required if the proposed system (i.e. the system that you develop in the thesis) should replace an existing system.
 ]
 
+Alternatives:
+
+- describe the current system and state of development from a user perspective in the first part. Describe the software architecture for the communication feature of Artemis in the second part.
+- only describe the _notificaton_ system of Artemis, 'which we change and extend.'
+
+=== Artemis - Learning
+
+We describe the current system in terms of a storyboard,
+i.e., a sequence of screens in the order,
+in which a user can navigate the application.
+
+A user can see their courses if they are logged in.
+A user can navigate to a single course and see its exercises, lectures, and messages.
+Messages are only visible if the instructor enabled it for the course.
+
+In the messages tab, a user can see conversations for course-wide channels, exercises, lectures, exams, group chats, and direct messages.
+They can navigate to a thread, i.e., a branch of messages, which has its root in one message in the conversation.
+
+A user can manipulate courses, conversations, messages, and threads.
+
+=== Artemis - Exam Supervision
+
+An instructor can see (relevant) exams.
+They can check all students, who are enrolled in an exam.
+
 == Proposed System
 #rect(
   width: 100%,
@@ -38,6 +81,10 @@
 )[
   Note: If you leave out the section “Current system”, you can rename this section into “Requirements”.
 ]
+
+=== Artemis - Learning
+
+=== Artemis - Exam Supervision
 
 === Functional Requirements
 #rect(
