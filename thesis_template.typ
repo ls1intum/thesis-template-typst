@@ -25,13 +25,35 @@
     size: 12pt, 
     lang: "en"
   )
+  
   show math.equation: set text(weight: 400)
+
+  // --- Headings ---
+  show heading: set block(below: 0.85em, above: 1.75em)
   show heading: set text(font: body-font)
   set heading(numbering: "1.1")
+  // Reference first-level headings as "chapters"
+  show ref: it => {
+    let el = it.element
+    if el != none and el.func() == heading and el.level == 1 {
+      [Chapter ]
+      numbering(
+        el.numbering,
+        ..counter(heading).at(el.location())
+      )
+    } else {
+      it
+    }
+  }
+
+  // --- Paragraphs ---
   set par(leading: 1em)
 
-  
+  // --- Citations ---
+  set cite(style: "alphanumeric")
 
+  // --- Figures ---
+  show figure: set text(size: 0.85em)
   
   // --- Table of Contents ---
   outline(
@@ -48,9 +70,30 @@
 
 
   // Main body.
-  set par(justify: true)
+  set par(justify: true, first-line-indent: 2em)
 
   body
+
+  // List of figures.
+  pagebreak()
+  heading(numbering: none)[List of Figures]
+  outline(
+    title:"",
+    target: figure.where(kind: image),
+  )
+
+  // List of tables.
+  pagebreak()
+  heading(numbering: none)[List of Tables]
+  outline(
+    title: "",
+    target: figure.where(kind: table)
+  )
+
+  // Appendix.
+  pagebreak()
+  heading(numbering: none)[Appendix A: Supplementary Material]
+  include("thesis_typ/appendix.typ")
 
   pagebreak()
   bibliography("thesis.bib")
