@@ -1,4 +1,4 @@
-= Summary
+= Summary <su>
 #rect(
   width: 100%,
   radius: 10%,

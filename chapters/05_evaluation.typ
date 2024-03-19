@@ -1,4 +1,4 @@
-= Case Study / Evaluation
+= Case Study / Evaluation <ev>
 #rect(
   width: 100%,
   radius: 10%,

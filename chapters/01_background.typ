@@ -1,4 +1,4 @@
-= Background
+= Background <bg>
 #rect(
   width: 100%,
   radius: 10%,

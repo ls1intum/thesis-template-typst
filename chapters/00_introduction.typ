@@ -1,4 +1,4 @@
-= Introduction
+= Introduction <in>
 
 #rect(
   width: 100%,
@@ -24,6 +24,7 @@ Until recently, Artemis revolved around the Artemis application, namely a server
 The Artemis project gained two native mobile applications, one Android client and one iOS client
 #footnote[https://github.com/ls1intum/Artemis/blob/develop/docs/user/mobile-applications.rst].
 The mobile applications do not support the same features and they do not support all the web client's features.
+
 == Problem
 
 #rect(
