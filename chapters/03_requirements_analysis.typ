@@ -1,4 +1,4 @@
-= Requirements Analysis
+= Requirements Analysis <ra>
 #rect(
   width: 100%,
   radius: 10%,
@@ -13,7 +13,7 @@ This chapter documents the results of requirements elicitation according to the 
 #cite(<bruegge2004OOSE>). // 152
 We describe the current system in 'Current System', which we plan to replace with the 'Proposed System'.
 
-== Overview
+== Overview <ra-overview>
 #rect(
   width: 100%,
   radius: 10%,
@@ -37,7 +37,7 @@ The objectives of this thesis are to:
 
 We deem the proposed system successful if users are satisfied with our improvements to usability.
 
-== Current System
+== Current System <ra-current-system>
 #rect(
   width: 100%,
   radius: 10%,
@@ -72,7 +72,7 @@ A user can manipulate courses, conversations, messages, and threads.
 An instructor can see (relevant) exams.
 They can check all students, who are enrolled in an exam.
 
-== Proposed System
+== Proposed System <ra-proposed-system>
 #rect(
   width: 100%,
   radius: 10%,
@@ -115,7 +115,7 @@ They can check all students, who are enrolled in an exam.
 
 ]
 
-== System Models
+== System Models <ra-system-models>
 #rect(
   width: 100%,
   radius: 10%,
