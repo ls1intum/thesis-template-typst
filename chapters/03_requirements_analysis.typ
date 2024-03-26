@@ -52,8 +52,6 @@ Alternatives:
 - describe the current system and state of development from a user perspective in the first part. Describe the software architecture for the communication feature of Artemis in the second part.
 - only describe the _notificaton_ system of Artemis, 'which we change and extend.'
 
-=== Artemis - Learning
-
 We describe the current system in terms of a storyboard,
 i.e., a sequence of screens in the order,
 in which a user can navigate the application.
@@ -67,11 +65,6 @@ They can navigate to a thread, i.e., a branch of messages, which has its root in
 
 A user can manipulate courses, conversations, messages, and threads.
 
-=== Artemis - Exam Supervision
-
-An instructor can see (relevant) exams.
-They can check all students, who are enrolled in an exam.
-
 == Proposed System <ra-proposed-system>
 #rect(
   width: 100%,
@@ -81,10 +74,6 @@ They can check all students, who are enrolled in an exam.
 )[
   Note: If you leave out the section “Current system”, you can rename this section into “Requirements”.
 ]
-
-=== Artemis - Learning
-
-=== Artemis - Exam Supervision
 
 === Functional Requirements
 #rect(
@@ -157,13 +146,6 @@ Charlie, the instructor, starts every lecture with a quiz exercise in the first 
 The train is scheduled every 10 minutes, thus Alice arrives in the lecture hall after the quiz begins.
 While Alice is still riding the train, they navigate to the course ISPL, and the Exercises tab in the Artemis app.
 Alice starts the quiz exercise and can finish it by the time they arrive in the lecture hall.
-
-Charlie conducts an exam for ISPL in one lecture hall.
-Besides Alice and Bob, Charlie must verify the attendance of 200 more students in the lecture hall, which they are responsible for.
-Every student logs into the Artemis web client and starts working on the exam.
-Charlie loads a list of all students, who registered for the exam, and filters for their lecture hall.
-Charlie walks from one seat to the next and prompts a code on the student's device.
-Charlie scans the code to verify the student's attendance.
 
 ==== Demo Scenarios
 
