@@ -11,7 +11,7 @@
 
 This chapter documents the results of requirements elicitation according to the _Requirements Analysis Document_ template
 #cite(<bruegge2004OOSE>). // 152
-We describe the current system in the section @ra-current-system, which we will replace with the proposed system in the section @ra-proposed-system.
+We describe the current system in the section @ra-current-system, which we will augment with the proposed system in the section @ra-proposed-system.
 
 == Overview <ra-overview>
 #rect(
@@ -23,8 +23,8 @@ We describe the current system in the section @ra-current-system, which we will 
   Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
 ]
 
-The current system is mostly a "Reader" app
-#footnote("https://developer.apple.com/app-store/review/guidelines/#reader-apps").
+We consider the current system a "Free Stand-alone App"
+#footnote("https://developer.apple.com/app-store/review/guidelines/#free-stand-alone-apps").
 The iOS app provides the capability to write messages, too.
 We plan to extend the participation features of the app.
 Scope are exercises and the communication feature.
@@ -52,20 +52,28 @@ Alternatives:
 - describe the current system and state of development from a user perspective in the first part. Describe the software architecture for the communication feature of Artemis in the second part.
 - only describe the _notificaton_ system of Artemis, 'which we change and extend.'
 
-We describe the current system in terms of a storyboard,
-i.e., a sequence of screens in the order,
-in which a user can navigate the application.
 
+The Artemis - Learning app is a companion to Artemis on the web, through which a user can view the details of their courses.
 A user can see their courses if they are logged in.
-A user can navigate to a single course and see its exercises, lectures, and messages.
+If a user registers for a course, they can view the course's exercises, lectures, and messages
+#cite(<andabaka2023app>).
+A user can submit attempts for modeling exercises
+#cite(<goertzen2024uml>),
+but cannot submit attempt for other kinds of exercises, i.e., programming, quiz, text, and file upload exercises.
 Messages are only visible if the instructor enabled it for the course.
-
 In the messages tab, a user can see conversations for course-wide channels, exercises, lectures, exams, group chats, and direct messages.
 They can navigate to a thread, i.e., a branch of messages, which has its root in one message in the conversation.
 
-A user can manipulate courses, conversations, messages, and threads.
+// A user can view their course details, e.g., exercises, lectures, and communications through the Artemis - Learning app.
+// A user can manipulate courses, conversations, messages, and threads.
+// A user can navigate to a single course and see its exercises, lectures, and messages.
+
+=== Storyboard
+
+We describe the current system in terms of a storyboard, i.e., a sequence of screens in the order, in which a user can navigate the application.
 
 == Proposed System <ra-proposed-system>
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -76,6 +84,7 @@ A user can manipulate courses, conversations, messages, and threads.
 ]
 
 === Functional Requirements
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -89,7 +98,23 @@ A user can manipulate courses, conversations, messages, and threads.
   - FR3 Short Title: Short Description.
 ]
 
+#set enum(numbering: n => [FR #n])
++ Configure a Code of Conduct: An instructor can adapt a template Code of Conduct at the creation of a course and edit it later.
++ Accept Code of Conduct: A user can use the communication feature if they accept the Code of Conduct
++ Report misconduct: A user can report misconduct to a course's responsible contact.
++ Mute individual conversations: A user can mute a conversation independent of other conversations.
++ Mention an exercise: A user can mention an exercise in a message.
++ Mention a lecture: A user can mention a lecture in a message.
++ Mention a conversation member: A user can mention a member of the conversation in a message.
++ Mention a conversation: A user can mention another conversation in a message.
++ Load earlier messages: A user can load earlier messages of a conversation.
++ Draft and restore a message: A user can draft a message and restore it at a later time.
++ Retry a message: A user can retry a message if it fails to send.
++ Participate in text exercises: A user can submit attempts for text exercises.
++ Participate in quiz exercises: A user can submit attempts for quiz exercises.
+
 === Nonfunctional Requirements
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -103,6 +128,30 @@ A user can manipulate courses, conversations, messages, and threads.
   - NFR3 Category: Short Description.
 
 ]
+
+#set enum(numbering: n => [NFR #n])
++ Usability:
+  #set enum(numbering: "1.")
+  1. Visibility of System Status: Queue sending a message
+  // - Match Between the System and the Real World
+  // - User Control & Freedom
+  4. Consistency and Standards: Internal, within the app, and external, among Artemis clients and iOS apps
+  // - Error Prevention: Severe damage; save failed message
+  6. Recognition Rather Than Recall: Recommend mentions
+  // - Flexibility and Efficiency of Use
+  8. Aesthetics and Minimalistic Design: Primary goals; message cell
+  9. Help Users Recognize, Diagnose and Recover from Errors: Red text; retry message
+    - Inform users when an error has occured
+    - Tell users what went wrong
+    - Offer users a solution
+  // - Help & Documentation
++ Robustness: Networking needs/constraints
++ Supportability: Maintainability
++ Implementation requirements: Develop the Artemis - Learning app for iOS and use the Swift programming language.
++ Interface requirements: The Artemis - Learning app should interface with the Artemis server.
+// + Operations requirements:
++ Packaging requirements: Distribute the Artemis - Learning app through the Apple App Store.
++ Legal requirements: App Store Review Guidelines for user-generated content: Developers submit apps to the App Store and App Review checks the submission. Submissions must cohere with the App Store Review Guidelines.
 
 == System Models <ra-system-models>
 #rect(
