@@ -235,15 +235,21 @@ Alice's iPhone disconnects from the network, inside the train station, when they
 
 ]
 
-#figure(image("../figures/03_use-case-model.png")) <ra-use-case-model>
-
 All users use messages.
 An instructor manages the code of conduct.
 A student participates in exercises.
+@ra-use-case-model depicts the relation between actors and use cases.
 
 We split the use case model into three parts.
 The first part concerns all users, i.e., an instructor, a tutor, and a student.
 The second part concerns instructors and students, individually.
+
+#figure(
+  image("../figures/03_use-case-model.png"), 
+  caption: [
+    The use case model depicts actors that use the system in various ways, i.e., use cases.
+  ]
+) <ra-use-case-model>
 
 === Analysis Object Model
 
@@ -263,8 +269,14 @@ A code of conduct is specific to a course and only available if a constructor en
 A subset of course members and many messages make a conversation.
 A message can be the first one of a thread of messages and we call the other messages answers.
 A message or answer can connect to a notification.
+We show the relationships between the objects in @ra-analysis-object-model.
 
-#figure(image("../figures/03_analysis-object-model.png")) <ra-analysis-object-model>
+#figure(
+  image("../figures/03_analysis-object-model.png"),
+  caption: [
+    The analysis object model depicts the high-level objects in the problem domain.
+  ]
+) <ra-analysis-object-model>
 
 === Dynamic Model
 
@@ -286,11 +298,17 @@ When a user sends a message, it is in the sending state until that server acknow
 If the server does not acknowledge the message until after a timeout interval, then it failed to send.
 
 A user sends a message and that can cause notifications for other users.
+We show the way of a notification in @ra-dynamic-model.
 A user can generally disable all notifications for a specific kind, e.g., all notifications for new messages in a conversations.
 If they enable notifications for conversations, then they can mute individual conversations.
 If the user mutes a conversation, they do not receive messages.
 
-#figure(image("../figures/03_dynamic-model.png")) <ra-dynamic-model>
+#figure(
+  image("../figures/03_dynamic-model.png"),
+  caption: [
+    The activity diagram shows how user settings influence a notification.
+  ]
+) <ra-dynamic-model>
 
 === User Interface
 
@@ -303,8 +321,13 @@ If the user mutes a conversation, they do not receive messages.
   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
 ]
 
-#figure(image("../figures/03_storyboard.png")) <ra-storyboard>
-
 The storyboard shows the login, dashboard, exercises, lectures, messages, and conversation screens.
 A user can navigate between the screens, whenever there is an edge.
 A user can switch tabs in a course and arrive at the exercises, lectures, or messages screens.
+
+#figure(
+  image("../figures/03_storyboard.png"),
+  caption: [
+    The storyboard depicts how a user can navigate between different screens of the application.
+  ]
+) <ra-storyboard>
