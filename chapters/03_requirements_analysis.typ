@@ -257,6 +257,15 @@ The second part concerns instructors and students, individually.
 
 ]
 
+We focus on the messages domain and model it from the point of view of a single user.
+A course comprises members, exercises, lectures, and conversations.
+A code of conduct is specific to a course and only available if a constructor enables information sharing.
+A subset of course members and many messages make a conversation.
+A message can be the first one of a thread of messages and we call the other messages answers.
+A message or answer can connect to a notification.
+
+#figure(image("../figures/03_analysis-object-model.png"))
+
 === Dynamic Model
 
 #rect(
