@@ -201,6 +201,7 @@ Fortunately, the existing implementations for the Android application and web cl
 ) <participation>
 
 == Outline
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -209,3 +210,18 @@ Fortunately, the existing implementations for the Android application and web cl
 )[
   Note: Describe the outline of your thesis
 ]
+
+In this chapter, @in, we gave an introduction to Artemis, its server and clients, and some of its problems.
+We expressed our motivation and the objectives of our thesis.
+
+In the chapter _Background_ @bg, we give context to this thesis in terms of related concepts and technologies.
+
+In the chapter _Related Work_ @rw, we mention other work, which relates to Artemis directly and the concepts of participation and usability.
+
+In the chapter _Requirements Analysis_ *wip* // @ra, we elicte the requirements of the system, independent of the implementation.
+
+In the chapter _System Design_ @sd, we transform the analysis model into a system design model.
+
+In the chapter _Evaluation_ @ev, we describe our test with users.
+
+Finally, in the chapter _Summary_ @su, we give a summary of our work and give inspiration to future work.
