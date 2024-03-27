@@ -235,7 +235,7 @@ Alice's iPhone disconnects from the network, inside the train station, when they
 
 ]
 
-#figure(image("../figures/03_use-case-model.png"))
+#figure(image("../figures/03_use-case-model.png")) <ra-use-case-model>
 
 All users use messages.
 An instructor manages the code of conduct.
@@ -264,7 +264,7 @@ A subset of course members and many messages make a conversation.
 A message can be the first one of a thread of messages and we call the other messages answers.
 A message or answer can connect to a notification.
 
-#figure(image("../figures/03_analysis-object-model.png"))
+#figure(image("../figures/03_analysis-object-model.png")) <ra-analysis-object-model>
 
 === Dynamic Model
 
@@ -290,7 +290,7 @@ A user can generally disable all notifications for a specific kind, e.g., all no
 If they enable notifications for conversations, then they can mute individual conversations.
 If the user mutes a conversation, they do not receive messages.
 
-#figure(image("../figures/03_dynamic-model.png"))
+#figure(image("../figures/03_dynamic-model.png")) <ra-dynamic-model>
 
 === User Interface
 
@@ -303,7 +303,7 @@ If the user mutes a conversation, they do not receive messages.
   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
 ]
 
-#figure(image("../figures/03_storyboard.png"))
+#figure(image("../figures/03_storyboard.png")) <ra-storyboard>
 
 The storyboard shows the login, dashboard, exercises, lectures, messages, and conversation screens.
 A user can navigate between the screens, whenever there is an edge.
