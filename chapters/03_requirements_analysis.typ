@@ -290,7 +290,7 @@ A user can generally disable all notifications for a specific kind, e.g., all no
 If they enable notifications for conversations, then they can mute individual conversations.
 If the user mutes a conversation, they do not receive messages.
 
-#figure(image("../figures/03_analysis-object-model.png"))
+#figure(image("../figures/03_dynamic-model.png"))
 
 === User Interface
 
