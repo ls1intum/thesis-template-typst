@@ -277,6 +277,21 @@ A message or answer can connect to a notification.
   Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.*Important:* Make sure to describe the diagram and its rationale in the text. *Do not use UML sequence diagrams.*
 ]
 
+// Avoid using sequence diagrams, instead consider using activity or communication diagrams.
+
+We put the spotlight on messages.
+A message can be in three different states: Compose, sending, and failed.
+When a user starts to write a message, it is in the compose state.
+When a user sends a message, it is in the sending state until that server acknowledges the message.
+If the server does not acknowledge the message until after a timeout interval, then it failed to send.
+
+A user sends a message and that can cause notifications for other users.
+A user can generally disable all notifications for a specific kind, e.g., all notifications for new messages in a conversations.
+If they enable notifications for conversations, then they can mute individual conversations.
+If the user mutes a conversation, they do not receive messages.
+
+#figure(image("../figures/03_analysis-object-model.png"))
+
 === User Interface
 
 #rect(
