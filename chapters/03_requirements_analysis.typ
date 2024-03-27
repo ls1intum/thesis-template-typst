@@ -186,6 +186,9 @@ We describe the current system in terms of a storyboard, i.e., a sequence of scr
   Note: Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
 ]
 
+// A scenario is an encapsulated description of - an individual user, using a specific set of computer facilities, to achieve a specific outcome, under specific circumstances, over a certain time interval.
+// nielsen1993UE, 100
+
 Alice, Bob, and Charlie are students at the Technical University of Munich.
 They registered themselves in the course Introduction to the Swift Programming Language (ISPL).
 They travel regularly from the Munich city center to Garching-Forschungszentrum (GFZ) and back by train.

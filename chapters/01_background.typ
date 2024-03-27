@@ -10,6 +10,37 @@
 
 == Usability
 
+// / Less Is More: Fewer options help users to understand the options they have better.
+=== Details Matter
+
+Minor details often affect the usability of a user interface
+#cite(<nielsen1993UE>).
+// Learnability, efficiency, and memorability.
+Those minor details can make a user interface easier to learn, easier to remember, and more efficient to use.
+// Errors.
+Moreover, a system that displays fewer errors or errors that a user can easily recover from is more usable.
+// Satisfaction.
+Last but not least, a user should feel satisfied, while using the user interface.
+
+=== Less Is More
+
+Nielsen #cite(<nielsen1993UE>) puts users in a three-dimensional space with three axes: from novice to expert user of the system, from ignorant to knowledgable about the domain, and from minimal to extensive computer experience.
+// We consider students (in the first semester) novice users who are ignorant about the domain,
+// and tutors expert users of the system who are knowledgeable about the domain. 
+Extraneous information slows down both novice and expert users.
+Fewer options, that is features and interaction mechanisms, help to increase the usability for both novice and expert users.
+
+== Gestalt
+
+Gestalt psychology creates "the idea that the whole is different from the sum of its parts"
+#cite(<rock1990legacy>).
+Gestaltists describe the emergent properties of a structure.
+The properties are not inherent to the structure's components.
+Rather some structure properties arise from the organization of its components.
+The original Gestalt laws of grouping are proximity, similarity, closure, and good continuation.
+// Rock and Palmer #cite(<rock1990legacy>) propose two new laws of grouping: common region and connectedness.
+Screens in a user interface can use the Gestalt laws of grouping to organize components that belong together
+#cite<nielsen1993UE>).
 
 == WebSocket
 
