@@ -302,3 +302,9 @@ If the user mutes a conversation, they do not receive messages.
 )[
   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
 ]
+
+#figure(image("../figures/03_storyboard.png"))
+
+The storyboard shows the login, dashboard, exercises, lectures, messages, and conversation screens.
+A user can navigate between the screens, whenever there is an edge.
+A user can switch tabs in a course and arrive at the exercises, lectures, or messages screens.
