@@ -1,4 +1,5 @@
 = Requirements Analysis <ra>
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -14,6 +15,7 @@ This chapter documents the results of requirements elicitation according to the 
 We describe the current system in the section @ra-current-system, which we will augment with the proposed system in the section @ra-proposed-system.
 
 == Overview <ra-overview>
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -38,6 +40,7 @@ The objectives of this thesis are to:
 We deem the proposed system successful if users are satisfied with our improvements to usability.
 
 == Current System <ra-current-system>
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -154,6 +157,7 @@ We describe the current system in terms of a storyboard, i.e., a sequence of scr
 + Legal requirements: App Store Review Guidelines for user-generated content: Developers submit apps to the App Store and App Review checks the submission. Submissions must cohere with the App Store Review Guidelines.
 
 == System Models <ra-system-models>
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -164,6 +168,7 @@ We describe the current system in terms of a storyboard, i.e., a sequence of scr
 ]
 
 === Scenarios
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -219,6 +224,7 @@ Alice and Bob wish each other a good morning.
 Alice's iPhone disconnects from the network, inside the train station, when they want to ask Bob about the upcoming lecture content.
 
 === Use Case Model
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -229,7 +235,18 @@ Alice's iPhone disconnects from the network, inside the train station, when they
 
 ]
 
+#figure(image("../figures/03_use-case-model.png"))
+
+All users use messages.
+An instructor manages the code of conduct.
+A student participates in exercises.
+
+We split the use case model into three parts.
+The first part concerns all users, i.e., an instructor, a tutor, and a student.
+The second part concerns instructors and students, individually.
+
 === Analysis Object Model
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -241,6 +258,7 @@ Alice's iPhone disconnects from the network, inside the train station, when they
 ]
 
 === Dynamic Model
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -251,6 +269,7 @@ Alice's iPhone disconnects from the network, inside the train station, when they
 ]
 
 === User Interface
+
 #rect(
   width: 100%,
   radius: 10%,
