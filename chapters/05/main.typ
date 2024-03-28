@@ -10,6 +10,7 @@
 ]
 
 == Overview
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -19,7 +20,19 @@
   Note: Provide a brief overview of the software architecture and references to other chapters (e.g. requirements analysis), references to existing systems, constraints impacting the software architecture..
 ]
 
+We organize the Artemis - Learning app into three layers: the view, view model, and service layers,
+similar to the Artemis server's three layers: the web, application, and data layers.
+The server and client talk to each other in a client-server architectural style, which we show in @sd-overview.
+
+#figure(
+  image("overview.png"),
+  caption: [
+    The \_ shows the three-layer architectural styles of the Artemis server and Artemis - Learning app programs.
+  ]
+) <sd-overview>
+
 == Design Goals
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -30,6 +43,7 @@
 ]
 
 == Subsytem Decomposition
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -40,6 +54,7 @@
 ]
 
 == Hardware Software Mapping
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -50,6 +65,7 @@
 ]
 
 == Persistent Data Management
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -60,6 +76,7 @@
 ]
 
 == Access Control
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -70,6 +87,7 @@
 ]
 
 == Global Software Control
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -80,6 +98,7 @@
 ]
 
 == Boundry Conditions
+
 #rect(
   width: 100%,
   radius: 10%,
