@@ -77,6 +77,18 @@ Developers should be able to easily recognize the subsystem decomposition simila
   Note: Describe the architecture of your system by decomposing it into subsys- tems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.
 ]
 
+@sd-subsystem-decomposition shows three system and their subsystems.
+The iOS app's _messages service_ corresponds to the server's conversation resource.
+The _messages service_ is only relevant after a user accepts the code of conduct.
+We model another code of conduct service for local storage.
+
+#figure(
+  image("subsystem-decomposition.png"),
+  caption: [
+    This \_ diagram depicts the subsystems of the server, web client, and Artemis - Learning app.
+  ]
+) <sd-subsystem-decomposition>
+
 == Hardware Software Mapping
 
 #rect(
