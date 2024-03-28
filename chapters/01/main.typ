@@ -79,8 +79,8 @@ These dissimilarities put a burden on the user of both the iOS application and t
   stack(
     dir: ltr,
     spacing: 1em,
-    image("../figures/proposal/messages_artemis.jpg", height: 60%),
-    image("../figures/proposal/messages_slack.jpg", height: 60%)
+    image("messages_artemis.jpg", height: 60%),
+    image("messages_slack.jpg", height: 60%)
   ),
   caption: [
     The left screenshot shows the Messages tab in the Artemis iOS application.
@@ -93,9 +93,9 @@ These dissimilarities put a burden on the user of both the iOS application and t
   stack(
     dir: ltr,
     spacing: 1em,
-    image("../figures/proposal/exercises_native_a.jpg", height: 40%),
-    image("../figures/proposal/exercises_native_b.jpg", height: 40%),
-    image("../figures/proposal/exercises_web.png", height: 40%)
+    image("exercises_native_a.jpg", height: 40%),
+    image("exercises_native_b.jpg", height: 40%),
+    image("exercises_web.png", height: 40%)
   ),
   caption: [
     The left screenshot shows the list of groups of exercises with an associated date.
@@ -193,7 +193,7 @@ The development will affect the server and client components as shown in @partic
 Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
 
 #figure(
-  image("../figures/export/deployment_diagram.jpg"),
+  image("deployment_diagram.jpg"),
   caption: [
     The diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
     The exercise services communicate via the HTTPS protocol.
