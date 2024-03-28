@@ -152,6 +152,10 @@ Developers need to write lightweight or manual migrations when a newer scheme is
   Note: Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
 ]
 
+We control the access to the communication feature because of the legal requirement \_ of user-generated content.
+We store the agreement on the server or hash the code of conduct and store the hash value on the native client.
+We ensure that a user accepts the latest code of conduct.
+
 == Global Software Control
 
 #rect(
