@@ -100,6 +100,17 @@ We model another code of conduct service for local storage.
   Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram. The existing components are often off-the-shelf components. If the components are distributed on different nodes, the network infrastructure and the protocols are also described.
 ]
 
+The development will affect the server and client components as shown in @sd-hardware-software-mapping.
+Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
+
+#figure(
+  image("hardware-software-mapping.jpg"),
+  caption: [
+    The diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
+    The exercise services communicate via the HTTPS protocol.
+  ]
+) <sd-hardware-software-mapping>
+
 == Persistent Data Management
 
 #rect(
