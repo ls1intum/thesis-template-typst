@@ -52,10 +52,10 @@
   submissionDate: submissionDate
 )
 
-#include "chapters/00_introduction.typ"
-#include "chapters/01_background.typ"
-#include "chapters/02_related_work.typ"
-#include "chapters/03_requirements_analysis.typ"
-#include "chapters/04_system_design.typ"
-#include "chapters/05_evaluation.typ"
-#include "chapters/06_summary.typ"
+#include "chapters/01/main.typ"
+#include "chapters/02/main.typ"
+#include "chapters/03/main.typ"
+#include "chapters/04/main.typ"
+#include "chapters/05/main.typ"
+#include "chapters/06/main.typ"
+#include "chapters/07/main.typ"
