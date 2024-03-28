@@ -248,7 +248,7 @@ The first part concerns all users, i.e., an instructor, a tutor, and a student.
 The second part concerns instructors and students, individually.
 
 #figure(
-  image("../figures/03_use-case-model.png"), 
+  image("use-case-model.png"), 
   caption: [
     The use case model depicts actors that use the system in various ways, i.e., use cases.
   ]
@@ -275,7 +275,7 @@ A message or answer can connect to a notification.
 We show the relationships between the objects in @ra-analysis-object-model.
 
 #figure(
-  image("../figures/03_analysis-object-model.png"),
+  image("analysis-object-model.png"),
   caption: [
     The analysis object model depicts the high-level objects in the problem domain.
   ]
@@ -307,7 +307,7 @@ If they enable notifications for conversations, then they can mute individual co
 If the user mutes a conversation, they do not receive messages.
 
 #figure(
-  image("../figures/03_dynamic-model.png"),
+  image("dynamic-model.png"),
   caption: [
     The activity diagram shows how user settings influence a notification.
   ]
@@ -329,7 +329,7 @@ A user can navigate between the screens, whenever there is an edge.
 A user can switch tabs in a course and arrive at the exercises, lectures, or messages screens.
 
 #figure(
-  image("../figures/03_storyboard.png"),
+  image("storyboard.png"),
   caption: [
     The storyboard depicts how a user can navigate between different screens of the application.
   ]
