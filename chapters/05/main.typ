@@ -167,6 +167,13 @@ We ensure that a user accepts the latest code of conduct.
   Note: Optional section describing the control flow of the system, in particular, whether a monolithic, event-driven control flow or concurrent processes have been selected, how requests are initiated and specific synchronization issues
 ]
 
+We distinguish between REST and WebSocket connections.
+We call the REST interface whenever we need to load an unchanging resource.
+Conversely, we subscribe to WebSocket connections whenever we want to synchronize dynamic data, e.g., messages in a conversation.
+There are three actions to messages in a conversation: create, update, and delete.
+
+We update the data structure local to the native client with these actions (create, update, and delete).
+
 == Boundry Conditions
 
 #rect(
