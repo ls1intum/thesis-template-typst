@@ -42,6 +42,30 @@ The server and client talk to each other in a client-server architectural style,
   Note: Derive design goals from your nonfunctional requirements, prioritize them (as they might conflict with each other) and describe the rationale of your prioritization. Any trade-offs between design goals (e.g., build vs. buy, memory space vs. response time), and the rationale behind the specific solution should be described in this section
 ]
 
+=== Usability
+
+Our first goal is to satisfy the user with a great user experience.
+The impact of usability expands to the other design goals.
+
+=== Performance
+
+Many users use Artemis clients at the same time, necessarily because students attend a class at the same time.
+The communication feature needs to coordinate many messages between many peer computers.
+
+=== Dependability
+
+The native Android and iOS clients are unique in that they enable persistence across launches, 
+a capability that is more present in native apps than in web clients.
+We use the capabilities of native apps to make them more reliable than their web counterparts, e.g.,
+let a user finish a task without losing their data.
+
+=== Maintenance
+
+The Artemis - Learning app is a companion to the Artemis server, among the web client and application for Android.
+Developers develop the Artemis server and web client in lockstep.
+The native Android and iOS apps are not an afterthought but are sometimes forgotten by developers.
+Developers should be able to easily recognize the subsystem decomposition similar to the server.
+
 == Subsytem Decomposition
 
 #rect(
