@@ -92,8 +92,10 @@
 
   // Appendix.
   pagebreak()
-  heading(numbering: none)[Appendix A: Supplementary Material]
-  include("thesis_typ/appendix.typ")
+  heading(numbering: none)[Appendix A: Manual Test]
+  include("thesis_typ/appendix/tasks.typ")
+  pagebreak()
+  include("thesis_typ/appendix/questionnaire.typ")
 
   pagebreak()
   bibliography("thesis.bib")
