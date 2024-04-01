@@ -9,7 +9,8 @@
   Note: If you did an evaluation / case study, describe it here.
 ]
 
-== Design 
+== Design
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -18,6 +19,12 @@
 )[
   Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done (e.g. questionnaire, personal interviews, simulation, quantitative analysis of metrics, what kind of participants, what kind of questions, what was the procedure?
 ]
+
+We conducted a manual test with 10 students from the universities TUM (4), RWTH Aachen (3), LMU (2), and FH Aachen (1).
+We asked the participants to accomplish three tasks, which we organized into multiple steps.
+All students used the same iPhone 11 with iOS 14 and the app build 1.0 (54)
+#footnote("https://github.com/ls1intum/artemis-ios/releases/tag/1.0.54").
+We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artemis.cit.tum.de) with Test User 2.
 
 == Objectives
 #rect(
