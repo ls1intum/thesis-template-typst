@@ -69,7 +69,7 @@ user long presses tech-support and mutes it
 ====
 
 user opens the thread, then the lecture
-user exits and enters again, sends the message
+user exits and enters thread again, sends the message
 
 2.1 yes
 2.2 yes
