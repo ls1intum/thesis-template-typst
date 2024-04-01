@@ -27,6 +27,7 @@ All students used the same iPhone 11 with iOS 14 and the app build 1.0 (54)
 We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artemis.cit.tum.de) with Test User 2.
 
 == Objectives
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -36,7 +37,17 @@ We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artem
   Note: Derive concrete objectives / hypotheses for this evaluation from the general ones in the introduction.
 ]
 
+We want to test if students can:
+
+1. navigate to the communication feature
+2. hide and mute channels
+3. tap mentions, e.g., a lecture
+4. restore drafts of messages and answers
+5. mention content, e.g., an exercise
+6. mention conversations, e.g., a channel
+
 == Results
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -47,6 +58,7 @@ We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artem
 ]
 
 == Findings
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -57,6 +69,7 @@ We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artem
 ]
 
 == Discussion
+
 #rect(
   width: 100%,
   radius: 10%,
@@ -67,6 +80,7 @@ We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artem
 ]
 
 == Limitations
+
 #rect(
   width: 100%,
   radius: 10%,
