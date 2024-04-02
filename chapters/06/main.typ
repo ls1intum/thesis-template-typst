@@ -43,6 +43,9 @@ We informed the participants that they should think aloud, such that we could fo
 At the end of each task, we asked the participants if the feature worked for them.
 We compare their confidence to the actual results.
 
+After the three tasks, we asked the students if they would rate their experience as satisfactory, in what ways they enjoyed the communication feature, and if they have suggestions to improve the experience.
+We therefore differentiate between the functionality and the usability of a feature.
+
 == Objectives
 
 #rect(
@@ -54,11 +57,12 @@ We compare their confidence to the actual results.
   Note: Derive concrete objectives / hypotheses for this evaluation from the general ones in the introduction.
 ]
 
+The three tasks cover several functionalities of the iOS app's communication feature.
 We want to test if students can:
 
 1. navigate to the communication feature
 2. hide and mute channels
-3. Follow mentions, e.g., a lecture
+3. follow mentions, e.g., a lecture
 4. restore drafts of messages and answers
 5. mention content, e.g., an exercise
 6. mention conversations, e.g., a channel
