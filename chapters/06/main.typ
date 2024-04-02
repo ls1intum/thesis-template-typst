@@ -190,6 +190,9 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
   Note: Discuss the findings in more detail and also review possible disadvantages that you found
 ]
 
+Some toolbar items are cut off because of the device's width, others are only visible if the user scrolls.
+Recognize rather than recall.
+
 == Limitations
 
 #rect(
