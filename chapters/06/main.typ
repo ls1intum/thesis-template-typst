@@ -106,8 +106,26 @@ One student taps the \# symbol and writes the whole exercise name; they do not s
     image("toolbar.jpg"),
     image("navigationbar.jpg"),
   ),
-  caption: []
+  caption: [
+    The left screenshot shows the thread of a message and the user focused the text field.
+    Above the keyboard, we display a toolbar, which a user can scroll horizontally.
+    The screen width cuts off the _Exercise_ toolbar item.
+    The right screenshot shows the modal screen, where a user can choose to mention an exercise.
+  ]
 ) <ev-bars>
+
+=== Questionnaire
+
+Seven of the ten students agree that the experience is satisfactory.
+Two students strongly agree that the experience is satisfactory.
+One student is neutral about their satisfaction.
+Individual students like that the conversation screen is responsive, they can answer a message in a thread, and mentions are easy to navigate.
+Five of the ten students like in particular that they can mention content in their messages.
+
+Two students say that they do not understand the label 'Exe' in the keyboard toolbar and one student says that the submenu should be more obvious.
+One of the former students says that 'Exe' reminds them of Microsoft executables.
+Two students suggest tips when they use the app for the first time.
+Two students suggest differentiating between messages that they sent and that they received, e.g., with a different user icon, color, or cursive font.
 
 == Findings
 
