@@ -34,7 +34,7 @@
     Students can participate in exams, exercises, and through the communication feature.
     In particular, the communication feature enables students, tutors, and instructors alike to collaborate within a course's context.
     The _Artemis - Learning_ iOS application (iOS app) constitutes an entry point to the learning management system.
-    The iOS app in its current form gives the impression that students can participate through the communication feature, but does not fully leverage the Artemis server's more efficient interfaces.
+    The iOS app in its current form gives the impression that students can participate through the communication feature, but does not fully utilize the Artemis server's more efficient interfaces.
 
     This thesis aims to fulfill the communication infrastructure and incorporate new communication features, that is, muting conversations and mentioning content, in the iOS app.
     Our goal is to solve usability issues in the iOS app's communication feature and in general, leave users with a satisfactory experience.
