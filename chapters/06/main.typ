@@ -40,7 +40,7 @@ The lecture and exercise names are titles from _A Swift Tour_
 Solving the exercises is not part of the manual test.
 
 We informed the participants that they should think aloud, such that we could follow their thought process.
-At the end of each task, we asked the participants if the feature worked for them.
+At the end of each task, we asked the participants if the feature worked for them, see the appendix _Questionnaire_ in @app-questionnaire.
 We compare their confidence to the actual results.
 
 After the three tasks, we asked the students if they would rate their experience as satisfactory, in what ways they enjoyed the communication feature, and if they have suggestions to improve the experience.

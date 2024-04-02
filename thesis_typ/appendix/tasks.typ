@@ -1,4 +1,5 @@
-= A Manual Test to Evaluate the Functionality of the _Artemis - Learning_ app's communication feature <app-manual-test>
+= A Manual Test to Evaluate the Functionality of the _Artemis - Learning_ app's communication feature
+<app-manual-test>
 
 The manual test is organized as a one-to-one on-site session where you will be interacting with the _Artemis - Learning_ app.
 You should follow the tasks below and think aloud as much as possible so that I can understand your thought process and identify potential UI/UX improvements.
