@@ -203,3 +203,21 @@ Recognize rather than recall.
 )[
   Note: Describe limitations and threats to validity of your evaluation, e.g. reliability, generalizability, selection bias, researcher bias
 ]
+
+@runeson2012case describes four aspects of validity, on which basis we discuss the validity of our manual test.
+
+// Copy of bachelor's thesis, p.48
+_Construct validity_ is concerned with the difference between intended and actual study observations.
+We intended to only conduct the test with students and did so.
+Otherwise, this would be a threat to the construct validity.
+
+_Internal validity_ is concerned with the investigated factors being affected by other factors.
+The participants did not test all of the commuication feature's options, which increases the likelihood of a bias towards the options that the participants tested.
+Additionally, the participants are our acquaintances, which increases the likelihood of a bias towards the author's work.
+
+_External validity_ is concerned with the possibility to generalize the findings.
+10 participants completed the manual test, which limits the generalizability.
+The manual test only targeted students and did not take into account other Artemis users, such as intructors and tutors.
+
+_Reliability_ is concerned with the dependency between the study and the specific researcher.
+The manual test depended on our presence to conduct the tasks and the recordings were transcribed and coded by us.
