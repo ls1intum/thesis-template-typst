@@ -79,12 +79,12 @@ These dissimilarities put a burden on the user of both the iOS app and the web c
   stack(
     dir: ltr,
     spacing: 1em,
-    image("messages_artemis.jpg", height: 60%),
-    image("messages_slack.jpg", height: 60%)
+    image("thread_artemis.png", height: 60%),
+    image("thread_slack.png", height: 60%)
   ),
   caption: [
-    The left screenshot shows the Messages tab in the Artemis iOS app.
-    The right screenshot shows the Home tab in the Slack iOS app.
+    The left screenshot shows a message thread in the Artemis iOS app.
+    The right screenshot shows a message thread in the Slack iOS app.
     Slack's layout appears more visually refined than that of Artemis.
   ]
 ) <messages>
