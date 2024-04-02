@@ -157,6 +157,28 @@ Two students suggest differentiating between messages that they sent and that th
   Note: Interpret the results and conclude interesting findings
 ]
 
+The manual test provides a better understanding, which features in the iOS app work and give suggestions how we can improve them further.
+Generally, the participants can navigate to and within the communication feature.
+They can follow mentions, but the touch target of a message that opens a thread interfers with the touch target of a link.
+Composing mentions appears to be a more difficult task, this could be of several reasons.
+
+The keyboard toolbar is now overfull and not all toolbar items are visible at a glance.
+Additionally, the toolbar item symbols are rather abstract and not easily relatable to a particular kind of content.
+@ev-symbols shows the sybmols that we use to create a link markup, mention a conversation member, or another conversation.
+
+#figure(
+  grid(
+    columns: (5%, 5%, 5%),
+    gutter: 1em,
+    image("link.png"),
+    image("at.png"),
+    image("number.png")
+  ),
+  caption: [
+    The link, at, and number symbols that Apple provides with SFSymbols.
+  ]
+) <ev-symbols>
+
 == Discussion
 
 #rect(
