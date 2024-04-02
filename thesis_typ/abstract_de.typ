@@ -20,7 +20,7 @@
   )
 
   
-  // --- Abstract (EN) ---
+  // --- Abstract (DE) ---
   v(1fr)
   align(center, text(font: body-font, 1em, weight: "semibold", "Zusammenfassung"))
   
