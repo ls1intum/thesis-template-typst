@@ -163,7 +163,7 @@ user taps hash and writes full exercise name (not mention)
 
 q.1 agree
 q.2 anhängen von aufgaben gut, erwähnen eines seperaten channels; gucken toleranz für mögliche schreibfehler (großklein, leerzeichen)
-q.3 fürs auge: gleiches user icon, sich selbst erkennen (krusiver text, anderes/kein icon), so könnte alles von fremden personen getippt
+q.3 fürs auge: gleiches user icon, sich selbst erkennen (kursiver text, anderes/kein icon), so könnte alles von fremden personen getippt
 
 === 38FAA039-D6A8-446B-B713-8078A910F1DD
 
