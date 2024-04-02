@@ -20,13 +20,28 @@
   Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done (e.g. questionnaire, personal interviews, simulation, quantitative analysis of metrics, what kind of participants, what kind of questions, what was the procedure?
 ]
 
-We conducted a manual test with ten students from the universities TUM (4), RWTH Aachen (3), LMU (2), and FH Aachen (1).
-We asked the participants to accomplish three tasks, which we organized into multiple steps.
-All students used the same iPhone 11 with iOS 14 and the app build 1.0 (54)
+=== Participants
+
+On March 29#super[th] to 31#super[st] 2024, we conducted a manual test with ten students from the universities TUM (4), RWTH Aachen (3), LMU (2), and FH Aachen (1).
+The students are enrolled in either a bachelor's or master's program and are not involved in the development of Artemis.
+All students used the same iPhone 11 with iOS 14 and the iOS app version 1.0 (54)
 #footnote("https://github.com/ls1intum/artemis-ios/releases/tag/1.0.54").
-We prepared the app to request Artemis Test Server 1 (http://artemis-test1.artemis.cit.tum.de) with test user 2.
-We prepared the course _Introduction to the Swift Programming Language_ with two students, test users 1 and 2, one tutor, test user 9, and one instructor, test user 15.
-The course contained one lecture and three exercises.
+We prepared the app to request the Artemis Test Server 1
+#footnote("https://artemis-test1.artemis.cit.tum.de")
+with test user 2's login.
+
+=== Methodology
+
+We asked the participants to accomplish three tasks, which we organized into multiple steps, see the appendix _Manual Test_ in @app-manual-test.
+We prepared the course _Introduction to the Swift Programming Language_ with two students, test users 2 and 4, one tutor, test user 9, and one instructor, test user 15.
+The course contained one lecture (_The Basics_) and three exercises, a modeling exercise (_Structures and Classes_), a text exercise (_Deinitialization_), and a file upload exercise (_Error Handling_).
+The lecture and exercise names are titles from _A Swift Tour_
+#footnote("https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/").
+Solving the exercises is not part of the manual test.
+
+We informed the participants that they should think aloud, such that we could follow their thought process.
+At the end of each task, we asked the participants if the feature worked for them.
+We compare their confidence to the actual results.
 
 == Objectives
 
