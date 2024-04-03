@@ -408,3 +408,23 @@ We should reserve the color red, as in the courses screen, for actions that caus
     The bottom row shows screenshots of the notifications, mention-lecture, courses, and conversation screens after the UI improvements.
   ]
 ) <ra-unavailable>
+
+@ra-conversation shows that a text field is visible between two possibly growing lists of users.
+A user adds the top list of users to the conversation if they create it.
+The bottom list of users are search results to the users query in the text field.
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto),
+      gutter: 1em,
+      image("conversation/1.png"),
+      image("conversation/2.png")
+    )
+  ),
+  caption: [
+    The left screenshot shows the screen for creating a conversation before the UI improvements.
+    The right screenshot shows the screen for creating a conversation after the UI improvements.
+  ]
+) <ra-conversation>
