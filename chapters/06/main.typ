@@ -122,17 +122,20 @@ One student taps the \# symbol and writes the whole exercise name; they do not s
   pad(
     x: 1em,
     grid(
-      columns: (50%, 50%),
+      columns: (auto, auto, auto),
       gutter: 1em,
       image("toolbar.jpg"),
-      image("navigationbar.jpg")
+      image("navigationbar.jpg"),
+      image("search.png")
     )
   ),
   caption: [
     The left screenshot shows the thread of a message and the user focused the text field.
     Above the keyboard, we display a toolbar, which a user can scroll horizontally.
     The screen width cuts off the _Exercise_ toolbar item.
-    The right screenshot shows the modal screen, where a user can choose to mention an exercise.
+    The center screenshot shows the modal screen, where a user can choose to mention an exercise.
+    The right screenshot shows the popover, where a user can choose to mention a conversation.
+    The user has not typed a query and an empty string does not match against a conversation title.
   ]
 ) <ev-bars>
 
