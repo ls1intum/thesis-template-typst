@@ -32,11 +32,15 @@
     Die _Artemis - Learning_ iOS-Anwendung (iOS app) ist ein Zugang zu dem Lernmanagementsystem.
     Die iOS app in ihrer jetzigen Form erweckt den Eindruck, dass Studierende durch die Kommunikationsfunktion partizipieren können, nutzt aber die effizienteren Schnittstellen des Artemis Servers nicht voll.
 
-    Diese Arbeit beabsichtigt in der iOS app die Kommunikationsinfrastruktur zu erfüllen und neue Kommunikationsfunktionen, wie das Stummschalten von Konversationen und das Erwähnen von Inhalten, aufzunehmen.
-    Unser Ziel ist es die Benutzbarkeit der Kommunikationsfunktion der iOS app zu verbessern und im Allgemeinen Nutzer:innen eine zufrieden stellende Erfahrung zu bieten.
+    Diese Arbeit beabsichtigt die Benutzbarkeit der Kommunikationsfunktion der iOS app zu verbessern und im Allgemeinen Nutzer:innen eine zufrieden stellende Erfahrung zu bieten.
+    Wir verfolgen den Nutzerpfad vom Dashboard zur Kommunikationsfunktion in der iOS app und steuern zu einer besseren Benutzeroberfläche bei.
+    Das Stummschalten von Konversationen gibt Nurter:innen auf allen Clients, mehr Kontrolle darüber, wie sie benachrichtigt werden.
+    Außerdem prüfen wir die Grundlagen der iOS app, um die Kommunikationsinfrastruktur zu erfüllen und neue Kommunikationsfunktionen in die iOS app aufzunehmen.
 
-    In dem systematischen Ansatz dieser Arbeit an das Software Engineering, erarbeiten wir Systemmodelle, aus denen wir ein Systemdesign ableiten, dass die Anforderungen erfüllt.
-    Wir setzen einen manuellen Test ein, um die resultierende Implementierung zu evaluieren.
+    Zu Beginn bringen wir Anforderungen aus der Problemdomäne hervor und erarbeiten Systemmodelle.
+    In der Lösungsdomäne leiten wir ein Systemdesign ab, dass die offensichtlichen Schwächen im Bezug auf die Systemmodelle mindert.
+    Wir setzen einen manuellen Test ein, um die resultierende Implementierung bezüglich ihrer Benutzbarkeit zu evaluieren.
+    In dem systematischen Ansatz dieser Arbeit an das Software Engineering, endet die Zusammenfassung mit einem Ausblick auf die Weiterentwicklung der iOS app.
   ]
   
   v(1fr)
