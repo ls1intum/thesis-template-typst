@@ -337,6 +337,27 @@ A user can switch tabs in a course and arrive at the exercises, lectures, or mes
 
 A user crosses the course screen to get to the conversations screen in the messages tab.
 We improve both, the course and conversations screens, with small refinements.
+
+@ra-courses shows that the button for course enrollment is not in the center and that a course, where progress is impossible, is green.
+Additionally, the list rows do not follow the automatic behavior that if a user pushes down on a row, the system highlights it.
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto),
+      gutter: 1em,
+      image("courses/1.png"),
+      image("courses/2.png"),
+      image("courses/3.png")
+    )
+  ),
+  caption: [
+    The left screenshot shows the list of courses before the UI improvements.
+    The right pair of screenshots shows the list of courses after the UI improvements.
+  ]
+) <ra-courses>
+
 @ra-conversations shows that the notification badge of a conversation is a circle that grows in height when the number grows in digits.
 Additionally, the round notification badge pushes the conversation bubble away from its usual place if a user collapses the disclosure group.
 
