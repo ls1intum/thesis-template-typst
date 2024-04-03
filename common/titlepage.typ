@@ -11,7 +11,7 @@
 ) = {
   set document(title: title, author: author)
   set page(
-    margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 0mm),
+    margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: none,
     number-align: center,
   )
@@ -50,7 +50,7 @@
   align(center, text(font: sans-font, 2em, weight: 500, titleGerman))
 
   pad(
-    top: 3em,
+    top: 0em,
     right: 15%,
     left: 15%,
     grid(
