@@ -378,3 +378,33 @@ Additionally, the round notification badge pushes the conversation bubble away f
     The right pair of screenshots shows the messages tab after the UI improvements.
   ]
 ) <ra-conversations>
+
+A user can exhibit unavailable content in many places of the iOS app.
+We consider an empty set of contents also as unavailable, as well as if an error occurs.
+@ra-unavailable shows that screens that recognize unavailable content, e.g., the notifications and conversation screens, only show a bare text.
+Other screens, such as the mention-lecture screen, are empty, analog to the mention-exercise screen.
+Errors cause unavailable content, too, but they do not necessarily cause data loss.
+We should reserve the color red, as in the courses screen, for actions that cause data loss.
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto, auto),
+      rows: (auto, auto),
+      gutter: 1em,
+      image("unavailable/a1.png"),
+      image("unavailable/a2.png"),
+      image("unavailable/a3.png"),
+      image("unavailable/a4.png"),
+      image("unavailable/b1.png"),
+      image("unavailable/b2.png"),
+      image("unavailable/b3.png"),
+      image("unavailable/b4.png"),
+    )
+  ),
+  caption: [
+    The top row shows screenshots of the notifications, mention-lecture, courses, and conversation screens before the UI improvements.
+    The bottom row shows screenshots of the notifications, mention-lecture, courses, and conversation screens after the UI improvements.
+  ]
+) <ra-unavailable>
