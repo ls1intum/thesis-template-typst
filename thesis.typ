@@ -53,9 +53,15 @@
 )
 
 #include "chapters/01/main.typ"
+#pagebreak()
 #include "chapters/02/main.typ"
+#pagebreak()
 #include "chapters/03/main.typ"
+#pagebreak()
 #include "chapters/04/main.typ"
+#pagebreak()
 #include "chapters/05/main.typ"
+#pagebreak()
 #include "chapters/06/main.typ"
+#pagebreak()
 #include "chapters/07/main.typ"
