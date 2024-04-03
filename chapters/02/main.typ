@@ -11,6 +11,13 @@
 
 == Interface Design
 
+Jenifer Tidwell presents a comprehensive list of well-known interface patterns in her book _Designing Interfaces_
+@tidwell2011DI.
+We find consistency by formulating our rationale independent of a specific software platform and adhering to interface patterns that work in many instances.
+The author writes that users have a habituation towards user interfaces and that it is important to be consistent within an application.
+In addition to patterns in navigation, lists, actions, and forms, Jenifer Tidwell touches on the topic of Gestalt.
+We look at the Gestalt principles in more detail in @bg-gestalt.
+
 Tom Greever writes in his book _Articulating Design Decisions_ @greever2020ADD: "Simplified, usability is about two things: common sense and research".
 This approach describes in large the structure of this thesis.
 We can mitigate many usability issues with reasonable design choices.
@@ -45,6 +52,7 @@ Extraneous information slows down both novice and expert users.
 Fewer options, that is features and interaction mechanisms, help to increase the usability for both novice and expert users.
 
 == Gestalt
+<bg-gestalt>
 
 Gestalt psychology creates "the idea that the whole is different from the sum of its parts"
 #cite(<rock1990legacy>).
@@ -54,7 +62,7 @@ Rather some structure properties arise from the organization of its components.
 The original Gestalt laws of grouping are proximity, similarity, closure, and good continuation.
 // Rock and Palmer #cite(<rock1990legacy>) propose two new laws of grouping: common region and connectedness.
 Screens in a user interface can use the Gestalt laws of grouping to organize components that belong together
-#cite<nielsen1993UE>).
+#cite(<nielsen1993UE>).
 
 == WebSocket
 
