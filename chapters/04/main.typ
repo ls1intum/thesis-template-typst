@@ -334,3 +334,26 @@ A user can switch tabs in a course and arrive at the exercises, lectures, or mes
     The storyboard depicts how a user can navigate between different screens of the application.
   ]
 ) <ra-storyboard>
+
+A user crosses the course screen to get to the conversations screen in the messages tab.
+We improve both, the course and conversations screens, with small refinements.
+@ra-conversations shows that the notification badge of a conversation is a circle that grows in height when the number grows in digits.
+Additionally, the round notification badge pushes the conversation bubble away from its usual place if a user collapses the disclosure group.
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto, auto),
+      gutter: 1em,
+      image("conversations/1.png"),
+      image("conversations/2.png"),
+      image("conversations/3.png"),
+      image("conversations/4.png")
+    )
+  ),
+  caption: [
+    The left pair of screenshots shows the messages tab before the UI improvements.
+    The right pair of screenshots shows the messages tab after the UI improvements.
+  ]
+) <ra-conversations>
