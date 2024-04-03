@@ -119,11 +119,14 @@ Two students tap the \# symbol but choose an exercise from the modal screen.
 One student taps the \# symbol and writes the whole exercise name; they do not see the popover appear.
 
 #figure(
-  grid(
-    columns: (50%, 50%),
-    gutter: 1em,
-    image("toolbar.jpg"),
-    image("navigationbar.jpg"),
+  pad(
+    x: 1em,
+    grid(
+      columns: (50%, 50%),
+      gutter: 1em,
+      image("toolbar.jpg"),
+      image("navigationbar.jpg")
+    )
   ),
   caption: [
     The left screenshot shows the thread of a message and the user focused the text field.

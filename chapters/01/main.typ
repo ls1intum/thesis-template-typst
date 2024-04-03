@@ -72,15 +72,15 @@ Satisfaction is one component of Nielsen's
 definition of usability.
 @messages shows that comparable functionality, i.e., that of messaging, is more satisfactory in other iOS apps.
 
-@exercises shows that the same functionality's layout appears different in the iOS app from the web client, even if the web client adapts to smartphone screen sizes.
-These dissimilarities put a burden on the user of both the iOS app and the web client to navigate the same content but with two different presentations.
-
 #figure(
-  stack(
-    dir: ltr,
-    spacing: 1em,
-    image("thread_artemis.png", height: 60%),
-    image("thread_slack.png", height: 60%)
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto),
+      gutter: 1em,
+      image("thread_artemis.png"),
+      image("thread_slack.png")
+    )
   ),
   caption: [
     The left screenshot shows a message thread in the Artemis iOS app.
@@ -89,13 +89,19 @@ These dissimilarities put a burden on the user of both the iOS app and the web c
   ]
 ) <messages>
 
+@exercises shows that the same functionality's layout appears different in the iOS app from the web client, even if the web client adapts to smartphone screen sizes.
+These dissimilarities put a burden on the user of both the iOS app and the web client to navigate the same content but with two different presentations.
+
 #figure(
-  stack(
-    dir: ltr,
-    spacing: 1em,
-    image("exercises_native_a.jpg", height: 40%),
-    image("exercises_native_b.jpg", height: 40%),
-    image("exercises_web.png", height: 40%)
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto),
+      gutter: 1em,
+      image("exercises_native_a.jpg"),
+      image("exercises_native_b.jpg"),
+      image("exercises_web.png")
+    )
   ),
   caption: [
     The left screenshot shows the list of groups of exercises with an associated date.
