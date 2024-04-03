@@ -9,6 +9,26 @@
   Note: Describe each proven technology / concept shortly that is important to understand your thesis. Point out why it is interesting for your thesis. Make sure to incorporate references to important literature here.
 ]
 
+== Interface Design
+
+Jenifer Tidwell presents a comprehensive list of well-known interface patterns in her book _Designing Interfaces_
+@tidwell2011DI.
+We find consistency by formulating our rationale independent of a specific software platform and adhering to interface patterns that work in many instances.
+The author writes that users have a habituation towards user interfaces and that it is important to be consistent within an application.
+In addition to patterns in navigation, lists, actions, and forms, Jenifer Tidwell touches on the topic of Gestalt.
+We look at the Gestalt principles in more detail in @bg-gestalt.
+
+Tom Greever writes in his book _Articulating Design Decisions_ @greever2020ADD: "Simplified, usability is about two things: common sense and research".
+This approach describes in large the structure of this thesis.
+We can mitigate many usability issues with reasonable design choices.
+Furthermore, the author differentiates how a feature works or if it works at all and how a stakeholder feels about a feature, especially in terms of its visual design.
+What people see, feel, or interact with, is what they care about
+@greever2020ADD.
+We are developing a visual user interface, the Artemis iOS app, thus we expect many opinions and ideas.
+Our goal is to look through them, solve a problem, and make the app easy to use for our users.
+
+Both books help us to understand design patterns for user interfaces and how to communicate our rationale.
+
 == Usability
 
 // / Less Is More: Fewer options help users to understand the options they have better.
@@ -32,6 +52,7 @@ Extraneous information slows down both novice and expert users.
 Fewer options, that is features and interaction mechanisms, help to increase the usability for both novice and expert users.
 
 == Gestalt
+<bg-gestalt>
 
 Gestalt psychology creates "the idea that the whole is different from the sum of its parts"
 #cite(<rock1990legacy>).
@@ -41,53 +62,19 @@ Rather some structure properties arise from the organization of its components.
 The original Gestalt laws of grouping are proximity, similarity, closure, and good continuation.
 // Rock and Palmer #cite(<rock1990legacy>) propose two new laws of grouping: common region and connectedness.
 Screens in a user interface can use the Gestalt laws of grouping to organize components that belong together
-#cite<nielsen1993UE>).
+#cite(<nielsen1993UE>).
 
-== WebSocket
+== WebSockets
 
 The WebSocket protocol enables programs to maintain bidirectional communications in the client/server architectural style
 #footnote("https://www.rfc-editor.org/rfc/rfc6455.html").
-For busy applications, e.g., messaging services, a server can use fewer WebSocket connections, compared to HTTP request, which would be necessary between the server and its clients.
-// #footnote("https://websockets.spec.whatwg.org/#the-websocket-interface").
-
+For busy applications, e.g., messaging services, a server can use fewer WebSocket connections, compared to HTTP requests, which would be necessary between the server and its clients.
 In detail, the WebSocket protocol "adds an addressing and protocol naming mechanism to support multiple services on one port and multiple host names on one IP address".
 WebSockets do not provide any other metadata on their own.
 
 The STOMP protocol "defines a text-based wire format for messages passed between these clients and servers"
 #footnote("https://stomp.github.io/stomp-specification-1.2.html").
-
 Note that servers and clients may use a prefix to identify user destinations, i.e., which is used to translate the URI into one, that does not collide with any other URI.
-"The default prefix used to identify such destinations is "/user/"."
+"The default prefix used to identify such destinations is `"/user/"`."
 #footnote("https://docs.spring.io/spring-framework/docs/5.0.2.RELEASE/kdoc-api/spring-framework/org.springframework.messaging.simp.config/-message-broker-registry/set-user-destination-prefix.html").
-
-The Artemis iOS applications may connect to an Artemis server through a WebSocket connection, besides calling the server's REST interfaces.
-
-== e.g. User Feedback
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section would summarize the concept User Feedback using definitions, historical overviews and pointing out the most important aspects of User Feedback.
-]
-
-== e.g. Representational State Transfer
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section would summarize the architectural style Representational State Transfer (REST) using definitions, historical overviews and pointing out the most important aspects of the architecture.
-]
-
-== e.g. Scrum
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section would summarize the agile method Scrum using definitions, historical overviews and pointing out the most important aspects of Scrum.
-]
+The iOS app may connect to an Artemis server through a WebSocket connection, besides calling the server's REST interfaces.
