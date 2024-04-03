@@ -1,25 +1,28 @@
 = Evaluation <ev>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you did an evaluation / case study, describe it here.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: If you did an evaluation / case study, describe it here.
+// ]
+We describe the construction of a manual test in @ev-design.
+In @ev-objectives, we formulate our objectives, which are followed by the results in @ev-results.
+In @ev-discussion, we discuss possible solutions to the problems that arose during the manual test.
+Finally, we express the limitations of the manual test in @ev-limitations.
 
-== Design
+== Design <ev-design>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done (e.g. questionnaire, personal interviews, simulation, quantitative analysis of metrics, what kind of participants, what kind of questions, what was the procedure?
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe the design / methodology of the evaluation and why you did it like that. E.g. what kind of evaluation have you done (e.g. questionnaire, personal interviews, simulation, quantitative analysis of metrics, what kind of participants, what kind of questions, what was the procedure?
+// ]
 === Participants
 
 On March 29#super[th] to 31#super[st] 2024, we conducted a manual test with ten students from the universities TUM (4), RWTH Aachen (3), LMU (2), and FH Aachen (1).
@@ -46,17 +49,16 @@ We compare their confidence to the actual results.
 After the three tasks, we asked the students if they would rate their experience as satisfactory, in what ways they enjoyed the communication feature, and if they have suggestions to improve the experience.
 We therefore differentiate between the functionality and the usability of a feature.
 
-== Objectives
+== Objectives <ev-objectives>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Derive concrete objectives / hypotheses for this evaluation from the general ones in the introduction.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Derive concrete objectives / hypotheses for this evaluation from the general ones in the introduction.
+// ]
 The three tasks cover several functionalities of the iOS app's communication feature.
 We want to test if students can:
 
@@ -67,17 +69,16 @@ We want to test if students can:
 5. mention content, e.g., an exercise
 6. mention conversations, e.g., a channel
 
-== Results
+== Results <ev-results>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Summarize the most interesting results of your evaluation (without interpretation). Additional results can be put into the appendix.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Summarize the most interesting results of your evaluation (without interpretation). Additional results can be put into the appendix.
+// ]
 === Navigate to the communication feature
 
 All ten students can find a course, navigate to the messages tab, and accept the code of conduct.
@@ -152,17 +153,16 @@ One of the former students says that 'Exe' reminds them of Microsoft executables
 Two students suggest tips when they use the app for the first time.
 Two students suggest differentiating between messages that they sent and that they received, e.g., with a different user icon, color, or cursive font.
 
-== Findings
+== Findings <ev-findings>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Interpret the results and conclude interesting findings
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Interpret the results and conclude interesting findings
+// ]
 The manual test provides a better understanding, which features in the iOS app work and give suggestions how we can improve them further.
 Generally, the participants can navigate to and within the communication feature.
 They can follow mentions, but the touch target of a message that opens a thread interfers with the touch target of a link.
@@ -185,7 +185,7 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
   ]
 ) <ev-symbols>
 
-== Discussion
+== Discussion <ev-discussion>
 
 #rect(
   width: 100%,
@@ -199,17 +199,16 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
 Some toolbar items are cut off because of the device's width, others are only visible if the user scrolls.
 Recognize rather than recall.
 
-== Limitations
+== Limitations <ev-limitations>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe limitations and threats to validity of your evaluation, e.g. reliability, generalizability, selection bias, researcher bias
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe limitations and threats to validity of your evaluation, e.g. reliability, generalizability, selection bias, researcher bias
+// ]
 @runeson2012case describes four aspects of validity, on which basis we discuss the validity of our manual test.
 
 // Copy of bachelor's thesis, p.48

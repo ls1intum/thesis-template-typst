@@ -25,11 +25,10 @@
   align(center, text(font: body-font, 1em, weight: "semibold", "Abstract"))
   
   text[
-    Note:
-    1. *paragraph:* What is the motivation of your thesis? Why is it interesting from a scientific point of view? Which main problem do you like to solve?
-    2. *paragraph:* What is the purpose of the document? What is the main content, the main contribution?
-    3. *paragraph:* What is your methodology? How do you proceed?
-
+    // Note:
+    // 1. *paragraph:* What is the motivation of your thesis? Why is it interesting from a scientific point of view? Which main problem do you like to solve?
+    // 2. *paragraph:* What is the purpose of the document? What is the main content, the main contribution?
+    // 3. *paragraph:* What is your methodology? How do you proceed?
     Artemis is a teaching platform that allows instructors and tutors to publish exams, exercises, and lectures to students.
     Students can participate in exams, exercises, and through the communication feature.
     In particular, the communication feature enables students, tutors, and instructors alike to collaborate within a course's context.

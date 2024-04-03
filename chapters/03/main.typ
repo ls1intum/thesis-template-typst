@@ -1,15 +1,19 @@
 = Related Work <rw>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe related work regarding your topic and emphasize your (scientific) contribution in contrast to existing approaches / concepts / workflows. Related work is usually current research by others and you defend yourself against the statement: “Why is your thesis relevant? The problem was al- ready solved by XYZ.” If you have multiple related works, use subsections to separate them.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe related work regarding your topic and emphasize your (scientific) contribution in contrast to existing approaches / concepts / workflows. Related work is usually current research by others and you defend yourself against the statement: “Why is your thesis relevant? The problem was al- ready solved by XYZ.” If you have multiple related works, use subsections to separate them.
+// ]
+// Copy of bachelor's thesis, p.4
+To show the latest research in this field, this section discusses selected literature and related projects.
+In @rw-slack, we examine the scale of _Slack_ and how its engineers manage it.
+In @rw-artemis, we explore how other developers' changes influence this thesis.
 
-== Slack
+== Slack <rw-slack>
 
 Maude Lemaire presents two case studies in her book _Refactoring at Scale_
 @lemaire2020ref.
@@ -23,7 +27,7 @@ In detail, Slack distinguishes between a _Web API_, which accepts HTTP requests,
 RTM is short for real-time messaging and the API uses a long-lived JSON web socket, similar to WebSocket API of Artemis.
 We keep Slack's API in mind when we improve the iOS app's communication feature.
 
-== Artemis Development
+== Artemis Development <rw-artemis>
 
 Sven Andabaka and Tim Ortel bring two native clients to the realm of Artemis development, which they describe in their theses, respectively
 @andabaka2023app @ortel2023app.

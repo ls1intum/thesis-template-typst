@@ -1,15 +1,18 @@
 = Background <bg>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe each proven technology / concept shortly that is important to understand your thesis. Point out why it is interesting for your thesis. Make sure to incorporate references to important literature here.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe each proven technology / concept shortly that is important to understand your thesis. Point out why it is interesting for your thesis. Make sure to incorporate references to important literature here.
+// ]
+We look at four areas that help to understand the changes we intend for the iOS app's communication feature.
+In @bg-interface-design, @bg-usability, and @bg-gestalt, we see the communication feature through the eyes of its appearance.
+In @bg-websockets, we give a reason, why the communication feature engages with a WebSocket interface, in addition to an HTTP interface.
 
-== Interface Design
+== Interface Design <bg-interface-design>
 
 Jenifer Tidwell presents a comprehensive list of well-known interface patterns in her book _Designing Interfaces_
 @tidwell2011DI.
@@ -29,7 +32,7 @@ Our goal is to look through them, solve a problem, and make the app easy to use 
 
 Both books help us to understand design patterns for user interfaces and how to communicate our rationale.
 
-== Usability
+== Usability <bg-usability>
 
 // / Less Is More: Fewer options help users to understand the options they have better.
 === Details Matter
@@ -51,8 +54,7 @@ Nielsen #cite(<nielsen1993UE>) puts users in a three-dimensional space with thre
 Extraneous information slows down both novice and expert users.
 Fewer options, that is features and interaction mechanisms, help to increase the usability for both novice and expert users.
 
-== Gestalt
-<bg-gestalt>
+== Gestalt <bg-gestalt>
 
 Gestalt psychology creates "the idea that the whole is different from the sum of its parts"
 #cite(<rock1990legacy>).
@@ -64,7 +66,7 @@ The original Gestalt laws of grouping are proximity, similarity, closure, and go
 Screens in a user interface can use the Gestalt laws of grouping to organize components that belong together
 #cite(<nielsen1993UE>).
 
-== WebSockets
+== WebSockets <bg-websockets>
 
 The WebSocket protocol enables programs to maintain bidirectional communications in the client/server architectural style
 #footnote("https://www.rfc-editor.org/rfc/rfc6455.html").

@@ -25,8 +25,7 @@
   align(center, text(font: body-font, 1em, weight: "semibold", "Zusammenfassung"))
   
   text[
-    Note: Insert the German translation of the English abstract here.
-
+    // Note: Insert the German translation of the English abstract here.
     Artemis ist eine Lernplattform, die es Lehrenden und Tutor:innen erlaubt, Klausuren, Aufgaben, und Vorlesungen für Studierende zu veröffentlichen.
     Studierende können an Klausuren, Aufgaben, und der Kommunikationsfunktion teilnehmen.
     Besonders die Kommunikationsfunktion ermöglicht es Studierenden, Tutor:innen, und Lehrenden gleichermaßen innerhalb eines Kurskontexts zusammen zu arbeiten.

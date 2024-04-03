@@ -1,14 +1,13 @@
 = Introduction <in>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Introduce the topic of your thesis, e.g. with a little historical overview.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Introduce the topic of your thesis, e.g. with a little historical overview.
+// ]
 Artemis is a teaching platform that allows instructors and tutors to publish exercises to students, e.g., programming exercises.
 Students create solutions by iteratively applying techniques of version control and continuous integration
 #cite(<krusche2018artemis>).
@@ -29,15 +28,14 @@ We call the _Artemis - Learning_ iOS application _iOS app_ from here onward.
 
 == Problem
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the problem that you like to address in your thesis to show the importance of your work. Focus on the negative symptoms of the currently available solution.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe the problem that you like to address in your thesis to show the importance of your work. Focus on the negative symptoms of the currently available solution.
+// ]
 Several university courses, where Bachelor's and Master's students enroll alike, use Artemis
 #cite(<krusche2021IL>).
 Hence, the development of Artemis must take into account learners who are novice or advanced users of learning management systems.
@@ -113,15 +111,14 @@ These dissimilarities put a burden on the user of both the iOS app and the web c
 
 == Motivation
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Motivate scientifically why solving this problem is necessary. What kind of benefits do we have by solving the problem?
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Motivate scientifically why solving this problem is necessary. What kind of benefits do we have by solving the problem?
+// ]
 About 94% of young people own and use a smartphone, as of 2021
 #footnote[https://de.statista.com/statistik/daten/studie/459963/umfrage/anteil-der-smartphone-nutzer-in-deutschland-nach-altersgruppe/].
 On the other hand, the share of young people that own a PC or laptop is, at about three quarters, lower, as of 2022
@@ -151,15 +148,14 @@ Similarly, the iOS app's further development to improve usability and extend fun
 
 == Objectives
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the research goals and/or research questions and how you address them by summarizing what you want to achieve in your thesis, e.g. developing a system and then evaluating it.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe the research goals and/or research questions and how you address them by summarizing what you want to achieve in your thesis, e.g. developing a system and then evaluating it.
+// ]
 This thesis aims to evolve the iOS app in two areas.
 We discuss the topics of evolving the communication feature and enabling participation in exercises in the subsections below.
 
@@ -197,15 +193,14 @@ Therefore, working on modeling exercises through the iOS app is not in the scope
 
 == Outline
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the outline of your thesis
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe the outline of your thesis
+// ]
 In this chapter, @in, we gave an introduction to Artemis, the server and its clients, and some of its problems.
 We expressed our motivation and the objectives of our thesis.
 In @bg, we give context to this thesis in terms of related concepts and technologies.
