@@ -9,6 +9,19 @@
   Note: Describe each proven technology / concept shortly that is important to understand your thesis. Point out why it is interesting for your thesis. Make sure to incorporate references to important literature here.
 ]
 
+== Interface Design
+
+Tom Greever writes in his book _Articulating Design Decisions_ @greever2020ADD: "Simplified, usability is about two things: common sense and research".
+This approach describes in large the structure of this thesis.
+We can mitigate many usability issues with reasonable design choices.
+Furthermore, the author differentiates how a feature works or if it works at all and how a stakeholder feels about a feature, especially in terms of its visual design.
+What people see, feel, or interact with, is what they care about
+@greever2020ADD.
+We are developing a visual user interface, the Artemis iOS app, thus we expect many opinions and ideas.
+Our goal is to look through them, solve a problem, and make the app easy to use for our users.
+
+Both books help us to understand design patterns for user interfaces and how to communicate our rationale.
+
 == Usability
 
 // / Less Is More: Fewer options help users to understand the options they have better.
