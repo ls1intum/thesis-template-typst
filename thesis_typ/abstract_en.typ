@@ -35,11 +35,15 @@
     The _Artemis - Learning_ iOS application (iOS app) constitutes an entry point to the learning management system.
     The iOS app in its current form gives the impression that students can participate through the communication feature, but does not fully utilize the Artemis server's more efficient interfaces.
 
-    This thesis aims to fulfill the communication infrastructure and incorporate new communication features, that is, muting conversations and mentioning content, in the iOS app.
-    Our goal is to solve usability issues in the iOS app's communication feature and in general, leave users with a satisfactory experience.
+    This thesis aims to solve usability issues in the iOS app's communication feature and in general, leave users with a satisfactory experience.
+    In the iOS app, we follow the user's path from the dashboard to the communication feature and contribute to a better user interface.
+    Muting individual conversations gives users on all clients more control over how they are notified.
+    Further, we revise the iOS app's fundamentals to fulfill the communication infrastructure and incorporate new communication features in the iOS app.
 
-    In this thesis' systematic approach to software engineering, we form system models, from which we derive a system design that meets the requirements.
-    We employ a manual test to evaluate the resulting implementation.
+    In the beginning, we elicit requirements from the problem domain and form system models.
+    In the solution domain, we derive a system design, which mitigates the apparent shortcomings of the current system, regarding the system models.
+    We employ a manual test to evaluate the resulting implementation concerning its usability.
+    In this thesis' systematic approach to software engineering, the summary ends with an outlook to further development of the iOS app.
   ]
   
   v(1fr)
