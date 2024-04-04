@@ -35,37 +35,39 @@ The server and client talk to each other in a client-server architectural style,
 
 == Design Goals
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Derive design goals from your nonfunctional requirements, prioritize them (as they might conflict with each other) and describe the rationale of your prioritization. Any trade-offs between design goals (e.g., build vs. buy, memory space vs. response time), and the rationale behind the specific solution should be described in this section
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Derive design goals from your nonfunctional requirements, prioritize them (as they might conflict with each other) and describe the rationale of your prioritization. Any trade-offs between design goals (e.g., build vs. buy, memory space vs. response time), and the rationale behind the specific solution should be described in this section
+// ]
+It is the first step of system design to define design goals, which may be inferred from the nonfunctional requirements in @ra-nonfunctional-requirements or may be further elicited from the client
+@bruegge2004OOSE.
+The design goals are discussed in their order of importance.
+The first design goal has the highest priority.
 
 === Usability
 
-Our first goal is to satisfy the user with a great user experience.
+The first goal is to satisfy the user with a great user experience.
 The impact of usability expands to the other design goals.
 
 === Performance
 
 Many users use Artemis clients at the same time, necessarily because students attend a class at the same time.
-The communication feature needs to coordinate many messages between many peer computers.
+The communication feature needs to coordinate many messages between many clients.
 
 === Dependability
 
-The native Android and iOS clients are unique in that they enable persistence across launches, 
-a capability that is more present in native apps than in web clients.
-We use the capabilities of native apps to make them more reliable than their web counterparts, e.g.,
-let a user finish a task without losing their data.
+The native Android and iOS clients are unique in that they enable persistence across launches, a capability that is more present in native apps than in web clients.
+We use the capabilities of native apps to make them more reliable than their web counterparts, e.g., let a user finish a task without losing their data.
 
 === Maintenance
 
-The Artemis - Learning app is a companion to the Artemis server, among the web client and application for Android.
-Developers develop the Artemis server and web client in lockstep.
-The native Android and iOS apps are not an afterthought but are sometimes forgotten by developers.
+The iOS app is a companion to the Artemis server, among the web client and Android app.
+Developers work on the Artemis server and web client in lockstep.
+The development cycles of the native Android and iOS apps do not integrate to the same extent.
 Developers should be able to easily recognize the subsystem decomposition similar to the server.
 
 == Subsytem Decomposition
@@ -175,14 +177,3 @@ Conversely, we subscribe to WebSocket connections whenever we want to synchroniz
 There are three actions to messages in a conversation: create, update, and delete.
 
 We update the data structure local to the native client with these actions (create, update, and delete).
-
-== Boundry Conditions
-
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the use cases how to start up the separate components of the system, how to shut them down, and what to do if a component or the system fails.
-]
