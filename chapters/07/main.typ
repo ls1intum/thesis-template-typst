@@ -1,24 +1,47 @@
 = Summary <su>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter includes the status of your thesis, a conclusion and an outlook about future work.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This chapter includes the status of your thesis, a conclusion and an outlook about future work.
+// ]
+This chapter summarizes this thesis by critically discussing the results in @su-status and @su-conclusion and by giving an outlook for future work in @su-future-work.
 
-== Status
+== Status <su-status>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe honestly the achieved goals (e.g. the well implemented and tested use cases) and the open goals here. if you only have achieved goals, you did something wrong in your analysis.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe honestly the achieved goals (e.g. the well implemented and tested use cases) and the open goals here. if you only have achieved goals, you did something wrong in your analysis.
+// ]
+The goal of this thesis was to realize eight functional requirements, which are listed in @ra-functional-requirements.
+Not all of them are fulfilled as we describe in the following sections.
+Full ●, half-full ◐, and empty ⚬ circles denote the status, realized, partially realized, and open, respectively.
+
+#figure(
+  table(
+    columns: (auto, auto),
+    align: (left, center),
+    [Functional Requirement], [Status],
+    [FR1: Configure a Code of Conduct], [●],
+    [FR2: Accept the Code of Conduct], [●],
+    [FR3: Report Misconduct], [●],
+    [FR4: Mute Individual Conversations], [●],
+    [FR5: Converse with Users], [◐],
+    [FR6: Restore a Message Draft], [●],
+    [FR7: Retry Failed Messages], [●],
+    [FR8: Mention Course Contents], [◐],
+  ),
+  caption: [
+    Status of the functional requirements.
+  ]
+)
 
 === Realized Goals
 
@@ -42,7 +65,7 @@
   Note: Summarize the open goals by repeating the open requirements or use cases and explaining why you were not able to achieve them. Important: It might be suspicious, if you do not have open goals. This usually indicates that you did not thoroughly analyze your problems.
 ]
 
-== Conclusion
+== Conclusion <su-conclusion>
 
 #rect(
   width: 100%,
@@ -53,7 +76,7 @@
   Note: Recap shortly which problem you solved in your thesis and discuss your *contributions* here.
 ]
 
-== Future Work
+== Future Work <su-future-work>
 
 #rect(
   width: 100%,
