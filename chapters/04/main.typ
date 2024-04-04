@@ -97,7 +97,7 @@ Requirements elicitation is one activity of requirements engineering.
 This activity aims to understand the users' requirements of the system.
 The requirements can be elicited by observing or interviewing the user
 @bruegge2004OOSE.
-This section encompasses the elicitation of functional and non-functional requirements in the subsections @ra-functional-requirements, @ra-non-functional-requirements, respectively.
+This section encompasses the elicitation of functional and nonfunctional requirements in the subsections @ra-functional-requirements, @ra-nonfunctional-requirements, respectively.
 
 === Functional Requirements <ra-functional-requirements>
 
@@ -123,45 +123,58 @@ This section encompasses the elicitation of functional and non-functional requir
 + *Retry Failed Messages*: A user can retry messages if they fail to send due to loss of connectivity
 + *Mention Course Contents*: A user can mention an exercise, a lecture, another conversation member, and a conversion in a message
 
-=== Nonfunctional Requirements <ra-non-functional-requirements>
+=== Nonfunctional Requirements <ra-nonfunctional-requirements>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in <bruegge2004object> without the category functionality that was already covered with the functional requirements.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in <bruegge2004object> without the category functionality that was already covered with the functional requirements.
 
-  - NFR1 Category: Short Description. 
-  - NFR2 Category: Short Description. 
-  - NFR3 Category: Short Description.
+//   - NFR1 Category: Short Description. 
+//   - NFR2 Category: Short Description. 
+//   - NFR3 Category: Short Description.
 
-]
+// ]
+// Copy of bachelor's thesis, p.15
+Nonfunctional requirements describe aspects of the system that are unrelated with its functionality.
+We divide our nonfunctional requirements into the URPS model and pseudo-requirements.
+The URPS model comprises requirements that fall into the categories of usability, reliability, performance, or supportability.
+Pseudo-requirements cover constraints that are concerned with the implementation, interfaces, operations, packaging, or legalities
+@bruegge2004OOSE.
 
-#set enum(numbering: n => [NFR #n])
-+ Usability:
-  #set enum(numbering: "1.")
-  1. Visibility of System Status: Queue sending a message
-  // - Match Between the System and the Real World
-  // - User Control & Freedom
-  4. Consistency and Standards: Internal, within the app, and external, among Artemis clients and iOS apps
-  // - Error Prevention: Severe damage; save failed message
-  6. Recognition Rather Than Recall: Recommend mentions
-  // - Flexibility and Efficiency of Use
-  8. Aesthetics and Minimalistic Design: Primary goals; message cell
-  9. Help Users Recognize, Diagnose and Recover from Errors: Red text; retry message
-    - Inform users when an error has occured
-    - Tell users what went wrong
-    - Offer users a solution
-  // - Help & Documentation
-+ Robustness: Networking needs/constraints
-+ Supportability: Maintainability
-+ Implementation requirements: Develop the Artemis - Learning app for iOS and use the Swift programming language.
-+ Interface requirements: The Artemis - Learning app should interface with the Artemis server.
+==== URPS
+
+#set enum(numbering: n => [*NFR #n*], number-align: start + top)
++ *Reliability*: The iOS app should keep on performing under constrained networking constraints, i.e., let users resume under more relaxed conditions
++ *Performance*: The iOS app should request the Artemis server as few as possible considering the number of students that attend a lecture simultaneously
++ *Supportability*: Developers work on the iOS app and its dependencies open-source. Keep dependencies maintainable and independent of each other
+
+==== URPS - Usability
+
+In the attempt to improve user satisfaction, the following requirements divide the non-functional requirement of usability further.
+#set enum(numbering: n => [*NFR #n*], start: 4, number-align: start + top)
++ *Visibility of System Status*: Give clear feedback about what the system is doing to users
+// + Match Between the System and the Real World
+// + User Control & Freedom
++ *Consistency and Standards*: Keep internal consistency, within the app, and external consistency, among Artemis clients and other iOS apps that adhere to well-known user-interface pattern
+// + Error Prevention: Severe damage; save failed message
++ *Recognition Rather Than Recall*: Give users options to choose from based on information they know instead of leaving them to memorize content
+// + Flexibility and Efficiency of Use
++ *Aesthetics and Minimalistic Design*: Display only appropriate information at any given time
++ *Help Users Recognize, Diagnose and Recover from Errors*: Inform users when an error occurs, tell them what went wrong, and offer a solution
+// + Help & Documentation
+
+==== Pseudo Requirements
+
+#set enum(numbering: n => [*NFR #n*], start: 9, number-align: start + top)
++ *Implementation requirements*: Develop the iOS app with the Swift programming language
++ *Interface requirements*: The iOS app should interface with the Artemis server and use the HTTP and WebSocket APIs
 // + Operations requirements:
-+ Packaging requirements: Distribute the Artemis - Learning app through the Apple App Store.
-+ Legal requirements: App Store Review Guidelines for user-generated content: Developers submit apps to the App Store and App Review checks the submission. Submissions must cohere with the App Store Review Guidelines.
++ *Packaging requirements*: Distribute the iOS app through Test Flight
++ *Legal requirements*: App Store Review Guidelines for user-generated content -- App Review checks that each developer's submission to the App Store coheres with the App Store Review Guidelines
 
 == System Models <ra-system-models>
 
