@@ -164,8 +164,19 @@ Nevertheless, when students received messages from the conductor, they struggled
 Seven of the ten students agree that the experience is satisfactory.
 Two students strongly agree that the experience is satisfactory.
 One student is neutral about their satisfaction.
+@ev-satisfaction shows the number of participants that strongly disagree, disagree, are neutral, agree, or strongly agree towards their satisfaction.
 Individual students like that the conversation screen is responsive, they can answer a message in a thread, and mentions are easy to navigate.
 Five of the ten students like in particular that they can mention content in their messages.
+
+#figure(
+  pad(
+    x: 1em,
+    image("satisfaction.jpg")
+  ),
+  caption: [
+    The plot shows the participants' agreement that the communication feature's usability is satisfactory.
+  ]
+) <ev-satisfaction>
 
 Two students say that they do not understand the label 'Exe' in the keyboard toolbar and one student says that the submenu should be more obvious.
 One of the former students says that 'Exe' reminds them of Microsoft executables.
