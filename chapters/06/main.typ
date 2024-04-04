@@ -226,9 +226,15 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
 // )[
 //   Note: Discuss the findings in more detail and also review possible disadvantages that you found
 // ]
-Firstly, we can fix issue \_ if we let the user recognize rather than recall a channel if we immediately display search results after they type \#.
+Firstly, we let the user recognize rather than recall a channel if we immediately display search results after they type \#.
 Secondly, we can fit more toolbar items if we create categories that open a submenu.
 @ev-divider shows a prototype of a revised toolbar that adds a plus button and categorizes actions.
+We leave the evaluation with the following issues:
+
+#set enum(numbering: n => [*I#n*])
++ Present the user an error if they disconnect from the conversation and an action to reconnect
++ Categorize actions in the toolbar into mentioning content and marking up text
++ Present a list of channels if the search query is empty
 
 #figure(
   pad(
