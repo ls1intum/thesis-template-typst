@@ -23,9 +23,14 @@ We describe the current system in @ra-current-system, which we will augment with
 // )[
 //   Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
 // ]
-The iOS app is a companion to Artemis on the web.
+The iOS app is a companion to Artemis on the web, through which a user can view the details of their courses.
 Users can read exercises, lectures, and messages through the iOS app.
-// #footnote("https://developer.apple.com/app-store/review/guidelines/#free-stand-alone-apps").
+In the special case of modeling exercises, users can even submit attempts.
+
+Messages are only visible if the instructor enabled it for the course.
+In the messages tab, a user can see conversations for course-wide channels, exercises, lectures, exams, group chats, and direct messages.
+They can navigate to a thread, i.e., a branch of messages, which has its root in one message in the conversation.
+
 This thesis plans to extend the participation features.
 We scope the proposed system to the communication feature.
 The objectives are to:
@@ -61,30 +66,21 @@ Describing the deficiencies in detail in @ra-user-interface, the section also pr
   ]
 ) <ra-storyboard>
 
-Alternatives:
+=== Dynamic Model
 
-- describe the current system and state of development from a user perspective in the first part. Describe the software architecture for the communication feature of Artemis in the second part.
-- only describe the _notificaton_ system of Artemis, 'which we change and extend.'
+Artemis provides notification settings for web app and email push notifications in the web client.
+Users can access the notification settings for the Android and iOS apps in the native clients, respectively.
+If a user disables push notifications for a category, e.g., new messages in conversations, all conversations do not notify the user of new messages, as shown in @ra-notifications-current.
 
-
-The Artemis - Learning app is a companion to Artemis on the web, through which a user can view the details of their courses.
-A user can see their courses if they are logged in.
-If a user registers for a course, they can view the course's exercises, lectures, and messages
-#cite(<andabaka2023app>).
-A user can submit attempts for modeling exercises
-#cite(<goertzen2024uml>),
-but cannot submit attempt for other kinds of exercises, i.e., programming, quiz, text, and file upload exercises.
-Messages are only visible if the instructor enabled it for the course.
-In the messages tab, a user can see conversations for course-wide channels, exercises, lectures, exams, group chats, and direct messages.
-They can navigate to a thread, i.e., a branch of messages, which has its root in one message in the conversation.
-
-// A user can view their course details, e.g., exercises, lectures, and communications through the Artemis - Learning app.
-// A user can manipulate courses, conversations, messages, and threads.
-// A user can navigate to a single course and see its exercises, lectures, and messages.
-
-=== Storyboard
-
-We describe the current system in terms of a storyboard, i.e., a sequence of screens in the order, in which a user can navigate the application.
+#figure(
+  pad(
+    x: 20%,
+    image("notifications/current.jpg")
+  ),
+  caption: [
+    An activity diagram depicting how user settings influence a notification in the current system.
+  ]
+) <ra-notifications-current>
 
 == Proposed System <ra-proposed-system>
 
@@ -312,17 +308,20 @@ When a user sends a message, it is in the sending state until that server acknow
 If the server does not acknowledge the message until after a timeout interval, then it failed to send.
 
 A user sends a message and that can cause notifications for other users.
-We show the way of a notification in @ra-dynamic-model.
+We show the way of a notification in @ra-notifications-vision.
 A user can generally disable all notifications for a specific kind, e.g., all notifications for new messages in a conversations.
 If they enable notifications for conversations, then they can mute individual conversations.
 If the user mutes a conversation, they do not receive messages.
 
 #figure(
-  image("dynamic-model.png"),
+  pad(
+    x: 20%,
+    image("notifications/vision.jpg")
+  ),
   caption: [
     The activity diagram shows how user settings influence a notification.
   ]
-) <ra-dynamic-model>
+) <ra-notifications-vision>
 
 === User Interface <ra-user-interface>
 
