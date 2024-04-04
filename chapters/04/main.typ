@@ -38,14 +38,28 @@ We deem the proposed system successful if users are satisfied with our improveme
 
 == Current System <ra-current-system>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section is only required if the proposed system (i.e. the system that you develop in the thesis) should replace an existing system.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This section is only required if the proposed system (i.e. the system that you develop in the thesis) should replace an existing system.
+// ]
+=== User Interface
+
+The storyboard in @ra-storyboard shows the dashboard, messages, create-conversation, and conversation screens.
+A user crosses the course screen to get to the conversations screen in the messages tab.
+All screens exhibit several usability deficiencies.
+Describing the deficiencies in detail in @ra-user-interface, the section also proposes improved screens side-by-side.
+
+#figure(
+  image("storyboard.jpg"),
+  caption: [
+    The storyboard depicts how a user can navigate between different screens of the application.
+    A user can navigate between the screens, whenever there is an edge.
+  ]
+) <ra-storyboard>
 
 Alternatives:
 
@@ -310,7 +324,7 @@ If the user mutes a conversation, they do not receive messages.
   ]
 ) <ra-dynamic-model>
 
-=== User Interface
+=== User Interface <ra-user-interface>
 
 #rect(
   width: 100%,
@@ -320,20 +334,6 @@ If the user mutes a conversation, they do not receive messages.
 )[
   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
 ]
-
-The storyboard shows the login, dashboard, exercises, lectures, messages, and conversation screens.
-A user can navigate between the screens, whenever there is an edge.
-A user can switch tabs in a course and arrive at the exercises, lectures, or messages screens.
-
-#figure(
-  image("storyboard.png"),
-  caption: [
-    The storyboard depicts how a user can navigate between different screens of the application.
-  ]
-) <ra-storyboard>
-
-A user crosses the course screen to get to the conversations screen in the messages tab.
-We improve both, the course and conversations screens, with small refinements.
 
 @ra-courses shows that the button for course enrollment is not in the center and that a course, where progress is impossible, is green.
 Additionally, the list rows do not follow the automatic behavior that if a user pushes down on a row, the system highlights it.
