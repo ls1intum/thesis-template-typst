@@ -165,6 +165,7 @@ Seven of the ten students agree that the experience is satisfactory.
 Two students strongly agree that the experience is satisfactory.
 One student is neutral about their satisfaction.
 @ev-satisfaction shows the number of participants that strongly disagree, disagree, are neutral, agree, or strongly agree towards their satisfaction.
+We conclude that the test confirms the hypothesis *H1*.
 Individual students like that the conversation screen is responsive, they can answer a message in a thread, and mentions are easy to navigate.
 Five of the ten students like in particular that they can mention content in their messages.
 
