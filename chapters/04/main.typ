@@ -271,26 +271,36 @@ The blue background comprises the use cases that are available if the communicat
 
 === Analysis Object Model
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see <bruegge2004object>). Do not insert objects, attributes or methods of the solution domain. *Important:* Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This subsection should contain a UML Class Diagram showing the most important objects, attributes, methods and relations of your application domain including taxonomies using specification inheritance (see <bruegge2004object>). Do not insert objects, attributes or methods of the solution domain. *Important:* Make sure to describe the analysis object model thoroughly in the text so that readers are able to understand the diagram. Also write about the rationale how and why you modeled the concepts like this.
 
-]
-
-We focus on the messages domain and model it from the point of view of a single user.
-A course comprises members, exercises, lectures, and conversations.
+// ]
+We focus on the messages domain and model it within the context of a single course.
+A course comprises users, exercises, lectures, and conversations.
+Lectures can contain attachments, which themselves contain slides that are grouped into units.
 A code of conduct is specific to a course and only available if a constructor enables information sharing.
 A subset of course members and many messages make a conversation.
 A message can be the first one of a thread of messages and we call the other messages answers.
-A message or answer can connect to a notification.
 We show the relationships between the objects in @ra-analysis-object-model.
 
+A central part of this analysis object model is the _Content_ class.
+Content is anything that a user can mention in a message or navigate to from a message.
+The identifier of content can take many forms.
+The identifier of a user is their username, whereas the identifier of exercises or lectures is numerical.
+
+The green highlights in @ra-analysis-object-model depict additions to the current system, whereas the blue highlights depict changes to the current system.
+The code of conduct is entirely new and enables a user to report another user, if necessary.
+Muting a conversation changes how a user gets push notifications.
+Furthermore, how a user mentions and opens content, changes in the iOS app.
+Users of the iOS app can restore and retry sending a message if an error occurs.
+
 #figure(
-  image("analysis-object-model.png"),
+  image("analysis-object-model.jpg"),
   caption: [
     The analysis object model depicts the high-level objects in the problem domain.
   ]
