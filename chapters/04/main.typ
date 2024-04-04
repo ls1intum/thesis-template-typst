@@ -178,73 +178,72 @@ In the attempt to improve user satisfaction, the following requirements divide t
 
 == System Models <ra-system-models>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section includes important system models for the requirements analysis.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This section includes important system models for the requirements analysis.
+// ]
+System models formalize the functional and non-functional requirements and let developers validate, clarify, and correct them
+@bruegge2004OOSE.
 
 === Scenarios
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you do not distinguish between visionary and demo scenarios, you can remove the two subsubsections below and list all scenarios here.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: If you do not distinguish between visionary and demo scenarios, you can remove the two subsubsections below and list all scenarios here.
 
-  *Visionary Scenarios*
+//   *Visionary Scenarios*
 
-  Note: Describe 1-2 visionary scenario here, i.e. a scenario that would perfectly solve your problem, even if it might not be realizable. Use free text description.
+//   Note: Describe 1-2 visionary scenario here, i.e. a scenario that would perfectly solve your problem, even if it might not be realizable. Use free text description.
 
-  *Demo Scenarios*
+//   *Demo Scenarios*
 
-  Note: Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
-]
-
+//   Note: Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
+// ]
 // A scenario is an encapsulated description of - an individual user, using a specific set of computer facilities, to achieve a specific outcome, under specific circumstances, over a certain time interval.
 // nielsen1993UE, 100
-
-Alice, Bob, and Charlie are students at the Technical University of Munich.
+// Copy of bachelor's thesis, p. 23
+Scenarios are detailed descriptions of the system in use
+@bruegge2004OOSE.
+Here, Alice, Bob, and Charlie are students at the Technical University of Munich.
 They registered themselves in the course Introduction to the Swift Programming Language (ISPL).
 They travel regularly from the Munich city center to Garching-Forschungszentrum (GFZ) and back by train.
-Alice and Bob are students, and Charlie is an instructor in the course.
-All of them installed the iOS application Artemis - Learning (Artemis app) on their iPhones.
-Charlie installed the iPadOS application Artemis - Exam Supervision (Exam app) on their iPad.
+Alice and Bob are students and Charlie is an instructor in the course.
+All of them installed the iOS app on their iPhones.
 
-==== Visionary Scenarios
+==== Participate in a Quiz Exercise (Visionary Scenario)
 
 Alice missed their usual train and is now late for the start of the lecture.
 Charlie, the instructor, starts every lecture with a quiz exercise in the first 10 minutes.
 The train is scheduled every 10 minutes, thus Alice arrives in the lecture hall after the quiz begins.
-While Alice is still riding the train, they navigate to the course ISPL, and the Exercises tab in the Artemis app.
+While Alice is still riding the train, they navigate to the course ISPL and the exercises tab in the iOS app.
 Alice starts the quiz exercise and can finish it by the time they arrive in the lecture hall.
 
-==== Demo Scenarios
-
-Alice and Bob sit in the lecture hall and listen to ISPL.
-They registered for push notifications in the Artemis app.
-Other students do not concentrate on the content as much as Alice and Bob and write a lot of messages in the _\#general_ course-wide channel.
-Alice and Bob receive a notification for every message that the other students send.
-They have not turned off course-wide notifications because other courses are not as spammy and they still want to see how many messages were sent.
-They did not hide it either.
+==== Mute _\#tech-support_ (Demo Scenario)
 
 Bob sometimes solves their assignments at the last minute.
 They are a member of the _\#tech-support_ course-wide channel.
 Other students like to ask questions and instructors inform students about infrastructure problems in this channel.
 Bob does not need to know about the other's problems immediately and receive a notification, but they like to see if the others have a problem and see if it applies to themselves at a later time/the latest time.
-Therefore, Bob mutes the _\#tech-support_ course-wide channel.
+Therefore, Bob mutes _\#tech-support_.
+
+==== Retry Failed Message (Demo Scenario)
 
 Alice travels to GFZ before the lecture starts.
 They prefer to use the iOS app when they travel and want to connect with Bob to discuss a lecture topic.
-In the Artemis app, they navigate to the course ISPL, and the Messages tab.
+In the iOS app, they navigate to the course ISPL and the messages tab.
 They create a new conversation with Bob.
 Alice and Bob wish each other a good morning.
 Alice's iPhone disconnects from the network, inside the train station, when they want to ask Bob about the upcoming lecture content.
+Alice puts away their iPhone and Alice's message is not lost.
+The message is automatically sent when Alice's phone reconnects.
 
 === Use Case Model
 
