@@ -72,15 +72,14 @@ Developers should be able to easily recognize the subsystem decomposition simila
 
 == Subsytem Decomposition
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Describe the architecture of your system by decomposing it into subsys- tems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Describe the architecture of your system by decomposing it into subsys- tems and the services provided by each subsystem. Use UML class diagrams including packages / components for each subsystem.
+// ]
 @sd-subsystem-decomposition shows three system and their subsystems.
 The iOS app's _messages service_ corresponds to the server's conversation resource.
 The _messages service_ is only relevant after a user accepts the code of conduct.
@@ -89,29 +88,31 @@ We model another code of conduct service for local storage.
 #figure(
   image("subsystem-decomposition.png"),
   caption: [
-    This \_ diagram depicts the subsystems of the server, web client, and Artemis - Learning app.
+    The component diagram depicts the subsystems of the server, web client, and the iOS app.
   ]
 ) <sd-subsystem-decomposition>
 
 == Hardware Software Mapping
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram. The existing components are often off-the-shelf components. If the components are distributed on different nodes, the network infrastructure and the protocols are also described.
-]
-
-The development will affect the server and client components as shown in @sd-hardware-software-mapping.
-Fortunately, the existing implementations for the Android application and web client will give guidance on how the functionality will manifest itself in the iOS application.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This section describes how the subsystems are mapped onto existing hardware and software components. The description is accompanied by a UML deployment diagram. The existing components are often off-the-shelf components. If the components are distributed on different nodes, the network infrastructure and the protocols are also described.
+// ]
+The development of the system affects the server and client components as shown in @sd-hardware-software-mapping.
+The university infrastructure hosts an Artemis server, whereas Laptops, Android devices, and iPhones are private property of the students.
+Each node hosts one program in @sd-hardware-software-mapping, where in reality the Artemis server is a facade for several other systems, such as version control, continuous integration, and user management systems.
+This diagram generalizes all services that relate to conversations into a single messages service for all execution environments.
+Users can access the Artemis learning management system through user interfaces on clients of the Android app, iOS app, or the web.
 
 #figure(
   image("hardware-software-mapping.jpg"),
   caption: [
-    The diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
-    The exercise services communicate via the HTTPS protocol.
+    The component diagram depicts the deployment of an Artemis server instance and clients for the web, iOS, and Android.
+    The messages services communicate via the HTTPS and WebSocket protocol.
   ]
 ) <sd-hardware-software-mapping>
 
