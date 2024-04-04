@@ -308,26 +308,24 @@ Users of the iOS app can restore and retry sending a message if an error occurs.
 
 === Dynamic Model
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.*Important:* Make sure to describe the diagram and its rationale in the text. *Do not use UML sequence diagrams.*
-]
-
-// Avoid using sequence diagrams, instead consider using activity or communication diagrams.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This subsection should contain dynamic UML diagrams. These can be a UML state diagrams, UML communication diagrams or UML activity diagrams.*Important:* Make sure to describe the diagram and its rationale in the text. *Do not use UML sequence diagrams.*
+// ]
 
 We put the spotlight on messages.
-A message can be in three different states: Compose, sending, and failed.
+A message can be in three different states: compose, sending, and failed.
 When a user starts to write a message, it is in the compose state.
-When a user sends a message, it is in the sending state until that server acknowledges the message.
-If the server does not acknowledge the message until after a timeout interval, then it failed to send.
+When a user sends a message, it is in the state 'sending' until that server acknowledges the message.
+If the server does not acknowledge the message until after a timeout interval, then it fails to send.
 
-A user sends a message and that can cause notifications for other users.
-We show the way of a notification in @ra-notifications-vision.
-A user can generally disable all notifications for a specific kind, e.g., all notifications for new messages in a conversations.
+A user sends a message and that can cause push notifications for other users.
+We show the way to a notification in @ra-notifications-vision.
+A user can generally disable all notifications for a specific kind, e.g., all notifications for new messages in conversations.
 If they enable notifications for conversations, then they can mute individual conversations.
 If the user mutes a conversation, they do not receive messages.
 
@@ -351,6 +349,8 @@ If the user mutes a conversation, they do not receive messages.
 // )[
 //   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
 // ]
+In @ra-storyboard, the storyboard revealed several user interface deficiencies. The following sections describe them in more detail, as well as alternatives with favorable behavior of the system.
+
 ==== Course Overview
 
 @ra-courses shows that the button for course enrollment is not in the center and that a course, where progress is impossible, is green.
