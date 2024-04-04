@@ -1,33 +1,35 @@
 = System Design <sd>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter follows the System Design Document Template in <bruegge2004object>. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite <bruegge2004object> several times in this chapter.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This chapter follows the System Design Document Template in <bruegge2004object>. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite <bruegge2004object> several times in this chapter.
+// ]
+// Copy of bachelor's thesis, p.37
+The system design activity transforms the analysis object model, the dynamic model, and the nonfunctional requirements into design goals, and the subsystem decomposition.
+Additionally, a hardware/software mapping strategy, persistent data management, and access control are defined
+@bruegge2004OOSE.
 
 == Overview
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Provide a brief overview of the software architecture and references to other chapters (e.g. requirements analysis), references to existing systems, constraints impacting the software architecture..
-]
-
-We organize the Artemis - Learning app into three layers: the view, view model, and service layers,
-similar to the Artemis server's three layers: the web, application, and data layers.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Provide a brief overview of the software architecture and references to other chapters (e.g. requirements analysis), references to existing systems, constraints impacting the software architecture..
+// ]
+The iOS app consists of three layers: the view, view model, and service layers, similar to the Artemis server's three layers: the web, application, and data layers.
 The server and client talk to each other in a client-server architectural style, which we show in @sd-overview.
 
 #figure(
-  image("overview.png"),
+  image("top-level-design.jpg"),
   caption: [
-    The \_ shows the three-layer architectural styles of the Artemis server and Artemis - Learning app programs.
+    The component diagram shows the three-layer architectural styles of the Artemis server and the iOS app.
   ]
 ) <sd-overview>
 
