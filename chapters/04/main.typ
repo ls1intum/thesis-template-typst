@@ -84,46 +84,46 @@ If a user disables push notifications for a category, e.g., new messages in conv
 
 == Proposed System <ra-proposed-system>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: If you leave out the section “Current system”, you can rename this section into “Requirements”.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: If you leave out the section “Current system”, you can rename this section into “Requirements”.
+// ]
+// Copy of bachelor's thesis, p.15
+Requirements elicitation is one activity of requirements engineering.
+This activity aims to understand the users' requirements of the system.
+The requirements can be elicited by observing or interviewing the user
+@bruegge2004OOSE.
+This section encompasses the elicitation of functional and non-functional requirements in the subsections @ra-functional-requirements, @ra-non-functional-requirements, respectively.
 
-=== Functional Requirements
+=== Functional Requirements <ra-functional-requirements>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: List and describe all functional requirements of your system. Also mention requirements that you were not able to realize. The short title should be in the form “verb objective”
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: List and describe all functional requirements of your system. Also mention requirements that you were not able to realize. The short title should be in the form “verb objective”
 
-  - FR1 Short Title: Short Description. 
-  - FR2 Short Title: Short Description. 
-  - FR3 Short Title: Short Description.
-]
+//   - FR1 Short Title: Short Description. 
+//   - FR2 Short Title: Short Description. 
+//   - FR3 Short Title: Short Description.
+// ]
+#set enum(numbering: n => [*FR #n*], number-align: start + top)
++ *Configure a Code of Conduct*: An instructor can adapt a template code of conduct at the creation of a course and edit it later
++ *Accept the Code of Conduct*: A user can use the communication feature if they accept the code of conduct
++ *Report Misconduct*: A user can report misconduct to a course's responsible contact
++ *Mute Individual Conversations*: A user can mute a conversation independent of other conversations
++ *Converse with Users*: Users can converse with each other including examining their conversation history
++ *Restore a Message Draft*: A user can draft a message and restore it at a later time after they exit and enter a conversation again
++ *Retry Failed Messages*: A user can retry messages if they fail to send due to loss of connectivity
++ *Mention Course Contents*: A user can mention an exercise, a lecture, another conversation member, and a conversion in a message
 
-#set enum(numbering: n => [*FR #n*])
-+ Configure a Code of Conduct: An instructor can adapt a template Code of Conduct at the creation of a course and edit it later.
-+ Accept Code of Conduct: A user can use the communication feature if they accept the Code of Conduct
-+ Report misconduct: A user can report misconduct to a course's responsible contact.
-+ Mute individual conversations: A user can mute a conversation independent of other conversations.
-+ Mention an exercise: A user can mention an exercise in a message.
-+ Mention a lecture: A user can mention a lecture in a message.
-+ Mention a conversation member: A user can mention a member of the conversation in a message.
-+ Mention a conversation: A user can mention another conversation in a message.
-+ Load earlier messages: A user can load earlier messages of a conversation.
-+ Draft and restore a message: A user can draft a message and restore it at a later time.
-+ Retry a message: A user can retry a message if it fails to send.
-+ Participate in text exercises: A user can submit attempts for text exercises.
-+ Participate in quiz exercises: A user can submit attempts for quiz exercises.
-
-=== Nonfunctional Requirements
+=== Nonfunctional Requirements <ra-non-functional-requirements>
 
 #rect(
   width: 100%,
