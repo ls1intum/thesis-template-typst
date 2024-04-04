@@ -79,25 +79,31 @@ We deem FR5 and FR8 only partially realized.
 
 == Conclusion <su-conclusion>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Recap shortly which problem you solved in your thesis and discuss your *contributions* here.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Recap shortly which problem you solved in your thesis and discuss your *contributions* here.
+// ]
+This thesis contributed to the communication infrastructure of the iOS app.
+On the way there, we employed several improvements to usability throughout the app.
+Users on all platforms gain more control of the communication feature.
+Instructors can configure a code of conduct and all users, including students and tutors, can mute individual conversations.
+
+With the ability to restore message and answer drafts, we foster the differentiating factors of the native Artemis clients.
 
 == Future Work <su-future-work>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Tell us the next steps (that you would do if you have more time). Be creative, visionary and open-minded here.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Tell us the next steps (that you would do if you have more time). Be creative, visionary and open-minded here.
+// ]
 We developed a user interface for text and quiz exercises during the exploration of this thesis' scope.
 @su-exercises show visual prototypes of the text and quiz exercise screens.
 We encourage fellow developers to pickup the pieces and follow up with the implementation and testing of the exercise feature in the iOS app.
