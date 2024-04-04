@@ -1,43 +1,40 @@
 = Requirements Analysis <ra>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This chapter follows the Requirements Analysis Document Template in <bruegge2004object>. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite <bruegge2004object> several times in this chapter.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This chapter follows the Requirements Analysis Document Template in <bruegge2004object>. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite <bruegge2004object> several times in this chapter.
 
-]
-
+// ]
 This chapter documents the results of requirements elicitation according to the _Requirements Analysis Document_ template
 #cite(<bruegge2004OOSE>). // 152
-We describe the current system in the section @ra-current-system, which we will augment with the proposed system in the section @ra-proposed-system.
+We describe the current system in @ra-current-system, which we will augment with the proposed system in @ra-proposed-system.
 
 == Overview <ra-overview>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
+// ]
+The iOS app is a companion to Artemis on the web.
+Users can read exercises, lectures, and messages through the iOS app.
+// #footnote("https://developer.apple.com/app-store/review/guidelines/#free-stand-alone-apps").
+This thesis plans to extend the participation features.
+We scope the proposed system to the communication feature.
+The objectives are to:
+- provide users with usability improvements up to and including the communication feature
+- provide users with the infrastructure to communicate through the iOS app
+- let users navigate to interesting content from messages
+- let users control how they are notified by enabling muting of conversations
 
-We consider the current system a "Free Stand-alone App"
-#footnote("https://developer.apple.com/app-store/review/guidelines/#free-stand-alone-apps").
-The iOS app provides the capability to write messages, too.
-We plan to extend the participation features of the app.
-Scope are exercises and the communication feature.
-
-The objectives of this thesis are to:
-
-- provide students participate in exercise through the iOS app.
-- provide students with the infrastructure to communicate through the iOS app and navigate to interesting content.
-- provide instructors with the infrastructure to efficiently let students sign their attendance at an exam.
-
-We deem the proposed system successful if users are satisfied with our improvements to usability.
+We deem the proposed system successful if users are satisfied with our improvements to its usability.
 
 == Current System <ra-current-system>
 
@@ -101,7 +98,7 @@ We describe the current system in terms of a storyboard, i.e., a sequence of scr
   - FR3 Short Title: Short Description.
 ]
 
-#set enum(numbering: n => [FR #n])
+#set enum(numbering: n => [*FR #n*])
 + Configure a Code of Conduct: An instructor can adapt a template Code of Conduct at the creation of a course and edit it later.
 + Accept Code of Conduct: A user can use the communication feature if they accept the Code of Conduct
 + Report misconduct: A user can report misconduct to a course's responsible contact.
