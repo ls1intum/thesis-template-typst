@@ -149,35 +149,44 @@ The initial version of this scheme is `1.0.0`.
   ]
 ) <sd-persistent-data-management>
 
-== Access Control
-
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
-]
-
-We control the access to the communication feature because of the legal requirement \_ of user-generated content.
-We store the agreement on the server or hash the code of conduct and store the hash value on the native client.
-We ensure that a user accepts the latest code of conduct.
-
 == Global Software Control
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section describing the control flow of the system, in particular, whether a monolithic, event-driven control flow or concurrent processes have been selected, how requests are initiated and specific synchronization issues
-]
-
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Optional section describing the control flow of the system, in particular, whether a monolithic, event-driven control flow or concurrent processes have been selected, how requests are initiated and specific synchronization issues
+// ]
+The communication feature is a very busy system in terms of the number of network requests.
 We distinguish between REST and WebSocket connections.
-We call the REST interface whenever we need to load an unchanging resource.
-Conversely, we subscribe to WebSocket connections whenever we want to synchronize dynamic data, e.g., messages in a conversation.
-There are three actions to messages in a conversation: create, update, and delete.
+In @bg-websockets, we recall that WebSockets can use a URI with a prefix to disambiguate individual users.
+The iOS app's communication feature can subscribe to three different WebSocket topics, which the `WebSocketTopic` type encodes:
+```swift
+enum WebSocketTopic {
+    /// Makes a topic for notifications through course-wide channels.
+    static func makeChannelNotifications(courseId: Int) -> String {
+        "/topic/metis/courses/\(courseId)"
+    }
 
-We update the data structure local to the native client with these actions (create, update, and delete).
+    /// Makes a topic for conversation notifications of a user.
+    static func makeConversationNotifications(userId: Int64) -> String {
+        "/topic/user/\(userId)/notifications/conversations"
+    }
+
+    // MARK: - User space
+
+    /// Makes a topic for membership notifications of a user in a course.
+    static func makeConversationMembershipNotifications(
+      courseId: Int, userId: Int64
+    ) -> String {
+        "/user/topic/metis/courses/\(courseId)/conversations/user/\(userId)"
+    }
+}
+```
+
+Note, channel notifications are the same for all users and do not need disambiguation.
+A single WebSocket for all users in the same channel relaxes the load on the server.
+There are three actions to messages in a conversation: create, update, and delete.
+We update the data structure local to the native client with these actions, create, update, and delete, accordingly.
