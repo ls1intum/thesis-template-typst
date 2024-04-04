@@ -60,14 +60,23 @@ We therefore differentiate between the functionality and the usability of a feat
 //   Note: Derive concrete objectives / hypotheses for this evaluation from the general ones in the introduction.
 // ]
 The three tasks cover several functionalities of the iOS app's communication feature.
-We want to test if students can:
+We test if students can:
 
-1. navigate to the communication feature
-2. hide and mute channels
-3. follow mentions, e.g., a lecture
-4. restore drafts of messages and answers
-5. mention content, e.g., an exercise
-6. mention conversations, e.g., a channel
+#set enum(numbering: n => [*T#n*])
++ Navigate to the communication feature
++ Hide and mute channels
++ Follow mentions, e.g., a lecture
++ Restore drafts of messages and answers
++ Mention content, e.g., an exercise
++ Mention conversations, e.g., a channel
+
+Furthermore, we assume that students in general find the communication feature satisfactory and that they prefer to mute a channel instead of hiding.
+Muting a channel still lets students see if the status of a channel changes, e.g., new messages arrive, but does not disturb them.
+Therefore, we test two hypotheses:
+
+#set enum(numbering: n => [*H#n*])
++ Students find the communication feature satisfactory
++ Students prefer muting a channel over hiding a channel
 
 == Results <ev-results>
 
@@ -81,8 +90,9 @@ We want to test if students can:
 // ]
 === Navigate to the communication feature
 
-All ten students can find a course, navigate to the messages tab, and accept the code of conduct.
+All ten students can find the course, navigate to the messages tab, and accept the code of conduct.
 One student did not immediately recognize the tab bar, which appears on the selection of a course.
+We conclude the test *T1* as passed.
 
 === Hide and mute channels
 
@@ -91,20 +101,24 @@ Three students tap and enter a channel before they exit it and try to long press
 Another one tries to hide the channel by browsing the list to add a channel.
 The remaining two students collapse the disclosure group to hide the channel.
 All students long press a row and mute a channel after they learn that there are two options, hide and mute.
+We conclude the test *T2* as passed.
 
 Nine of the ten students prefer to mute a channel, given the two options.
 The remaining student is indecisive.
 Three students prefer to mute a channel because they can still see the channel, but a push notification does not interrupt their focus.
+The test agrees to a degree of 90% that the hypothesis *H2* is true.
 
 === Follow mentions
 
 One of the ten students follows the mention directly.
 The other nine students first select the message and then follow the mention to open the lecture.
+We conclude the test *T3* as passed.
 
 === Restore drafts of messages and answers
 
 Two of the ten students write a message in the conversation, the remaining eight students write an answer in the thread of the message.
 All students can exit the conversation or thread and send the message after they enter it again.
+We conclude the test *T4* as passed.
 
 === Mention content and conversations
 
@@ -113,11 +127,16 @@ All of the nine remaining students can choose an exercise from the modal screen,
 One student confuses other toolbar items with the exercise toolbar item, that is, the \@ and link symbols.
 Another student exits the conversation and tries to select an exercise in the exercises tab.
 One student questions if 'Exe' is shorthand for exercises, see @ev-bars.
+We conclude the test *T5* as failed.
 
 Six of the ten students can mention a conversation in a message.
 Again, one student did not receive messages from the conductor.
 Two students tap the \# symbol but choose an exercise from the modal screen.
 One student taps the \# symbol and writes the whole exercise name; they do not see the popover appear.
+We conclude the test *T6* as failed.
+
+Note that not all students were able to mention content and conversations because one student did not receive messages from the conductor.
+Nevertheless, when students received messages from the conductor, they struggled to fulfill the task.
 
 #figure(
   pad(
@@ -140,13 +159,25 @@ One student taps the \# symbol and writes the whole exercise name; they do not s
   ]
 ) <ev-bars>
 
-=== Questionnaire
+=== Comprehensive questions
 
 Seven of the ten students agree that the experience is satisfactory.
 Two students strongly agree that the experience is satisfactory.
 One student is neutral about their satisfaction.
+@ev-satisfaction shows the number of participants that strongly disagree, disagree, are neutral, agree, or strongly agree towards their satisfaction.
+We conclude that the test confirms the hypothesis *H1*.
 Individual students like that the conversation screen is responsive, they can answer a message in a thread, and mentions are easy to navigate.
 Five of the ten students like in particular that they can mention content in their messages.
+
+#figure(
+  pad(
+    x: 1em,
+    image("satisfaction.jpg")
+  ),
+  caption: [
+    The plot shows the participants' agreement that the communication feature's usability is satisfactory.
+  ]
+) <ev-satisfaction>
 
 Two students say that they do not understand the label 'Exe' in the keyboard toolbar and one student says that the submenu should be more obvious.
 One of the former students says that 'Exe' reminds them of Microsoft executables.
@@ -163,14 +194,14 @@ Two students suggest differentiating between messages that they sent and that th
 // )[
 //   Note: Interpret the results and conclude interesting findings
 // ]
-The manual test provides a better understanding, which features in the iOS app work and give suggestions how we can improve them further.
+The manual test provides a better understanding of which features in the iOS app work and gives suggestions on how we can improve them further.
 Generally, the participants can navigate to and within the communication feature.
-They can follow mentions, but the touch target of a message that opens a thread interfers with the touch target of a link.
-Composing mentions appears to be a more difficult task, this could be of several reasons.
+They can follow mentions, but the touch target of a message that opens a thread interferes with the touch target of a link.
+Composing mentions appears to be a more difficult task, this could be for several reasons.
 
 The keyboard toolbar is now overfull and not all toolbar items are visible at a glance.
 Additionally, the toolbar item symbols are rather abstract and not easily relatable to a particular kind of content.
-@ev-symbols shows the sybmols that we use to create a link markup, mention a conversation member, or another conversation.
+@ev-symbols shows the symbols that we use to create a link markup, mention a conversation member, or another conversation.
 
 #figure(
   grid(
@@ -181,23 +212,50 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
     image("number.png")
   ),
   caption: [
-    The link, at, and number symbols that Apple provides with SFSymbols.
+    The link, at, and number symbols that iOS supports.
   ]
 ) <ev-symbols>
 
 == Discussion <ev-discussion>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Discuss the findings in more detail and also review possible disadvantages that you found
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Discuss the findings in more detail and also review possible disadvantages that you found
+// ]
+Firstly, we let the user recognize rather than recall a channel if we immediately display search results after they type \#.
+Secondly, we can fit more toolbar items if we create categories that open a submenu.
+@ev-divider shows a prototype of a revised toolbar that adds a plus button and categorizes actions.
+We leave the evaluation with the following issues:
 
-Some toolbar items are cut off because of the device's width, others are only visible if the user scrolls.
-Recognize rather than recall.
+#set enum(numbering: n => [*I#n*])
++ Present the user an error if they disconnect from the conversation and an action to reconnect
++ Categorize actions in the toolbar into mentioning content and marking up text
++ Present a list of channels if the search query is empty
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto, auto),
+      gutter: 1em,
+      image("divider/1.png"),
+      image("divider/2.png"),
+      image("divider/3.png"),
+      image("divider/4.png")
+    )
+  ),
+  caption: [
+    The left pair of screenshots shows the toolbar in Slack.
+    If a user taps the plus button, Slack opens a modal screen.
+    The right pair of screenshots shows a prototype of the toolbar in Artemis.
+    If a user taps the plus button, Artemis opens a modal screen.
+    Additionally, two dividers compartmentalize different sets of actions.
+  ]
+) <ev-divider>
 
 == Limitations <ev-limitations>
 
