@@ -118,29 +118,32 @@ Users can access the Artemis learning management system through user interfaces 
 
 == Persistent Data Management
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Optional section that describes how data is saved over the lifetime of the system and which data. Usually this is either done by saving data in structured files or in databases. If this is applicable for the thesis, describe the approach for persisting data here and show a UML class diagram how the entity objects are mapped to persistent storage. It contains a rationale of the selected storage scheme, file system or database, a description of the selected database and database administration issues.
-]
-
-SwiftData is a framework, which Apple presented at the conference 'WWDC' in the year 2023.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Optional section that describes how data is saved over the lifetime of the system and which data. Usually this is either done by saving data in structured files or in databases. If this is applicable for the thesis, describe the approach for persisting data here and show a UML class diagram how the entity objects are mapped to persistent storage. It contains a rationale of the selected storage scheme, file system or database, a description of the selected database and database administration issues.
+// ]
+SwiftData is a framework, which Apple released in the year 2023.
 SwiftData wraps CoreData, originally an Objective-C framework, in a Swift module.
-SwiftData and CoreData both access a MySQL database.
-@sd-persistent-data-management depicts the entities: server, user, course, conversation, message, and offline message and answer.
+SwiftData and CoreData both access SQLite stores underneath.
+@sd-persistent-data-management depicts the entities: server, course, conversation, message, and offline message and answer.
 
-We chose to fully qualify the scheme with server and user.
-If a user logs out of the app, we can delete the user and if a user changes the server URL, i.e., host, we can delete the server entity.
-Our configuration deletes all entities that a higher entity references when the first or second case occurs.
+We chose to fully qualify the scheme with server, course, and conversation entities.
+If a user logs out of the app, we can delete the server.
+The configuration deletes all entities that a higher entity references when the first or second case occurs.
 
 SwiftData lets developers version schemes.
 Developers need to write lightweight or manual migrations when a newer scheme is incompatible with an older scheme.
+The initial version of this scheme is `1.0.0`.
 
 #figure(
-  image("persistent-data-management.png"),
+  pad(
+    x: 12%,
+    image("persistent-data-management.jpg")
+  ),
   caption: [
     This class diagram shows the properties of entities and their relationships.
   ]
