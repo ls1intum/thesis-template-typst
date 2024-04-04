@@ -247,29 +247,25 @@ The message is automatically sent when Alice's phone reconnects.
 
 === Use Case Model
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: This subsection should contain a UML Use Case Diagram including roles and their use cases. You can use colors to indicate priorities. Think about splitting the diagram into multiple ones if you have more than 10 use cases. *Important:* Make sure to describe the most important use cases using the use case table template (./tex/use-case-table.tex). Also describe the rationale of the use case model, i.e. why you modeled it like you show it in the diagram.
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: This subsection should contain a UML Use Case Diagram including roles and their use cases. You can use colors to indicate priorities. Think about splitting the diagram into multiple ones if you have more than 10 use cases. *Important:* Make sure to describe the most important use cases using the use case table template (./tex/use-case-table.tex). Also describe the rationale of the use case model, i.e. why you modeled it like you show it in the diagram.
 
-]
-
-All users use messages.
-An instructor manages the code of conduct.
-A student participates in exercises.
+// ]
+All users, including students, tutors, and instructors, use messages.
+Only an instructor manages a course's code of conduct.
 @ra-use-case-model depicts the relation between actors and use cases.
-
-We split the use case model into three parts.
-The first part concerns all users, i.e., an instructor, a tutor, and a student.
-The second part concerns instructors and students, individually.
+In particular, the gray background comprises the use cases related to the code of conduct.
+The blue background comprises the use cases that are available if the communication feature is enabled for the course and the code of conduct is accepted.
 
 #figure(
-  image("use-case-model.png"), 
+  image("use-case-model.jpg"), 
   caption: [
-    The use case model depicts actors that use the system in various ways, i.e., use cases.
+    A use case diagram depicting two actors, any user and an instructor, that have different capabilities in the system.
   ]
 ) <ra-use-case-model>
 
