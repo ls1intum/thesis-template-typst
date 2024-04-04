@@ -187,17 +187,38 @@ Additionally, the toolbar item symbols are rather abstract and not easily relata
 
 == Discussion <ev-discussion>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Discuss the findings in more detail and also review possible disadvantages that you found
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Discuss the findings in more detail and also review possible disadvantages that you found
+// ]
+Firstly, we can fix issue \_ if we let the user recognize rather than recall a channel if we immediately display search results after they type \#.
+Secondly, we can fit more toolbar items if we create categories that open a submenu.
+@ev-divider shows a prototype of a revised toolbar that adds a plus button and categorizes actions.
 
-Some toolbar items are cut off because of the device's width, others are only visible if the user scrolls.
-Recognize rather than recall.
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto, auto, auto),
+      gutter: 1em,
+      image("divider/1.png"),
+      image("divider/2.png"),
+      image("divider/3.png"),
+      image("divider/4.png")
+    )
+  ),
+  caption: [
+    The left pair of screenshots shows the toolbar in Slack.
+    If a user taps the plus button, Slack opens a modal screen.
+    The right pair of screenshots shows a prototype of the toolbar in Artemis.
+    If a user taps the plus button, Artemis opens a modal screen.
+    Additionally, two dividers compartmentalize different sets of actions.
+  ]
+) <ev-divider>
 
 == Limitations <ev-limitations>
 
