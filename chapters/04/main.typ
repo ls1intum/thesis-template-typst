@@ -326,14 +326,15 @@ If the user mutes a conversation, they do not receive messages.
 
 === User Interface <ra-user-interface>
 
-#rect(
-  width: 100%,
-  radius: 10%,
-  stroke: 0.5pt,
-  fill: yellow,
-)[
-  Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
-]
+// #rect(
+//   width: 100%,
+//   radius: 10%,
+//   stroke: 0.5pt,
+//   fill: yellow,
+// )[
+//   Note: Show mockups of the user interface of the software you develop and their connections / transitions. You can also create a storyboard. *Important:* Describe the mockups and their rationale in the text.
+// ]
+==== Course Overview
 
 @ra-courses shows that the button for course enrollment is not in the center and that a course, where progress is impossible, is green.
 Additionally, the list rows do not follow the automatic behavior that if a user pushes down on a row, the system highlights it.
@@ -354,6 +355,8 @@ Additionally, the list rows do not follow the automatic behavior that if a user 
     The right pair of screenshots shows the list of courses after the UI improvements.
   ]
 ) <ra-courses>
+
+==== Messages Tab
 
 @ra-conversations shows that the notification badge of a conversation is a circle that grows in height when the number grows in digits.
 Additionally, the round notification badge pushes the conversation bubble away from its usual place if a user collapses the disclosure group.
@@ -376,9 +379,33 @@ Additionally, the round notification badge pushes the conversation bubble away f
   ]
 ) <ra-conversations>
 
+==== Conversation Creation
+
+@ra-conversation shows that a text field is visible between two possibly growing lists of users.
+A user adds the top list of users to the conversation if they create it.
+The bottom list of users displays search results according to the user's query in the text field.
+
+#figure(
+  pad(
+    x: 1em,
+    grid(
+      columns: (auto, auto),
+      gutter: 1em,
+      image("conversation/1.png"),
+      image("conversation/2.png")
+    )
+  ),
+  caption: [
+    The left screenshot shows the screen for creating a conversation before the UI improvements.
+    The right screenshot shows the screen for creating a conversation after the UI improvements.
+  ]
+) <ra-conversation>
+
+==== Content Unavailable
+
 A user can exhibit unavailable content in many places of the iOS app.
 We consider an empty set of contents also as unavailable, as well as if an error occurs.
-@ra-unavailable shows that screens that recognize unavailable content, e.g., the notifications and conversation screens, only show a bare text.
+@ra-unavailable shows that screens that recognize unavailable content, e.g., the notifications and conversation screens, only show bare text.
 Other screens, such as the mention-lecture screen, are empty, analog to the mention-exercise screen.
 Errors cause unavailable content, too, but they do not necessarily cause data loss.
 We should reserve the color red, as in the courses screen, for actions that cause data loss.
@@ -405,23 +432,3 @@ We should reserve the color red, as in the courses screen, for actions that caus
     The bottom row shows screenshots of the notifications, mention-lecture, courses, and conversation screens after the UI improvements.
   ]
 ) <ra-unavailable>
-
-@ra-conversation shows that a text field is visible between two possibly growing lists of users.
-A user adds the top list of users to the conversation if they create it.
-The bottom list of users are search results to the users query in the text field.
-
-#figure(
-  pad(
-    x: 1em,
-    grid(
-      columns: (auto, auto),
-      gutter: 1em,
-      image("conversation/1.png"),
-      image("conversation/2.png")
-    )
-  ),
-  caption: [
-    The left screenshot shows the screen for creating a conversation before the UI improvements.
-    The right screenshot shows the screen for creating a conversation after the UI improvements.
-  ]
-) <ra-conversation>
