@@ -9,7 +9,6 @@
   startDate: none,
   submissionDate: none,
 ) = {
-  set document(title: title, author: author)
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: none,

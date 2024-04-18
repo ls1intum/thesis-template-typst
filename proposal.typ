@@ -2,6 +2,7 @@
 #import "common/titlepage.typ": *
 #import "common/metadata.typ": *
 
+#set document(title: titleEnglish, author: author)
 
 #titlepage(
   title: titleEnglish,

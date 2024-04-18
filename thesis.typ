@@ -8,6 +8,8 @@
 #import "common/metadata.typ": *
 
 
+#set document(title: titleEnglish, author: author)
+
 #cover(
   title: titleEnglish,
   degree: degree,
