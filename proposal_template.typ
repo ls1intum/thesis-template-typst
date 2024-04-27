@@ -39,6 +39,11 @@
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---
+  let firstParagraphIndent = 1.45em
+  show heading: it => {
+    it
+    h(firstParagraphIndent)
+  }
   set par(leading: 1em, justify: true, first-line-indent: 2em)
 
   // --- Figures ---
