@@ -6,9 +6,12 @@
   supervisor: "",
   advisors: (),
   author: "",
-  startDate: none,
-  submissionDate: none,
+  startDate: datetime,
+  submissionDate: datetime,
 ) = {
+  // Quality checks
+  assert(degree in ("Bachelor", "Master"), message: "The degree must be either 'Bachelor' or 'Master'")
+  
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: none,
@@ -29,7 +32,7 @@
   
   // --- Title Page ---
   v(1cm)
-  align(center, image("../figures/logo.png", width: 26%))
+  align(center, image("/figures/logo.png", width: 26%))
 
   v(5mm)
   align(center, text(font: sans-font, 2em, weight: 700, "Technical University of Munich"))
@@ -58,8 +61,8 @@
       strong("Author: "), author,
       strong("Supervisor: "), supervisor,
       strong("Advisors: "), advisors.join(", "),
-      strong("Start Date: "), startDate,
-      strong("Submission Date: "), submissionDate,
+      strong("Start Date: "), startDate.display("[day].[month].[year]"),
+      strong("Submission Date: "), submissionDate.display("[day].[month].[year]"),
     )
   )
 
