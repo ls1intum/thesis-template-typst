@@ -9,8 +9,8 @@
   supervisor: "",
   advisors: (),
   author: "",
-  startDate: none,
-  submissionDate: none,
+  startDate: datetime,
+  submissionDate: datetime,
   body,
 ) = {
   // Set the document's basic properties.
