@@ -6,8 +6,8 @@
   supervisor: "",
   advisors: (),
   author: "",
-  startDate: none,
-  submissionDate: none,
+  startDate: datetime,
+  submissionDate: datetime,
   body,
 ) = {
   set page(
