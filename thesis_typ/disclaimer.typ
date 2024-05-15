@@ -32,7 +32,7 @@
   grid(
       columns: 2,
       gutter: 1fr,
-      "Munich, " + submissionDate, author
+      "Munich, " + submissionDate.display("[day].[month].[year]"), author
   )
 
   pagebreak()
