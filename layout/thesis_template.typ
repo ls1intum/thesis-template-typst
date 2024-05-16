@@ -1,4 +1,10 @@
-#let project(
+#import "/layout/cover.typ": *
+#import "/layout/titlepage.typ": *
+#import "/layout/disclaimer.typ": *
+#import "/layout/acknowledgement.typ": *
+#import "/layout/abstract.typ": *
+
+#let thesis(
   title: "",
   titleGerman: "",
   degree: "",
@@ -8,8 +14,41 @@
   author: "",
   startDate: datetime,
   submissionDate: datetime,
+  abstract_en: "",
+  abstract_de: "",
   body,
 ) = {
+  cover(
+    title: title,
+    degree: degree,
+    program: program,
+    author: author,
+  )
+
+  titlepage(
+    title: title,
+    titleGerman: titleGerman,
+    degree: degree,
+    program: program,
+    supervisor: supervisor,
+    advisors: advisors,
+    author: author,
+    startDate: startDate,
+    submissionDate: submissionDate
+  )
+
+  disclaimer(
+    title: title,
+    degree: degree,
+    author: author,
+    submissionDate: submissionDate
+  )
+
+  acknowledgement()
+
+  abstract(lang: "en")[#abstract_en]
+  abstract(lang: "de")[#abstract_de]
+
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: "1",
@@ -92,8 +131,8 @@
   // Appendix.
   pagebreak()
   heading(numbering: none)[Appendix A: Supplementary Material]
-  include("thesis_typ/appendix.typ")
+  include("/layout/appendix.typ")
 
   pagebreak()
-  bibliography("thesis.bib")
+  bibliography("/thesis.bib")
 }
