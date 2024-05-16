@@ -3,11 +3,9 @@
 #import "common/titlepage.typ": *
 #import "thesis_typ/disclaimer.typ": *
 #import "thesis_typ/acknowledgement.typ": *
-#import "thesis_typ/abstract_en.typ": *
-#import "thesis_typ/abstract_de.typ": *
+#import "thesis_typ/abstract.typ": *
 #import "common/metadata.typ": *
 #import "common/utils.typ": TODO
-
 
 #set document(title: titleEnglish, author: author)
 
@@ -39,9 +37,16 @@
 
 #acknowledgement()
 
-#abstract_en()
+#abstract(lang: "en")[
+  Note:
+  1. *paragraph:* What is the motivation of your thesis? Why is it interesting from a scientific point of view? Which main problem do you like to solve?
+  2. *paragraph:* What is the purpose of the document? What is the main content, the main contribution?
+  3. *paragraph:* What is your methodology? How do you proceed?
+]
 
-#abstract_de()
+#abstract(lang: "de")[
+  Note: Insert the German translation of the English abstract here.
+]
 
 #show: project.with(
   title: titleEnglish,
