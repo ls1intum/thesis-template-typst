@@ -1,7 +1,9 @@
+#import "/layout/titlepage.typ": *
+
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
 // Go ahead and customize it to your liking!
-#let project(
+#let proposal(
   title: "",
   titleGerman: "",
   degree: "",
@@ -13,6 +15,18 @@
   submissionDate: datetime,
   body,
 ) = {
+  titlepage(
+    title: title,
+    titleGerman: titleGerman,
+    degree: degree,
+    program: program,
+    supervisor: supervisor,
+    advisors: advisors,
+    author: author,
+    startDate: startDate,
+    submissionDate: submissionDate
+  )
+
   // Set the document's basic properties.
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
@@ -52,5 +66,5 @@
   body
 
   pagebreak()
-  bibliography("thesis.bib")
+  bibliography("/thesis.bib")
 }

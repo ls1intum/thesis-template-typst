@@ -21,13 +21,18 @@ Nix and Docker users, please refer to the official installation guide for detail
 
 ## Usage
 ### Set thesis metadata 
-Fill in your thesis details in the `common/metadata.typ` file: 
+Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file: 
 * Degree (Bachelor or Master)
 * Your study program
 * English and German title
 * Advisor and supervisor
 * Your name (without e-mail address or matriculation number)
 * The start and submission date
+
+### Write your thesis
+For the actual content of your thesis, there is a dedicated folder named [`/content`](/content) which includes all the chapters and sections of your thesis. This applies for the proposal as well as the thesis (see [`/content/proposal.typ`](/content/proposal.typ) for proposal content). 
+You can add or remove chapters as needed (adapt the [`thesis.typ`](/thesis.typ) with the `#include(...)` accordingly).
+If you need to customize the layout of the template, you can do so by modifying the corresponding file in the [`layout`](/layout) directory.
 
 ### Build PDFs locally 
 Once you have installed Typst, you can use it like this:
