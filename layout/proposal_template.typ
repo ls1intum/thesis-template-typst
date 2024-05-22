@@ -60,6 +60,9 @@
   }
   set par(leading: 1em, justify: true, first-line-indent: 2em)
 
+  // --- Citation Style ---
+  set cite(style: "alphanumeric")
+
   // --- Figures ---
   show figure: set text(size: 0.85em)
 
