@@ -69,5 +69,5 @@
   body
 
   pagebreak()
-  bibliography("/thesis.bib")
+  bibliography("/proposal.bib")
 }

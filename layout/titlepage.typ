@@ -60,7 +60,7 @@
       gutter: 1em,
       strong("Author: "), author,
       strong("Supervisor: "), supervisor,
-      strong("Advisors: "), advisors.join(", "),
+      strong("Advisors: "), advisors,
       strong("Start Date: "), startDate.display("[day].[month].[year]"),
       strong("Submission Date: "), submissionDate.display("[day].[month].[year]"),
     )

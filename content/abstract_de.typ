@@ -1,1 +1,9 @@
-Note: Insert the German translation of the English abstract here.
+Artemis ist ein Software-Tool für die Ausbildung von Studenten, das verschiedene Funktionen für die Verwaltung von Kursen, Vorlesungen und Prüfungen mit einer großen Anzahl von Funktionen bietet. Solch ein komplexes System erfordert angemessene Tests, um die Stabilität zu gewährleisten. End-to-End-Tests sind eine der umfassendsten Methoden, um Probleme im Voraus zu erkennen, indem verschiedene Benutzerabläufe simuliert werden. Bei der Vorbereitung von E2E-Tests ist es wichtig, sich über die Testabdeckung des Systems im Klaren zu sein, insbesondere wenn man bedenkt, dass es immer noch keine eindeutige Methode zur Bestimmung der Testabdeckung bei solchen Tests gibt. Ein weiteres wichtiges Thema bei E2E-Tests ist ihre Ausführungszeit. Die Entwickler benötigen die Ergebnisse der Tests, um sicherzustellen, dass das System nach den von ihnen vorgenommenen Änderungen stabil ist. Daher wird die Optimierung von Tests, um Zeit und Ressourcen zu sparen, zu einem wichtigen Thema, insbesondere wenn die Anzahl der Tests linear zur Anzahl der implementierten neuen Funktionen wächst.
+
+
+In dieser Arbeit wird Playwright anstelle von Cypress für das E2E-Testen von Artemis eingeführt, da Playwright in Bezug auf Funktionen und Leistung Vorteile bietet. Playwright ist ein von Microsoft entwickeltes Open Source E2E-Testwerkzeug. In dieser Arbeit werden wir diese beiden Tools in Bezug auf Leistung und Funktionen vergleichen.
+
+
+Mit der Migration zu Playwright erhalten wir die Möglichkeit, Tests parallel auszuführen. Diese Arbeit wird sich auch auf die Ausführungszeit von E2E-Tests konzentrieren und die Ausführungszeit von Artemis E2E-Tests vor und nach der Parallelisierung vergleichen.
+
+Schließlich werden wir die Möglichkeiten zur Bestimmung der Testabdeckung in E2E-Tests entdecken und die E2E-Testabdeckung von Artemis analysieren. Wir werden verschiedene Ansätze betrachten und versuchen, den für Artemis am besten geeigneten zu finden.
