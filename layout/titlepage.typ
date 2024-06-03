@@ -61,7 +61,7 @@
   entries.push(("Start Date: ", startDate.display("[day].[month].[year]")))
   entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
 
-pad(
+  pad(
     top: 3em,
     right: 15%,
     left: 15%,
