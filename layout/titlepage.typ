@@ -51,18 +51,26 @@
 
   align(center, text(font: sans-font, 2em, weight: 500, titleGerman))
 
-  pad(
+  let entries = ()
+  entries.push(("Author: ", author))
+  entries.push(("Supervisor: ", supervisor))
+  // Only show advisors if there are any
+  if advisors.len() > 0 {
+    entries.push(("Advisors: ", advisors.join(", ")))
+  }
+  entries.push(("Start Date: ", startDate.display("[day].[month].[year]")))
+  entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
+
+pad(
     top: 3em,
     right: 15%,
     left: 15%,
     grid(
       columns: 2,
       gutter: 1em,
-      strong("Author: "), author,
-      strong("Supervisor: "), supervisor,
-      strong("Advisors: "), advisors.join(", "),
-      strong("Start Date: "), startDate.display("[day].[month].[year]"),
-      strong("Submission Date: "), submissionDate.display("[day].[month].[year]"),
+      ..for (term, desc) in entries {
+        (strong(term), desc)
+      }
     )
   )
 
