@@ -55,8 +55,46 @@ compilation.
 typst watch thesis.typ
 ```
 
-## Working with the Typst Web Editor
+### Updating Your Repository to the Latest Template Version
+If you have created your thesis repository using the Typst Thesis Template, you might want to update your repository to incorporate the latest changes from the template. Follow these steps to sync your repository with the latest version of the template.
 
+**Steps to Update:**
+1. Add the Template Repository as a Remote 
+First, navigate to your repository in the terminal and add the original template repository as a new remote:
+```sh
+git remote add template https://github.com/ls1intum/thesis-template-typst.git
+```
+
+2. Fetch the latest updates from the template repository:
+```sh
+git fetch template
+```
+
+3. Merge the Changes into Your Repository
+Merge the changes from the template's main branch into your current branch. This might require resolving merge conflicts if there are any differences between your customizations and the template's updates:
+```sh
+git merge template/main
+```
+
+4. Resolve Merge Conflicts
+If there are any merge conflicts, git will notify you. Open the conflicting files, resolve the conflicts, and then add the resolved files:
+```sh
+git add <resolved-file>
+```
+
+5. Commit the Merge
+After resolving conflicts and adding the resolved files, commit the merge:
+```sh
+git commit -m "Merge updates from Typst Thesis Template"
+```
+
+6. Push the Changes to Your Repository
+Finally, push the merged changes to your repository:
+```sh
+git push origin main
+```
+
+## Working with the Typst Web Editor
 If you prefer an integrated IDE-like experience with autocompletion and instant preview, the Typst web editor allows you to import files directly into a new or existing document. Here's how you can do this:
 
 1. Navigate to the [Typst Web Editor](https://typst.app/).
