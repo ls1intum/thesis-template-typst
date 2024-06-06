@@ -73,7 +73,7 @@ git fetch template
 3. Merge the Changes into Your Repository
 Merge the changes from the template's main branch into your current branch. This might require resolving merge conflicts if there are any differences between your customizations and the template's updates:
 ```sh
-git merge template/main
+git merge template/main --allow-unrelated-histories
 ```
 
 4. Resolve Merge Conflicts
