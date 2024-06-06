@@ -91,7 +91,7 @@ git commit -m "Merge updates from Typst Thesis Template"
 6. Push the Changes to Your Repository
 Finally, push the merged changes to your repository:
 ```sh
-git push origin main
+git push origin <branch-name>
 ```
 
 ## Working with the Typst Web Editor
