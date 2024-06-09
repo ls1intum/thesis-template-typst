@@ -29,3 +29,13 @@
 #TODO[
   Tell us the next steps (that you would do if you have more time). Be creative, visionary and open-minded here.
 ]
+
+== Appendix A - Converted E2E Tests
+#TODO[
+  Include the converted E2E tests from Cypress to Playwright here.
+]
+
+== Appendix B - Newly Developed E2E Tests
+#TODO[
+  Include the newly developed E2E tests for Playwright here.
+]
