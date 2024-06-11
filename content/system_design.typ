@@ -6,8 +6,11 @@
 // ]
 In this section, we introduce the system design for migrating our current end-to-end (E2E) test suite to the Playwright testing framework. Our approach includes identifying areas lacking test coverage through advanced test coverage techniques and expanding the existing suite to encompass more user workflows and functionalities. To illustrate the capabilities of our proposed system, we present visionary scenarios and use cases, which help formulate both the analysis object model and the dynamic model.
 
-// Provide graph of test coverage based on user workflows
+Furthermore, we discuss the methods of calculating the test coverage for e2e tests, including the use of automated metrics for evaluating E2E and API test coverage. We also present tools and case studies to demonstrate how these metrics can be applied in real-world systems.
 
+Finally, we dive into some areas regarding exam and exercise subsytems, for which we extend the test suites.
+
+// Provide graph of test coverage based on user workflows
 
 == Overview
 // #TODO[
