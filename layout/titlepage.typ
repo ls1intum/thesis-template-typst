@@ -46,10 +46,10 @@
   v(8mm)
   
 
-  align(center, text(font: sans-font, 2em, weight: 700, title))
+  align(center, text(font: sans-font, 1.6em, weight: 700, title))
   
 
-  align(center, text(font: sans-font, 2em, weight: 500, titleGerman))
+  align(center, text(font: sans-font, 1.6em, weight: 500, titleGerman))
 
   pad(
     top: 3em,
