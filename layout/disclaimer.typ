@@ -34,7 +34,4 @@
       gutter: 1fr,
       "Munich, " + submissionDate.display("[day].[month].[year]"), author
   )
-
-  pagebreak()
-  pagebreak()
 }

@@ -1,4 +1,5 @@
 #import "/layout/titlepage.typ": *
+#import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
@@ -13,6 +14,7 @@
   author: "",
   startDate: datetime,
   submissionDate: datetime,
+  transparency_ai_tools: "",
   body,
 ) = {
   titlepage(
@@ -70,4 +72,6 @@
 
   pagebreak()
   bibliography("/thesis.bib")
+  pagebreak()
+  transparency_ai_tools_layout(transparency_ai_tools)
 }

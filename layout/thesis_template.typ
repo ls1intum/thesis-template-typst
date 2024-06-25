@@ -1,7 +1,8 @@
 #import "/layout/cover.typ": *
 #import "/layout/titlepage.typ": *
 #import "/layout/disclaimer.typ": *
-#import "/layout/acknowledgement.typ": *
+#import "/layout/acknowledgement.typ": acknowledgement as acknowledgement_layout
+#import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/layout/abstract.typ": *
 
 #let thesis(
@@ -16,6 +17,8 @@
   submissionDate: datetime,
   abstract_en: "",
   abstract_de: "",
+  acknowledgement: "",
+  transparency_ai_tools: "",
   body,
 ) = {
   cover(
@@ -43,8 +46,10 @@
     author: author,
     submissionDate: submissionDate
   )
+  transparency_ai_tools_layout(transparency_ai_tools)
+  pagebreak(to: "odd")
 
-  acknowledgement()
+  acknowledgement_layout(acknowledgement)
 
   abstract(lang: "en")[#abstract_en]
   abstract(lang: "de")[#abstract_de]
