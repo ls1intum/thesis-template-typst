@@ -27,7 +27,7 @@
     author: author,
   )
 
-  print_page_break(print: is_print)
+  pagebreak()
 
   titlepage(
     title: title,
@@ -41,8 +41,7 @@
     submissionDate: submissionDate
   )
 
-  print_page_break(print: is_print)
-
+  print_page_break(print: is_print, to: "even")
 
   disclaimer(
     title: title,
