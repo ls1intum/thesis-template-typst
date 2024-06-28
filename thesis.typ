@@ -14,7 +14,9 @@
   startDate: startDate,
   submissionDate: submissionDate,
   abstract_en: include "/content/abstract_en.typ",
-  abstract_de: include "/content/abstract_de.typ"
+  abstract_de: include "/content/abstract_de.typ",
+  acknowledgement: include "/content/acknowledgement.typ",
+  transparency_ai_tools: include "/content/transparency_ai_tools.typ",
 )
 
 #include "/content/introduction.typ"

@@ -1,4 +1,4 @@
-#let acknowledgement(body) = {
+#let transparency_ai_tools(body) = {
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
     numbering: none,
@@ -16,10 +16,9 @@
 
   set par(leading: 1em)
 
-  
-  // --- Acknowledgements ---
-  align(left, text(font: sans-font, 2em, weight: 700,"Acknowledgements"))
-  v(15mm)
+  // --- AI Usage ---
+  align(left, text(font: sans-font, 20pt, weight: 700,"Transparency in the use of AI tools"))
+  v(12pt)
 
   body
 }

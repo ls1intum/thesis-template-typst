@@ -12,7 +12,8 @@
   advisors: advisors,
   author: author,
   startDate: startDate,
-  submissionDate: submissionDate
+  submissionDate: submissionDate,
+  transparency_ai_tools: "/content/transparency_ai_tools.typ",
 )
 
 #include "/content/proposal.typ"

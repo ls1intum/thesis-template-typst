@@ -1,4 +1,5 @@
 #import "/layout/titlepage.typ": *
+#import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/utils/print_page_break.typ": *
 
 // The project function defines how your document looks.
@@ -14,6 +15,7 @@
   author: "",
   startDate: datetime,
   submissionDate: datetime,
+  transparency_ai_tools: "",
   is_print: false,
   body,
 ) = {
@@ -74,4 +76,6 @@
 
   pagebreak()
   bibliography("/thesis.bib")
+  pagebreak()
+  transparency_ai_tools_layout(transparency_ai_tools)
 }
