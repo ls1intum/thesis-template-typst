@@ -4,6 +4,7 @@
 #import "/layout/acknowledgement.typ": acknowledgement as acknowledgement_layout
 #import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/layout/abstract.typ": *
+#import "/utils/print_page_break.typ": *
 
 #let thesis(
   title: "",
@@ -19,6 +20,7 @@
   abstract_de: "",
   acknowledgement: "",
   transparency_ai_tools: "",
+  is_print: false,
   body,
 ) = {
   cover(
@@ -27,6 +29,8 @@
     program: program,
     author: author,
   )
+
+  pagebreak()
 
   titlepage(
     title: title,
@@ -40,6 +44,8 @@
     submissionDate: submissionDate
   )
 
+  print_page_break(print: is_print, to: "even")
+
   disclaimer(
     title: title,
     degree: degree,
@@ -47,9 +53,12 @@
     submissionDate: submissionDate
   )
   transparency_ai_tools_layout(transparency_ai_tools)
-  pagebreak(to: "odd")
 
+  print_page_break(print: is_print)
+  
   acknowledgement_layout(acknowledgement)
+
+  print_page_break(print: is_print)
 
   abstract(lang: "en")[#abstract_en]
   abstract(lang: "de")[#abstract_de]
