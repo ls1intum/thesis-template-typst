@@ -42,6 +42,4 @@
   
   v(10mm)
   align(center, text(font: sans-font, 2em, weight: 500, author))
-  
-  pagebreak()
 }

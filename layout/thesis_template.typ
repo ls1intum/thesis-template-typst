@@ -3,6 +3,7 @@
 #import "/layout/disclaimer.typ": *
 #import "/layout/acknowledgement.typ": *
 #import "/layout/abstract.typ": *
+#import "/utils/print_page_break.typ": *
 
 #let thesis(
   title: "",
@@ -16,6 +17,7 @@
   submissionDate: datetime,
   abstract_en: "",
   abstract_de: "",
+  is_print: false,
   body,
 ) = {
   cover(
@@ -24,6 +26,8 @@
     program: program,
     author: author,
   )
+
+  pagebreak()
 
   titlepage(
     title: title,
@@ -37,6 +41,8 @@
     submissionDate: submissionDate
   )
 
+  print_page_break(print: is_print, to: "even")
+
   disclaimer(
     title: title,
     degree: degree,
@@ -44,7 +50,11 @@
     submissionDate: submissionDate
   )
 
+  print_page_break(print: is_print)
+
   acknowledgement()
+
+  print_page_break(print: is_print)
 
   abstract(lang: "en")[#abstract_en]
   abstract(lang: "de")[#abstract_de]
