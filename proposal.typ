@@ -13,7 +13,7 @@
   author: author,
   startDate: startDate,
   submissionDate: submissionDate,
-  transparency_ai_tools: "/content/transparency_ai_tools.typ",
+  transparency_ai_tools: include "/content/transparency_ai_tools.typ",
 )
 
 #include "/content/proposal.typ"
