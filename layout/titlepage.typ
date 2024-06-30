@@ -13,7 +13,7 @@
   assert(degree in ("Bachelor", "Master"), message: "The degree must be either 'Bachelor' or 'Master'")
   
   set page(
-    margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
+    margin: (left: 20mm, right: 20mm, top: 30mm, bottom: 30mm),
     numbering: none,
     number-align: center,
   )
@@ -27,7 +27,7 @@
     lang: "en"
   )
 
-  set par(leading: 1em)
+  set par(leading: 0.5em)
 
   
   // --- Title Page ---
@@ -61,13 +61,13 @@
   entries.push(("Start Date: ", startDate.display("[day].[month].[year]")))
   entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
 
-  pad(
-    top: 3em,
-    right: 15%,
-    left: 15%,
+  v(1cm)
+  align(
+    center,
     grid(
       columns: 2,
       gutter: 1em,
+      align: left,
       ..for (term, desc) in entries {
         (strong(term), desc)
       }
