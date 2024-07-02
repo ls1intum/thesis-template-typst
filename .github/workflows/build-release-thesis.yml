@@ -32,6 +32,13 @@ jobs:
           WITH_V: true
           DEFAULT_BUMP: 'patch'
 
+      - name: Compile Typst
+        uses: lvignoli/typst-action@main
+        with:
+          source_file: |
+            thesis.typ
+            proposal.typ
+
       - name: Create Release
         id: create_release
         uses: softprops/action-gh-release@v2
@@ -40,30 +47,6 @@ jobs:
           name: Version ${{ steps.bump.outputs.new_tag }}
           draft: false
           prerelease: false
-  
-      - name: Compile Typst
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: |
-            thesis.typ
-            proposal.typ
-
-      - name: Upload Release Asset - Thesis
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./thesis.pdf
-          asset_name: thesis.pdf
-          asset_content_type: application/pdf
-
-      - name: Upload Release Asset - Proposal
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./proposal.pdf
-          asset_name: proposal.pdf
-          asset_content_type: application/pdf
+          files: |
+            thesis.pdf
+            proposal.pdf
