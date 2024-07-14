@@ -58,7 +58,7 @@
 
   v(1.5cm)
 
-  "Hiermit bestätigen wir, dass der Kandidat/die Kandidatin sich am " + startDate + " zur " + degree + "arbeit angemeldet hat. \n"
+  "Hiermit bestätigen wir, dass der Kandidat/die Kandidatin sich am " + startDate.display("[day].[month].[year]") + " zur " + degree + "arbeit angemeldet hat. \n"
   comment
 
   v(1.5cm)
