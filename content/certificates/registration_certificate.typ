@@ -13,5 +13,6 @@
   startDate: startDate,
   submissionDate: submissionDate,
   currentDate: datetime.today(),
-  comment: "",
 )
+
+// You can write additional text for the registration certificate here.

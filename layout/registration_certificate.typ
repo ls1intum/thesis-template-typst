@@ -10,7 +10,6 @@
   startDate: datetime,
   submissionDate: datetime,
   currentDate: datetime,
-  comment: "",
   body,
 ) = {
 
@@ -30,16 +29,14 @@
     lang: "en"
   )
 
-  // v(1cm)
-  grid(
-    columns: (1fr,2fr,1fr),
-    align: center,
-    image("/figures/ls1_logo.png", width: 30%),
-    rect(stroke: 0mm),
-    image("/figures/tum_logo.png", width: 50%),
-    text(font: sans-font, "Applied Software Engineering"),
-    rect(stroke: 0mm),
-    text(font: sans-font, weight: "bold", "Technical University of Munich")
+  align(
+    right,
+    stack(
+      dir: ttb,
+      spacing: 10pt,
+      image("/figures/tum_logo.png", width: 20%),
+      text(font: sans-font, weight: "bold", "Technical University \n of Munich")
+    )
   )
 
   v(1.5cm)
@@ -59,7 +56,7 @@
   v(1.5cm)
 
   "Hiermit bestätigen wir, dass der Kandidat/die Kandidatin sich am " + startDate.display("[day].[month].[year]") + " zur " + degree + "arbeit angemeldet hat. \n"
-  comment
+  body
 
   v(1.5cm)
 
@@ -70,9 +67,3 @@
     formField(supervisor, " ", length: 90%)
   )
 }
-
-#let comment(content) = {
-
-}
-
-
