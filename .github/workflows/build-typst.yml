@@ -20,3 +20,4 @@ jobs:
           source_file: |
             thesis.typ
             proposal.typ
+            registration_certificate.typ
