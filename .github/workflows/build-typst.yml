@@ -13,11 +13,8 @@ jobs:
         with:
           fetch-depth: '0'
           lfs: true
-  
-      - name: Compile Typst
-        uses: lvignoli/typst-action@main
-        with:
-          source_file: |
-            thesis.typ
-            proposal.typ
-            registration_certificate.typ
+
+      - uses: typst-community/setup-typst@v3
+      - run: typst compile thesis.typ thesis.pdf
+      - run: typst compile proposal.typ proposal.pdf
+      - run: typst compile registration_certificate.typ registration_certificate.pdf
