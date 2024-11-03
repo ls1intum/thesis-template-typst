@@ -14,8 +14,10 @@
     lang: "en"
   )
 
-  set par(leading: 1em)
-
+  set par(
+    leading: 1em, 
+    justify: true
+  )
   
   // --- Acknowledgements ---
   align(left, text(font: sans-font, 2em, weight: 700,"Acknowledgements"))
