@@ -14,7 +14,10 @@
     lang: "en"
   )
 
-  set par(leading: 1em)
+  set par(
+    leading: 1em, 
+    justify: true
+  )
 
   // --- AI Usage ---
   align(left, text(font: sans-font, 20pt, weight: 700,"Transparency in the use of AI tools"))
