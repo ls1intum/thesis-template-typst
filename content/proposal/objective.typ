@@ -3,8 +3,9 @@
 = Objective
 #TODO[ // Remove this block
   *Proposal Objective*
-  - What are the main goals of your thesis? 
-  - This section should start with a short overview where you state the goals (using action-oriented phrasing) with short enumerated bulletpoints, i.e. 1., 2., 3., ...
-  - Do not use the gerund form for verbs, e.g. instead of "Developing Feature XYZ", write "Develop Feature XYZ", and make sure to provide concrete goals, not generic ones
-  - Then, the section has a sub section for each goal (repeating the enumerated bulletpoint before to stay consistent) which is at least two paragraphs long and describes the goal in more detail. Again be specific
+  - Define the main goals of your thesis clearly and concisely.
+  - Start with a short overview where you enumerate the goals as bullet points, using action-oriented phrasing (e.g., 1., 2., 3., ...).
+  - Avoid the gerund form for verbs (e.g., "Developing Feature XYZ") and noun phrases (e.g., "Feature XYZ Development"). Instead, use action-oriented language such as "Develop Feature XYZ", similar to how you would formulate use cases in UML use case diagrams.
+  - Ensure your goals are concrete and specific, avoiding generic statements. Clearly state what you aim to achieve.
+  - Expand on each goal in a dedicated subsection. Repeat the corresponding enumerated bullet point number to maintain consistency and provide at least two paragraphs explaining the goal. Focus on being precise and specific in your descriptions.
 ]
