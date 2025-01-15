@@ -88,10 +88,12 @@
   show ref: it => {
     let el = it.element
     if el != none and el.func() == heading and el.level == 1 {
-      [Chapter ]
-      numbering(
-        el.numbering,
-        ..counter(heading).at(el.location())
+      link(
+        el.location(),
+        [Chapter #numbering(
+          el.numbering,
+          ..counter(heading).at(el.location())
+        )]
       )
     } else {
       it
