@@ -1,4 +1,5 @@
 #import "/utils/formfield.typ": *
+#import "/utils/fonts.typ": *
 
 #let registrationCertificate(
   author: "",
@@ -18,10 +19,6 @@
     margin: (left: 20mm, right: 20mm, top: 20mm, bottom: 20mm),
   )
 
-  // Save heading and body font families in variables.
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   // Set body font family.
   set text(
     font: body-font, 
@@ -35,13 +32,13 @@
       dir: ttb,
       spacing: 10pt,
       image("/figures/tum_logo.png", width: 20%),
-      text(font: sans-font, weight: "bold", "Technical University \n of Munich")
+      text(font: fonts.sans, weight: "bold", "Technical University \n of Munich")
     )
   )
 
   v(1.5cm)
   
-  align(left, text(font: sans-font, 1.3em, weight: "bold", "Bestätigung zur Anmeldung der " + degree + "arbeit"))
+  align(left, text(font: fonts.sans, 1.3em, weight: "bold", "Bestätigung zur Anmeldung der " + degree + "arbeit"))
 
   grid(
     columns: 2,

@@ -1,3 +1,5 @@
+#import "/utils/fonts.typ": *
+
 #let transparency_ai_tools(body) = {
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
@@ -5,11 +7,8 @@
     number-align: center,
   )
 
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   set text(
-    font: body-font, 
+    font: fonts.body, 
     size: 12pt, 
     lang: "en"
   )
@@ -20,7 +19,7 @@
   )
 
   // --- AI Usage ---
-  align(left, text(font: sans-font, 20pt, weight: 700,"Transparency in the use of AI tools"))
+  align(left, text(font: fonts.sans, 20pt, weight: 700,"Transparency in the use of AI tools"))
   v(12pt)
 
   body

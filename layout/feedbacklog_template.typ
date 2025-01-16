@@ -1,3 +1,5 @@
+#import "/utils/fonts.typ": *
+
 #let feedbacklog(
   titleEnglish: "",
   supervisor: "",
@@ -14,10 +16,6 @@
     number-align: center,
   )
 
-  // Save heading and body font families in variables.
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   // Set body font family.
   set text(
     font: body-font, 
@@ -25,11 +23,11 @@
     lang: "en"
   )
   
-  align(center, text(font: "sans-font", 1.7em, weight: 700, "Presentation Feedbacklog" + linebreak() + titleEnglish))
+  align(center, text(font: fonts.sans, 1.7em, weight: 700, "Presentation Feedbacklog" + linebreak() + titleEnglish))
 
   v(7.5mm)
 
-  align(center, text(font: "sans-font", 1.2em, weight: 400, feedbacklogSubmissionDate.display("[day]. [month repr:long] [year]")))
+  align(center, text(font: fonts.sans, 1.2em, weight: 400, feedbacklogSubmissionDate.display("[day]. [month repr:long] [year]")))
 
   v(7.5mm)
 
