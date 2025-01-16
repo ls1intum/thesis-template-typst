@@ -110,6 +110,10 @@
   show figure: set text(size: 0.85em)
   
   // --- Table of Contents ---
+  show outline.entry.where(level: 1): it => {
+    v(15pt, weak: true)
+    strong(it)
+  }
   outline(
     title: {
       text(font: body-font, 1.5em, weight: 700, "Contents")
