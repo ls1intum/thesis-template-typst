@@ -66,7 +66,7 @@
 
   set page(
     margin: (left: 30mm, right: 30mm, top: 40mm, bottom: 40mm),
-    numbering: "1",
+    numbering: none,
     number-align: center,
   )
 
@@ -125,7 +125,9 @@
   pagebreak()
 
 
-  // Main body.
+    // Main body. Reset page numbering.
+  set page(numbering: "1")
+  counter(page).update(1)
   set par(justify: true, first-line-indent: 2em)
 
   body
