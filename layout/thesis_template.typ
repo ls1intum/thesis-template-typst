@@ -5,7 +5,7 @@
 #import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/layout/abstract.typ": *
 #import "/utils/print_page_break.typ": *
-#import "/utils/fonts.typ": *
+#import "/layout/fonts.typ": *
 
 #let thesis(
   title: "",

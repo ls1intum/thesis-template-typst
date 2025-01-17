@@ -1,4 +1,4 @@
-#import "/utils/fonts.typ": *
+#import "/layout/fonts.typ": *
 
 #let abstract(body, lang: "en") = {
   let title = (en: "Abstract", de: "Zusammenfassung")

@@ -1,4 +1,4 @@
-#import "/utils/fonts.typ": *
+#import "/layout/fonts.typ": *
 
 #let feedbacklog(
   titleEnglish: "",

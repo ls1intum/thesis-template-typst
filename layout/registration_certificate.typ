@@ -1,5 +1,5 @@
 #import "/utils/formfield.typ": *
-#import "/utils/fonts.typ": *
+#import "/layout/fonts.typ": *
 
 #let registrationCertificate(
   author: "",
