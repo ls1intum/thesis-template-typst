@@ -5,6 +5,7 @@
 #import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/layout/abstract.typ": *
 #import "/utils/print_page_break.typ": *
+#import "/layout/fonts.typ": *
 
 #let thesis(
   title: "",
@@ -69,11 +70,8 @@
     number-align: center,
   )
 
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   set text(
-    font: body-font, 
+    font: fonts.body, 
     size: 12pt, 
     lang: "en"
   )
@@ -82,7 +80,7 @@
 
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
-  show heading: set text(font: body-font)
+  show heading: set text(font: fonts.body)
   set heading(numbering: "1.1")
   // Reference first-level headings as "chapters"
   show ref: it => {
@@ -116,7 +114,7 @@
   }
   outline(
     title: {
-      text(font: body-font, 1.5em, weight: 700, "Contents")
+      text(font: fonts.body, 1.5em, weight: 700, "Contents")
       v(15mm)
     },
     indent: 2em

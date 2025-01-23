@@ -1,6 +1,7 @@
 #import "/layout/titlepage.typ": *
 #import "/layout/transparency_ai_tools.typ": transparency_ai_tools as transparency_ai_tools_layout
 #import "/utils/print_page_break.typ": *
+#import "/layout/fonts.typ": *
 
 // The project function defines how your document looks.
 // It takes your content and some metadata and formats it.
@@ -40,13 +41,9 @@
     number-align: center,
   )
 
-  // Save heading and body font families in variables.
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   // Set body font family.
   set text(
-    font: body-font, 
+    font: fonts.body, 
     size: 12pt, 
     lang: "en"
   )
@@ -55,7 +52,7 @@
 
   // --- Headings ---
   show heading: set block(below: 0.85em, above: 1.75em)
-  show heading: set text(font: body-font)
+  show heading: set text(font: fonts.body)
   set heading(numbering: "1.1")
 
   // --- Paragraphs ---

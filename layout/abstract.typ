@@ -1,3 +1,5 @@
+#import "/layout/fonts.typ": *
+
 #let abstract(body, lang: "en") = {
   let title = (en: "Abstract", de: "Zusammenfassung")
 
@@ -7,11 +9,8 @@
     number-align: center,
   )
 
-  let body-font = "New Computer Modern"
-  let sans-font = "New Computer Modern Sans"
-
   set text(
-    font: body-font, 
+    font: fonts.body, 
     size: 12pt, 
     lang: lang
   )
@@ -23,7 +22,7 @@
 
   // --- Abstract ---
   v(1fr)
-  align(center, text(font: body-font, 1em, weight: "semibold", title.at(lang)))
+  align(center, text(font: fonts.body, 1em, weight: "semibold", title.at(lang)))
   
   body
   
