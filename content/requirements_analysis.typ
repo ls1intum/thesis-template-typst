@@ -1,4 +1,5 @@
 #import "/utils/todo.typ": TODO
+#import "/utils/fr_nfr.typ": NFR, FR, Scenario
 
 = Requirements Analysis
 #TODO[
@@ -25,19 +26,20 @@
 #TODO[
   List and describe all functional requirements of your system. Also mention requirements that you were not able to realize. The short title should be in the form “verb objective”
 
-  - FR1 Short Title: Short Description. 
-  - FR2 Short Title: Short Description. 
-  - FR3 Short Title: Short Description.
+  You can use the FR macro to create a new functional requirement:
+  #FR("Short Title")[Short Description]
+  #FR("Short Title")[Short Description]
+  #FR("Short Title")[Short Description]
 ]
 
 === Nonfunctional Requirements
 #TODO[
   List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
 
-  - NFR1 Category: Short Description. 
-  - NFR2 Category: Short Description. 
-  - NFR3 Category: Short Description.
-
+  You can use the NFR macro to create a new functional requirement:
+  #NFR("Short Titel (Category)")[Short Description.]
+  #NFR("Short Titel (Category)")[Short Description.]
+  #NFR("Short Titel (Category)")[Short Description.]
 ]
 
 == System Models
@@ -54,6 +56,12 @@
 
   *Demo Scenarios*
   Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
+
+  You can use the Scenario macro to create a new scenario:
+  #Scenario(type: "Visionary", "Short Title")[Short Description]
+  #Scenario("Short Title")[Short Description]
+  #Scenario(type: "Demo", "Short Title")[Short Description]
+  #Scenario("Short Title")[Short Description]
 ]
 
 === Use Case Model
