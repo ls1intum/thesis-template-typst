@@ -37,9 +37,9 @@
   List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
 
   You can use the NFR macro to create a new functional requirement:
-  #NFR("Short Titel (Category)")[Short Description.]
-  #NFR("Short Titel (Category)")[Short Description.]
-  #NFR("Short Titel (Category)")[Short Description.]
+  #NFR("Short Titel","Category")[Short Description.]
+  #NFR("Short Titel","Category")[Short Description.]
+  #NFR("Short Titel","Category")[Short Description.]
 ]
 
 == System Models
