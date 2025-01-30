@@ -35,7 +35,7 @@
   #assert(type in scenario_counter.keys(), message: "The scenario type must be either " + scenario_counter.keys().map((it) => "'"+it+"'").join(", "))
   #scenario_counter.at(type).step()
   #let sc_headline = "Scenario " + context scenario_counter.at(type).display() + ": " + headline
-  #let key = "scenario-" + lower(sc_headline.replace(" ", "-"))
+  #let key = "scenario-" + lower(headline.replace(" ", "-"))
   #if (type != "") {
     sc_headline = type + " " + sc_headline
   }
