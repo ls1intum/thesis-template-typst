@@ -32,7 +32,7 @@ jobs:
           WITH_V: true
           DEFAULT_BUMP: 'patch'
 
-      - uses: typst-community/setup-typst@v3
+      - uses: typst-community/setup-typst@v4
       - run: typst compile thesis.typ thesis.pdf
       - run: typst compile proposal.typ proposal.pdf
       - run: typst compile registration_certificate.typ registration_certificate.pdf
