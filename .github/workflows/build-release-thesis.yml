@@ -36,6 +36,7 @@ jobs:
       - run: typst compile thesis.typ thesis.pdf
       - run: typst compile proposal.typ proposal.pdf
       - run: typst compile registration_certificate.typ registration_certificate.pdf
+      - run: typst compile feedbacklog.typ feedbacklog.pdf
 
       - name: Create Release
         id: create_release
