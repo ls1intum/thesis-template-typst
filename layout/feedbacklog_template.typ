@@ -33,6 +33,15 @@
 
   line(length: 100%, stroke: 0.5pt)
 
+  let entries = ()
+  entries.push(("Author: ", author))
+  entries.push(("Supervisor: ", supervisor))
+  // Only show advisors if there are any
+  if advisors.len() > 0 {
+    entries.push(("Advisors: ", advisors.join(", ")))
+  }
+  entries.push(("Presentation Date: ", presentationDate.display("[day].[month].[year]")))
+
   align(
     center,
     box(
@@ -41,10 +50,9 @@
         grid(
           columns: 2,
           gutter: 1em,
-          strong("Author: "), author,
-          strong("Supervisor: "), supervisor,
-          strong("Advisors: "), advisors.join(",\n"),
-          strong("Presentation Date: "), presentationDate.display("[day].[month].[year]"),
+          ..for (term, desc) in entries {
+            (strong(term), desc)
+          }
         )
       )
     )
