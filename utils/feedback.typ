@@ -1,9 +1,10 @@
-#let feedback(feedback: "", response: "") = context {
-    counter("feedback").update(1)
+#let feedback(feedback: "", response: "") = {
+    counter("feedback").step();
     block(
         breakable: false,
         par(
-            strong(counter("feedback").display() + ". Feedback: ") + feedback
+            justify: true,
+            [*#context counter("feedback").display(). Feedback: * #feedback]
         ) +
         pad(
             top: 2mm,
@@ -13,7 +14,7 @@
                 justify: true,
                 text(
                     fill: blue,
-                    strong("Response: ") + response
+                    [*Response:* #response]
                 )
             )
         )
