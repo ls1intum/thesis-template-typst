@@ -18,6 +18,14 @@ jobs:
           fetch-depth: '0'
           lfs: true
 
+      - name: Download and Install New Computer Modern Font
+        run: |
+            mkdir -p ~/.local/share/fonts
+            wget -O /tmp/newcomputermodern.zip "https://fontesk.com/download/39191"
+            unzip /tmp/newcomputermodern.zip -d /tmp/
+            cp -r /tmp/*.otf ~/.local/share/fonts/
+            fc-cache -f -v  # Refresh font cache
+
       - name: Create initial tag
         run: |
           if [ -z "$(git tag -l 'v*')" ]; then
@@ -31,14 +39,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
           DEFAULT_BUMP: 'patch'
-
-      - name: Download and Install New Computer Modern Font
-        run: |
-              mkdir -p ~/.local/share/fonts
-              wget -O /tmp/newcomputermodern.zip "https://fontesk.com/download/39191"
-              unzip /tmp/newcomputermodern.zip -d /tmp/
-              cp -r /tmp/*.otf ~/.local/share/fonts/
-              fc-cache -f -v  # Refresh font cache
 
       - uses: typst-community/setup-typst@v4
       - run: typst compile thesis.typ thesis.pdf
