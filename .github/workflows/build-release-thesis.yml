@@ -36,9 +36,6 @@ jobs:
           cp -r /tmp/*.otf ~/.local/share/fonts/
           fc-cache -f -v  # Refresh font cache
 
-      - name: Verify Font Installation
-        run: fc-list | grep "New Computer Modern"
-
       - name: Create initial tag
         run: |
           if [ -z "$(git tag -l 'v*')" ]; then
