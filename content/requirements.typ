@@ -1,6 +1,6 @@
 #import "/utils/todo.typ": TODO
 
-= Requirements Analysis
+= Requirements
 #TODO[
   This chapter follows the Requirements Analysis Document Template in @bruegge2004object. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite @bruegge2004object several times in this chapter.
 
@@ -11,14 +11,14 @@
   Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
 ]
 
-== Current System
+== Existing System
 #TODO[
   This section is only required if the proposed system (i.e. the system that you develop in the thesis) should replace an existing system.
 ]
 
 == Proposed System
 #TODO[
-  If you leave out the section “Current system”, you can rename this section into “Requirements”.
+  If you leave out the section “Existing system”, you can rename this section into “Requirements”.
 ]
 
 === Functional Requirements
@@ -42,7 +42,7 @@
 
 == System Models
 #TODO[
-  This section includes important system models for the requirements analysis.
+  This section includes important system models for the requirements.
 ]
 
 === Scenarios

@@ -1,13 +1,13 @@
 #import "/utils/todo.typ": TODO
 
-= System Design
+= Architecture
 #TODO[
   This chapter follows the System Design Document Template in @bruegge2004object. You describe in this chapter how you map the concepts of the application domain to the solution domain. Some sections are optional, if they do not apply to your problem. Cite @bruegge2004object several times in this chapter.
 ]
 
 == Overview
 #TODO[
-  Provide a brief overview of the software architecture and references to other chapters (e.g. requirements analysis), references to existing systems, constraints impacting the software architecture..
+  Provide a brief overview of the software architecture and references to other chapters (e.g. requirements), references to existing systems, constraints impacting the software architecture..
 ]
 
 == Design Goals
@@ -32,7 +32,7 @@
 
 == Access Control
 #TODO[
-  Optional section describing the access control and security issues based on the nonfunctional requirements in the requirements analysis. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
+  Optional section describing the access control and security issues based on the nonfunctional requirements. It also de- scribes the implementation of the access matrix based on capabilities or access control lists, the selection of authentication mechanisms and the use of en- cryption algorithms.
 ]
 
 == Global Software Control
