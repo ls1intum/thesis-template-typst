@@ -18,6 +18,24 @@ jobs:
           fetch-depth: '0'
           lfs: true
 
+      - name: Cache Fonts
+        id: cache-fonts
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/fonts
+          key: newcomputermodern-fonts-${{ runner.os }}
+          restore-keys: |
+            newcomputermodern-fonts-
+
+      - name: Install Fonts (if not cached)
+        if: steps.cache-fonts.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/.local/share/fonts
+          wget -O /tmp/newcomputermodern.zip "https://fontesk.com/download/39191"
+          unzip /tmp/newcomputermodern.zip -d /tmp/
+          cp -r /tmp/*.otf ~/.local/share/fonts/
+          fc-cache -f -v  # Refresh font cache
+
       - name: Create initial tag
         run: |
           if [ -z "$(git tag -l 'v*')" ]; then
