@@ -1,16 +1,16 @@
 # thesis-template-typst
 This repository provides a comprehensive Typst template for writing your Bachelor's or Master's thesis at the CIT School of TUM (Technical University of Munich). It includes two types of documents: a proposal template and a thesis template, both specifically designed for students in the field of Informatics. For more information about writing a thesis at the CIT School, please visit the [official CIT website](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/).
 
-**Note:** This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor!
+> [!IMPORTANT]
+> This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor!
 
---- 
+
 ## Guidelines 
+> [!TIP]
+> __Please thorougly read our guidelines and hints on [confluence](https://confluence.ase.in.tum.de/display/EduResStud/How+to+thesis)!__ (TUM Login Required) 
 
-__Please thorougly read our guidelines and hints on [confluence](https://confluence.ase.in.tum.de/display/EduResStud/How+to+thesis)!__ (TUM Login Required) 
 
----
 ## Installation
-
 For detailed installation instructions, please refer to the [official installation guide](https://github.com/typst/typst). Here, we provide basic steps for installing Typst's CLI:
 
 - You can get sources and pre-built binaries from the [releases page](https://github.com/typst/typst/releases).
@@ -18,6 +18,9 @@ For detailed installation instructions, please refer to the [official installati
 - If you have a [Rust](https://rustup.rs/) toolchain installed, you can also install the latest development version.
 
 Nix and Docker users, please refer to the official installation guide for detailed instructions.
+
+> [!NOTE]
+> [Git LFS](https://git-lfs.com/) is required in this repository to handle large files, such as figures. Make sure to install it before cloning the repository.
 
 ## Usage
 ### Set thesis metadata 
@@ -102,7 +105,8 @@ If you prefer an integrated IDE-like experience with autocompletion and instant 
 3. Click on "File" on the top left menu, then "Upload File".
 4. Select all .typ and .bib files along with the figures provided in this template repository.
 
-**Note:** You can select multiple files to import. The editor will import and arrange all the files accordingly. Always ensure you have all the necessary .typ, .bib, and figures files you need for your document.
+> [!Note]
+> You can select multiple files to import. The editor will import and arrange all the files accordingly. Always ensure you have all the necessary `.typ`, `.bib`, and figures files you need for your document.
 
 ## Working with VS Code
 If you prefer to have a more integrated experience with your favorite code editor, you can use the Typst VS Code extension. The extension provides syntax highlighting, autocompletion, and error checking for Typst files. You can install the extension from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=nvarner.typst-lsp).
