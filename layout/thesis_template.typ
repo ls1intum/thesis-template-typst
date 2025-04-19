@@ -21,6 +21,7 @@
   abstract_de: "",
   acknowledgement: "",
   transparency_ai_tools: "",
+  appendix: array,
   is_print: false,
   body,
 ) = {
@@ -132,9 +133,10 @@
 
   body
 
+  set heading(numbering: none)
   // List of figures.
   pagebreak()
-  heading(numbering: none)[List of Figures]
+  heading()[List of Figures]
   outline(
     title:"",
     target: figure.where(kind: image),
@@ -142,7 +144,7 @@
 
   // List of tables.
   pagebreak()
-  heading(numbering: none)[List of Tables]
+  heading()[List of Tables]
   outline(
     title: "",
     target: figure.where(kind: table)
@@ -150,9 +152,10 @@
 
   // Appendix.
   pagebreak()
-  heading(numbering: none)[Appendix A: Supplementary Material]
-  include("/layout/appendix.typ")
+  for a in appendix {
+    a
+    pagebreak()
+  }
 
-  pagebreak()
   bibliography("/thesis.bib")
 }
