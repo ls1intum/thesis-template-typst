@@ -147,12 +147,16 @@
   )
 
   // List of tables.
-  pagebreak()
-  heading(numbering: none)[List of Tables]
-  outline(
-    title: "",
-    target: figure.where(kind: table)
-  )
+  context[
+    #if query(figure.where(kind: table)).len() > 0 {
+      pagebreak()
+      heading(numbering: none)[List of Tables]
+      outline(
+        title: "",
+        target: figure.where(kind: table)
+      )
+    }
+  ]
 
   // Appendix.
   pagebreak()
