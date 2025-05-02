@@ -1,6 +1,6 @@
 #import "/utils/todo.typ": TODO
 
-= Requirements Analysis
+= Requirements
 #TODO[
   This chapter follows the Requirements Analysis Document Template in @bruegge2004object. Important: Make sure that the whole chapter is independent of the chosen technology and development platform. The idea is that you illustrate concepts, taxonomies and relationships of the application domain independent of the solution domain! Cite @bruegge2004object several times in this chapter.
 
@@ -11,14 +11,14 @@
   Provide a short overview about the purpose, scope, objectives and success criteria of the system that you like to develop.
 ]
 
-== Current System
+== Existing System
 #TODO[
   This section is only required if the proposed system (i.e. the system that you develop in the thesis) should replace an existing system.
 ]
 
 == Proposed System
 #TODO[
-  If you leave out the section “Current system”, you can rename this section into “Requirements”.
+  If you leave out the section “Existing system”, you can rename this section into “Requirements”.
 ]
 
 === Functional Requirements
@@ -30,19 +30,30 @@
   - FR3 Short Title: Short Description.
 ]
 
-=== Nonfunctional Requirements
+=== Quality Attributes
 #TODO[
-  List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
+  List and describe all quality attributes of your system. All your quality attributes should fall into the URPS categories mentioned in @bruegge2004object. Also mention requirements that you were not able to realize.
 
-  - NFR1 Category: Short Description. 
-  - NFR2 Category: Short Description. 
-  - NFR3 Category: Short Description.
+  - QA1 Category: Short Description. 
+  - QA2 Category: Short Description. 
+  - QA3 Category: Short Description.
+
+]
+
+=== Constraints
+
+#TODO[
+  List and describe all pseudo requirements of your system. Also mention requirements that you were not able to realize.
+
+  - C1 Category: Short Description. 
+  - C2 Category: Short Description. 
+  - C3 Category: Short Description.
 
 ]
 
 == System Models
 #TODO[
-  This section includes important system models for the requirements analysis.
+  This section includes important system models for the requirements.
 ]
 
 === Scenarios

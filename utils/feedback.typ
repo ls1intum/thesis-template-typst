@@ -1,21 +1,20 @@
-#let feedback(
-    feedback: "",
-    response: "",
-) = {
-    counter("feedback").step()
+#let feedback(feedback: "", response: "") = {
+    counter("feedback").step();
     block(
         breakable: false,
         par(
-            justify: true,            
-            context[#text(weight: 700, counter("feedback").display() + ". Feedback: ")] +
-            feedback + 
-            pad(
-                left: 5%,
-                top: 2mm,
-                bottom: 5mm,
+            justify: true,
+            [*#context counter("feedback").display(). Feedback: * #feedback]
+        ) +
+        pad(
+            top: 2mm,
+            left: 5%,
+            bottom: 5mm,
+            par(
+                justify: true,
                 text(
                     fill: blue,
-                    text(weight: 700, "Response: ") + response
+                    [*Response:* #response]
                 )
             )
         )
