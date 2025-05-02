@@ -30,13 +30,24 @@
   - FR3 Short Title: Short Description.
 ]
 
-=== Nonfunctional Requirements
+=== Quality Attributes
 #TODO[
-  List and describe all nonfunctional requirements of your system. Also mention requirements that you were not able to realize. Categorize them using the FURPS+ model described in @bruegge2004object without the category functionality that was already covered with the functional requirements.
+  List and describe all quality attributes of your system. All your quality attributes should fall into the URPS categories mentioned in @bruegge2004object. Also mention requirements that you were not able to realize.
 
-  - NFR1 Category: Short Description. 
-  - NFR2 Category: Short Description. 
-  - NFR3 Category: Short Description.
+  - QA1 Category: Short Description. 
+  - QA2 Category: Short Description. 
+  - QA3 Category: Short Description.
+
+]
+
+=== Constraints
+
+#TODO[
+  List and describe all pseudo requirements of your system. Also mention requirements that you were not able to realize.
+
+  - C1 Category: Short Description. 
+  - C2 Category: Short Description. 
+  - C3 Category: Short Description.
 
 ]
 
