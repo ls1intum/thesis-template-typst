@@ -3,3 +3,4 @@
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.jpeg filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
+figures/tum_logo.png -filter=lfs -diff=lfs -merge=lfs
