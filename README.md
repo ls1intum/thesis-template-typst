@@ -23,6 +23,13 @@ Nix and Docker users, please refer to the official installation guide for detail
 > [Git LFS](https://git-lfs.com/) is required in this repository to handle large files, such as figures. Make sure to install it before cloning the repository.
 
 ## Usage
+
+### Use this repository as a template
+You can use this repository as a template for your thesis. To do this, follow these steps:
+1. Click on the green "Use this template" button at the top right of this page.
+2. Select "Create a new repository" and fill in the required information.
+3. Clone the new repository to your local machine using `git clone <repository-url>`.
+
 ### Set thesis metadata 
 Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file: 
 * Degree (Bachelor or Master)
