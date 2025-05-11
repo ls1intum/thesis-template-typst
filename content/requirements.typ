@@ -1,5 +1,5 @@
 #import "/utils/todo.typ": TODO
-#import "/utils/fr_qa_c.typ": FR, QA, C, Scenario
+#import "/utils/fr_qa_c.typ": FR, QA, C
 
 = Requirements
 #TODO[
@@ -67,12 +67,6 @@
 
   *Demo Scenarios*
   Describe 1-2 demo scenario here, i.e. a scenario that you can implement and demonstrate until the end of your thesis. Use free text description.
-
-  You can use the Scenario macro to create a new scenario:
-  #Scenario(type: "Visionary", "Short Title")[Short Description]
-  #Scenario("Short Title")[Short Description]
-  #Scenario(type: "Demo", "Short Title")[Short Description]
-  #Scenario("Short Title")[Short Description]
 ]
 
 === Use Case Model

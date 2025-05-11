@@ -1,62 +1,87 @@
 #let fr_counter = counter("fr")
 #let qa_counter = counter("qa")
 #let const_counter = counter("const")
-#let scenario_counter = (
-  "": counter("sc_ctr"),
-  "Demo": counter("demo_sc_ctr"),
-  "Visionary": counter("vis_sc_ctr")
-)
 
-#let FR(headline, description) = context [
+#let FR(headline, description) = [
   #fr_counter.step()
-  // Automatically generate a key based on the headline for referencing
-  #let key = "fr-" + lower(headline.replace(" ", "-"))
-  #grid(
-   columns: 2,
-   column-gutter: 3mm,
-    "FR" + fr_counter.display(),
-    strong(headline) + ": " + description
-  )
-  #label(key)
-]
-
-#let QA(category, description) = context [
-  #qa_counter.step()
-  #let key = "qa-" + lower(category.replace(" ", "-")) + "-" + str(qa_counter.get().first())
-  #grid(
-   columns: 2,
-   column-gutter: 3mm,
-    "QA" + qa_counter.display(),
-    strong(category)  + ": " + description
-  )
-  #label(key)
-]
-
-#let C(category, description) = context [
-  #const_counter.step()
-  #let key = "c-" + lower(category.replace(" ", "-"))  + "-" + str(const_counter.get().first())
-  #grid(
-   columns: 2,
-   column-gutter: 3mm,
-    "C" + const_counter.display(),
-    strong(category)  + ": " + description
-  )
-  #label(key)
-]
-
-#let Scenario(type: "", headline, body) = context [
-  // Check if type is valid
-  #assert(type in scenario_counter.keys(), message: "The scenario type must be either " + scenario_counter.keys().map((it) => "'"+it+"'").join(", "))
-  // Increment the respective scenario counter based on the type
-  #scenario_counter.at(type).step()
-  #let sc_headline = "Scenario " + scenario_counter.at(type).display() + ": " + headline
-  #let key = "scenario-" + lower(headline.replace(" ", "-"))
-  #if (type != "") {
-    sc_headline = type + " " + sc_headline
-  }
-  #block(below: 2em)[
-    #strong[#sc_headline]
-    #body
+  #context [
+    #set align(left)
+    #let key = "fr-" + str(fr_counter.get().first()) + "-" + lower(headline.replace(" ", "-"))
+    // Have to use figures because we cannot directly use labels on grids
+    #figure(
+      {
+        set text(
+          font: "New Computer Modern", 
+          size: 12pt, 
+          lang: "en"
+        )
+        grid(
+          columns: (auto, 1fr),
+          column-gutter: 3mm,
+          align: (right, left),
+          "FR" + context fr_counter.display(),
+          strong(headline) + ": " + description
+        )
+      },
+      kind: "FR",
+      supplement: "FR"
+    )
+    #label(key)
   ]
-  #label(key)
+]
+
+#let QA(headline, description) = [
+  #qa_counter.step()
+  #context [
+    #set align(left)
+    #let key = "qa-" + str(qa_counter.get().first()) + "-" + lower(headline.replace(" ", "-"))
+    // Have to use figures because we cannot directly use labels on grids
+    #figure(
+      {
+        set text(
+          font: "New Computer Modern", 
+          size: 12pt, 
+          lang: "en"
+        )
+        grid(
+          columns: (auto, 1fr),
+          column-gutter: 3mm,
+          align: (right, left),
+          "QA" + context qa_counter.display(),
+          strong(headline) + ": " + description
+        )
+      },
+      kind: "QA",
+      supplement: "QA"
+    )
+    #label(key)
+  ]
+]
+
+#let C(headline, description) = [
+  #const_counter.step()
+  #context [
+    #set align(left)
+    #let key = "c-" + str(const_counter.get().first()) + "-" + lower(headline.replace(" ", "-"))
+    // Have to use figures because we cannot directly use labels on grids
+    #figure(
+      {
+        set text(
+          font: "New Computer Modern", 
+          size: 12pt, 
+          lang: "en"
+        )
+        grid(
+          columns: (auto, 1fr),
+          column-gutter: 3mm,
+          align: (right, left),
+          "C" + context const_counter.display(),
+          strong(headline) + ": " + description
+        )
+      },
+      kind: "C",
+      supplement: "C"
+    )
+    #label(key)
+  ]
 ]
