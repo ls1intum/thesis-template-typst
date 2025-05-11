@@ -6,6 +6,7 @@
 #import "/layout/abstract.typ": *
 #import "/utils/print_page_break.typ": *
 #import "/layout/fonts.typ": *
+#import "/utils/diagram.typ": in-outline
 
 #let thesis(
   title: "",
@@ -135,18 +136,27 @@
   // List of figures.
   pagebreak()
   heading(numbering: none)[List of Figures]
+  show outline: it => { // Show only the short caption here
+    in-outline.update(true)
+    it
+    in-outline.update(false)
+  }
   outline(
     title:"",
     target: figure.where(kind: image),
   )
 
   // List of tables.
-  pagebreak()
-  heading(numbering: none)[List of Tables]
-  outline(
-    title: "",
-    target: figure.where(kind: table)
-  )
+  context[
+    #if query(figure.where(kind: table)).len() > 0 {
+      pagebreak()
+      heading(numbering: none)[List of Tables]
+      outline(
+        title: "",
+        target: figure.where(kind: table)
+      )
+    }
+  ]
 
   // Appendix.
   pagebreak()
