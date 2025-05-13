@@ -163,6 +163,8 @@ For the best thesis proposal feedback experience:
 > [!NOTE]
 > Remember to acknowledge AI assistance in your transparency statement if you used GitHub Copilot extensively for your thesis work.
 
+---
+
 ## Further Resources
 
 - [Typst Documentation](https://typst.app/docs/)
