@@ -122,7 +122,49 @@ If you prefer to have a more integrated experience with your favorite code edito
 2. Set the correct file (`thesis.typ` or `proposal.typ`) as the main file. This can be done by opening the respective file and running the command `Typst: Pin the main file to the currently opened document`. Just hit `CMD + Shift + P` and search for the command.
 
 
+## Working with GitHub Copilot
+
+GitHub Copilot can significantly enhance your thesis workflow, especially for proposal review and development. As a student, you can access GitHub Copilot for free through GitHub Education.
+
+### Getting GitHub Copilot (Free for Students)
+
+1. Visit [GitHub Education](https://education.github.com/pack) and sign up for the GitHub Student Developer Pack using your university email
+2. After verification, you'll get free access to GitHub Copilot
+3. Install the GitHub Copilot extension:
+   - Open VS Code
+   - Go to Extensions (or press `Cmd+Shift+X` on Mac)
+   - Search for "GitHub Copilot"
+   - Click "Install"
+4. After installation, you'll need to sign in to your GitHub account in VS Code
+
+### Thesis Proposal Review Assistant
+
+This template includes custom Copilot instructions specifically designed to help evaluate thesis proposals against academic standards. The instructions help Copilot provide detailed feedback on:
+
+- Structure and completeness of all required sections
+- Scientific rigor and citation quality
+- Diagram and figure requirements
+- Writing quality and style issues
+
+These custom instructions are located in `.github/copilot-instructions.md`. You can modify or remove this file if you prefer different Copilot behavior.
+
+### Using Copilot for Proposal Review
+
+For the best thesis proposal feedback experience:
+
+1. Open Copilot Chat by clicking the Copilot icon or use `Ctrl+Cmd+I` on Mac
+2. In the chat use the "Ask" mode (default) and select "Claude 3.7 Sonnet Thinking" as your model for comprehensive academic feedback (you might need to enable this in your GitHub settings)
+3. Ask questions such as:
+   - "Do you have any feedback for my proposal?"
+   - "Review my problem description section for academic rigor"
+   - "Check if my citations follow proper academic standards"
+4. Also try out the "Agent" mode for applying the feedback directly to your document. This mode can help you make changes based on Copilot's suggestions.
+
+> [!NOTE]
+> Remember to acknowledge AI assistance in your transparency statement if you used GitHub Copilot extensively for your thesis work.
+
 ---
+
 ## Further Resources
 
 - [Typst Documentation](https://typst.app/docs/)
