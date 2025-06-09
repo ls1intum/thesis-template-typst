@@ -1,0 +1,8 @@
+bruegge2004object:
+  type: book
+  title: Object Oriented Software Engineering Using UML, Patterns, and Java
+  author:
+    - Bruegge, Bernd
+    - Dutoit, Allen H
+  date: 2009
+  publisher: Prentice Hall
