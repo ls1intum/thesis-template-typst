@@ -50,7 +50,7 @@ The template supports two reference formats:
       - If you choose this format, you need to update all occurrences of `thesis.yml` to `thesis.bib` in the template files
       - You can also convert BibTeX to YAML using the Hayagriva CLI tool:
       ```bash 
-      hayagriva convert thesis.bib thesis.yml
+      hayagriva thesis.bib > thesis.yml
       ```
 
 ### Write your thesis
