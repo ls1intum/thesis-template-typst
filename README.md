@@ -39,10 +39,26 @@ Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file:
 * Your name (without e-mail address or matriculation number)
 * The start and submission date
 
+### Choose Reference Format
+The template supports two reference formats:
+
+1. **YAML** (`thesis.yml`):
+      - Recommended for precise control over reference formatting and styling
+
+2. **BibTeX** (`thesis.bib`):
+      - This is the default export format of Zotero's BibTeX plugin
+      - If you choose this format, you need to update all occurrences of `thesis.yml` to `thesis.bib` in the template files
+      - You can also convert BibTeX to YAML using the Hayagriva CLI tool:
+      ```bash 
+      hayagriva convert thesis.bib thesis.yml
+      ```
+
 ### Write your thesis
 For the actual content of your thesis, there is a dedicated folder named [`/content`](/content) which includes all the chapters and sections of your thesis. This applies for the proposal as well as the thesis (see [`/content/proposal`](/content/proposal) for proposal content). 
 You can add or remove chapters as needed (adapt the [`thesis.typ`](/thesis.typ) with the `#include(...)` accordingly).
 If you need to customize the layout of the template, you can do so by modifying the corresponding file in the [`layout`](/layout) directory.
+
+
 
 ### Build PDFs locally 
 Once you have installed Typst, you can use it like this:
