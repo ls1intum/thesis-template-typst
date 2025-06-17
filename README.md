@@ -48,7 +48,7 @@ The template supports two reference formats:
 2. **BibTeX** (`thesis.bib`):
       - This is the default export format of Zotero's BibTeX plugin
       - If you choose this format, you need to update all occurrences of `thesis.yml` to `thesis.bib` in the template files
-      - You can also convert BibTeX to YAML using the Hayagriva CLI tool:
+      - You can also convert BibTeX to YAML using the [Hayagriva CLI tool](https://github.com/typst/hayagriva):
       ```bash 
       hayagriva thesis.bib > thesis.yml
       ```
