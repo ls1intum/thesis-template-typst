@@ -29,6 +29,7 @@ You can use this repository as a template for your thesis. To do this, follow th
 1. Click on the green "Use this template" button at the top right of this page.
 2. Select "Create a new repository" and fill in the required information.
 3. Clone the new repository to your local machine using `git clone <repository-url>`.
+4. Install the fonts from `/fonts` on your local machine
 
 ### Set thesis metadata 
 Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file: 
