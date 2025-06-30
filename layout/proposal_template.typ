@@ -72,7 +72,7 @@
   body
 
   pagebreak()
-  bibliography("/thesis.bib")
+  bibliography("/thesis.yml")
   pagebreak()
   transparency_ai_tools_layout(transparency_ai_tools)
 }

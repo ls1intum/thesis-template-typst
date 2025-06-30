@@ -164,5 +164,5 @@
   include("/layout/appendix.typ")
 
   pagebreak()
-  bibliography("/thesis.bib")
+  bibliography("/thesis.yml")
 }
