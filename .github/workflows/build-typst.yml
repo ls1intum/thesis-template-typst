@@ -27,9 +27,7 @@ jobs:
         if: steps.cache-fonts.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/.local/share/fonts
-          wget -O /tmp/newcomputermodern.zip "https://fontesk.com/download/39191"
-          unzip /tmp/newcomputermodern.zip -d /tmp/
-          cp -r /tmp/*.otf ~/.local/share/fonts/
+          cp -r fonts/newComputerModern/*.otf ~/.local/share/fonts/
           fc-cache -f -v  # Refresh font cache
 
       - uses: typst-community/setup-typst@v4
