@@ -1,0 +1,67 @@
+
+		New Computer Modern Fonts
+           (Package version 1.002, GustFLv1 or later)
+
+NewCM10, NewCMSans10, NewCMMath: Version 1.001
+
+NewCMMono10: Version 1.002
+
+		Antonis Tsolomitis
+		Samos, Greece, 2019
+
+This is the first release of a new assembly of ComputerModern 
+fonts plus glyphs for non latin alphabets which are considered 
+compatible in style to CM fonts.
+
+The fonts contain Latin and accented latin letters and combinations,
+Greek (monotonic and polytonic) and Cyrillic.
+
+Curently they are distributed only at 10pt-size but more sizes 
+will be available in the near future. However, priority will be
+given to the completeness in language support to the 10pt-size,
+as the view is to have a font that works by default with 
+a broad set of languages.
+
+They differ from Latin Modern in that they contain Greek and Cyrillic.
+
+They differ from cm-unicode in that the latin part is more extended,
+the are adjusted to work easier for users of the Greek language 
+(Small Caps and other Lookups should work in all scripts).
+
+They differ from both LatinModern and cm-unicode in that the BoldSans 
+font is properly designed and they are not just the stroke extension
+of the SansRegular. This currently covers Latin but soon it will
+cover Greek and Cyrillic. It also differs in that the kerning table
+for Greek is much improved.
+
+NewComputerModern will try to be a language-complete font (as much as
+this is possible). So if you can provide information about glyphs for
+any language not covered at this point, I will gladly add the glyphs.
+Please notice that I will not design new glyphs from scratch. I will 
+gladly correct faulty splines or compose a character from existing 
+ones (such as accented) but the suggested to be added glyphs, must be
+available from some source. For example, I know that a compatible
+to cm font for Hebrew exists but I do not have any information more 
+than that.
+
+As far as the NewCMMath font is concerned, this is the same with 
+lm-math with BoldSans glyphs improved. So if you do not need BoldSans, 
+please use lm-math. The credit belongs to the developers of lm-math. 
+Work in math fonts is very very demanding. I do not want to take 
+any credit that belongs to others. However, more imrovements will follow.
+
+---------------------------------------
+
+Version 1.002 for the Mono fonts have considerable improved iota
+and all polytonic accents of Greek.
+
+Thanks to Professor Claudio Beccari for providing information 
+about the need for this improvement.
+
+Antonis Tsolomitis
+Professor
+University of the Aegean
+Department of Mathematics
+Samos, Greece
+atsol@aegean.gr
+
