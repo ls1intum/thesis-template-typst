@@ -7,7 +7,7 @@
   title: "",
   degree: "",
   program: "",
-  supervisor: "",
+  examiner: "",
   startDate: datetime,
   submissionDate: datetime,
   currentDate: datetime,
@@ -61,6 +61,6 @@
     columns: 2,
     column-gutter: 2cm,
     formField("Datum", currentDate.display("[day].[month].[year]"), length: 90%),
-    formField(supervisor, " ", length: 90%)
+    formField(examiner, " ", length: 90%)
   )
 }

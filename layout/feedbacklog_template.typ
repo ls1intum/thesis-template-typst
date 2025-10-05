@@ -2,8 +2,8 @@
 
 #let feedbacklog(
   titleEnglish: "",
-  supervisor: "",
-  advisors: (),
+  examiner: "",
+  supervisors: (),
   author: "",
   presentationDate: datetime,
   feedbacklogSubmissionDate: datetime,
@@ -35,10 +35,10 @@
 
   let entries = ()
   entries.push(("Author: ", author))
-  entries.push(("Supervisor: ", supervisor))
-  // Only show advisors if there are any
-  if advisors.len() > 0 {
-    entries.push(("Advisors: ", advisors.join(", ")))
+  entries.push(("Examiner: ", examiner))
+  // Only show supervisors if there are any
+  if supervisors.len() > 0 {
+    entries.push(("Supervisors: ", supervisors.join(", ")))
   }
   entries.push(("Presentation Date: ", presentationDate.display("[day].[month].[year]")))
 

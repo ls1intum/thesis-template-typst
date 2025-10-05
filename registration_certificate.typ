@@ -9,7 +9,7 @@
   birthdate: birthdate,
   degree: degree,
   program: program,
-  supervisor: supervisor,
+  examiner: examiner,
   startDate: startDate,
   submissionDate: submissionDate,
   currentDate: datetime.today(),
