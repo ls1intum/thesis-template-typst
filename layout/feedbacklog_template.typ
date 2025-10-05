@@ -38,7 +38,8 @@
   entries.push(("Examiner: ", examiner))
   // Only show supervisors if there are any
   if supervisors.len() > 0 {
-    entries.push(("Supervisors: ", supervisors.join(", ")))
+    let supervisorField = "Supervisor" + if supervisors.len() > 1 [s] + ": "
+    entries.push((supervisorField, supervisors.join(", ")))
   }
   entries.push(("Presentation Date: ", presentationDate.display("[day].[month].[year]")))
 
