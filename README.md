@@ -36,7 +36,7 @@ Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file:
 * Degree (Bachelor or Master)
 * Your study program
 * English and German title
-* Advisor and supervisor
+* Supervisor and examiner
 * Your name (without e-mail address or matriculation number)
 * The start and submission date
 
