@@ -1,4 +1,5 @@
 #import "/layout/fonts.typ": *
+#import "/layout/titlepage_table.typ": render-title-table
 
 #let feedbacklog(
   titleEnglish: "",
@@ -34,30 +35,16 @@
   line(length: 100%, stroke: 0.5pt)
 
   let entries = ()
-  entries.push(("Author: ", author))
-  entries.push(("Examiner: ", examiner))
+  entries.push(("Author", author))
+  entries.push(("Examiner", examiner))
   // Only show supervisors if there are any
   if supervisors.len() > 0 {
-    let supervisorField = "Supervisor" + if supervisors.len() > 1 [s] + ": "
+    let supervisorField = "Supervisor" + if supervisors.len() > 1 [s]
     entries.push((supervisorField, supervisors.join(", ")))
   }
-  entries.push(("Presentation Date: ", presentationDate.display("[day].[month].[year]")))
+  entries.push(("Presentation Date", presentationDate.display("[day].[month].[year]")))
 
-  align(
-    center,
-    box(
-      align(
-        left,
-        grid(
-          columns: 2,
-          gutter: 1em,
-          ..for (term, desc) in entries {
-            (strong(term), desc)
-          }
-        )
-      )
-    )
-  )
+  render-title-table(entries)
 
   line(length: 100%, stroke: 0.5pt)
 
