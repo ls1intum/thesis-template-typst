@@ -131,7 +131,9 @@
   counter(page).update(1)
   set par(justify: true, first-line-indent: 2em)
 
-  body
+  { show heading.where(level: 1): it => pagebreak(weak: true) + it
+    body
+  }
 
   // List of figures.
   pagebreak()
