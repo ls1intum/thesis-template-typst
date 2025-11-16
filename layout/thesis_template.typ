@@ -131,9 +131,12 @@
   counter(page).update(1)
   set par(justify: true, first-line-indent: 2em)
 
-  { show heading.where(level: 1): it => pagebreak(weak: true) + it
-    body
+  // Start each chapter on a new page
+  show heading.where(level: 1): it => {
+    pagebreak(weak: true)
+    it
   }
+  body
 
   // List of figures.
   pagebreak()
