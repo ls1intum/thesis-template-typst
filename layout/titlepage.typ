@@ -1,4 +1,5 @@
 #import "/layout/fonts.typ": *
+#import "/layout/titlepage_table.typ": render-title-table
 
 #let titlepage(
   title: "",
@@ -51,25 +52,16 @@
   align(center, text(font: fonts.sans, 2em, weight: 500, titleGerman))
 
   let entries = ()
-  entries.push(("Author: ", author))
-  entries.push(("Examiner: ", examiner))
+  entries.push(("Author", author))
+  entries.push(("Examiner", examiner))
   // Only show supervisors if there are any
   if supervisors.len() > 0 {
-    entries.push(("Supervisors: ", supervisors.join(", ")))
+    let supervisorField = "Supervisor" + if supervisors.len() > 1 [s]
+    entries.push((supervisorField, supervisors.join(", ")))
   }
-  entries.push(("Start Date: ", startDate.display("[day].[month].[year]")))
-  entries.push(("Submission Date: ", submissionDate.display("[day].[month].[year]")))
+  entries.push(("Start Date", startDate.display("[day].[month].[year]")))
+  entries.push(("Submission Date", submissionDate.display("[day].[month].[year]")))
 
   v(1cm)
-  align(
-    center,
-    grid(
-      columns: 2,
-      gutter: 1em,
-      align: left,
-      ..for (term, desc) in entries {
-        (strong(term), desc)
-      }
-    )
-  )
+  render-title-table(entries)
 }
