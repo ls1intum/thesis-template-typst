@@ -7,7 +7,7 @@ This repository provides a comprehensive Typst template for writing your Bachelo
 
 ## Guidelines 
 > [!TIP]
-> __Please thorougly read our guidelines and hints on [Outline](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a)!__ (TUM Login Required) 
+> __Please thoroughly read our guidelines and hints on [Outline](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a)!__ (TUM Login Required) 
 
 
 ## Installation
