@@ -18,8 +18,8 @@
 )
 
 #TODO(color: red)[ // Remove this block
-  Before you start with your thesis, have a look at our guides on Confluence!
-  #link("https://confluence.ase.in.tum.de/display/EduResStud/How+to+Proposal")
+  Before you start with your thesis, have a look at our guides on Outline!
+  #link("https://outline.aet.cit.tum.de/doc/proposal-ocozQUn1RU")
 ]
 
 #set heading(numbering: none)
