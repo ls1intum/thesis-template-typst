@@ -7,6 +7,7 @@
 #import "/utils/print_page_break.typ": *
 #import "/layout/fonts.typ": *
 #import "/utils/diagram.typ": in-outline
+#import "../utils/fr_qa_c.typ": fr_counter, qa_counter, const_counter
 
 #let thesis(
   title: "",
@@ -93,6 +94,24 @@
           el.numbering,
           ..counter(heading).at(el.location())
         )]
+      )
+    // Custom formatting for FR, QA, and C to remove whitespace
+    } else if el != none and el.func() == figure and el.kind == "FR" {
+      link(
+        el.location(),
+        [#el.supplement#numbering(el.numbering, ..fr_counter.at(el.location()))]
+      )
+    } 
+    else if el != none and el.func() == figure and el.kind == "QA" {
+      link(
+        el.location(),
+        [#el.supplement#numbering(el.numbering, ..qa_counter.at(el.location()))]
+      )
+    }
+    else if el != none and el.func() == figure and el.kind == "C" {
+      link(
+        el.location(),
+        [#el.supplement#numbering(el.numbering, ..const_counter.at(el.location()))]
       )
     } else {
       it
