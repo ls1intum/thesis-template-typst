@@ -54,6 +54,8 @@ The template supports two reference formats:
       hayagriva thesis.bib > thesis.yml
       ```
 
+To cite a single source, use `@sourcekey` (e.g. `@bruegge2004object`). To cite multiple sources at once, list them consecutively: `@source1 @source2`.
+
 ### Write your thesis
 For the actual content of your thesis, there is a dedicated folder named [`/content`](/content) which includes all the chapters and sections of your thesis. This applies for the proposal as well as the thesis (see [`/content/proposal`](/content/proposal) for proposal content). 
 You can add or remove chapters as needed (adapt the [`thesis.typ`](/thesis.typ) with the `#include(...)` accordingly).
