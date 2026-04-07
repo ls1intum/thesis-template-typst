@@ -1,0 +1,16 @@
+bruegge2004object:
+  type: book
+  title: Object Oriented Software Engineering Using UML, Patterns, and Java
+  author:
+    - Bruegge, Bernd
+    - Dutoit, Allen H
+  date: 2009
+  publisher: Prentice Hall
+
+mustermann2020design:
+  type: thesis
+  title: "Design and Implementation of a Scalable Microservice Architecture"
+  author: Max Mustermann
+  genre: Master Thesis
+  publisher: Technical University of Munich
+  date: 2020 

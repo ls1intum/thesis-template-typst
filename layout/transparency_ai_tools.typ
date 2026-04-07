@@ -19,7 +19,7 @@
   )
 
   // --- AI Usage ---
-  align(left, text(font: fonts.sans, 20pt, weight: 700,"Transparency in the use of AI tools"))
+  align(left, text(font: fonts.sans, 20pt, weight: 700,"Transparency in the Use of AI Tools"))
   v(12pt)
 
   body

@@ -11,8 +11,8 @@
   titleGerman: "",
   degree: "",
   program: "",
-  supervisor: "",
-  advisors: (),
+  examiner: "",
+  supervisors: (),
   author: "",
   startDate: datetime,
   submissionDate: datetime,
@@ -25,8 +25,8 @@
     titleGerman: titleGerman,
     degree: degree,
     program: program,
-    supervisor: supervisor,
-    advisors: advisors,
+    examiner: examiner,
+    supervisors: supervisors,
     author: author,
     startDate: startDate,
     submissionDate: submissionDate
@@ -72,7 +72,7 @@
   body
 
   pagebreak()
-  bibliography("/thesis.bib")
+  bibliography("/thesis.yml")
   pagebreak()
   transparency_ai_tools_layout(transparency_ai_tools)
 }

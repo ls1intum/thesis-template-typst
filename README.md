@@ -2,12 +2,12 @@
 This repository provides a comprehensive Typst template for writing your Bachelor's or Master's thesis at the CIT School of TUM (Technical University of Munich). It includes two types of documents: a proposal template and a thesis template, both specifically designed for students in the field of Informatics. For more information about writing a thesis at the CIT School, please visit the [official CIT website](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/).
 
 > [!IMPORTANT]
-> This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor!
+> This is only a template. You have to adapt the template to your thesis and discuss the structure of your thesis with your supervisor(s)!
 
 
 ## Guidelines 
 > [!TIP]
-> __Please thorougly read our guidelines and hints on [confluence](https://confluence.ase.in.tum.de/display/EduResStud/How+to+thesis)!__ (TUM Login Required) 
+> __Please thoroughly read our guidelines and hints on [Outline](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a)!__ (TUM Login Required) 
 
 
 ## Installation
@@ -23,19 +23,45 @@ Nix and Docker users, please refer to the official installation guide for detail
 > [Git LFS](https://git-lfs.com/) is required in this repository to handle large files, such as figures. Make sure to install it before cloning the repository.
 
 ## Usage
+
+### Use this repository as a template
+You can use this repository as a template for your thesis. To do this, follow these steps:
+1. Click on the green "Use this template" button at the top right of this page.
+2. Select "Create a new repository" and fill in the required information.
+3. Clone the new repository to your local machine using `git clone <repository-url>`.
+4. Install the fonts from `/fonts` on your local machine
+
 ### Set thesis metadata 
 Fill in your thesis details in the [`metadata.typ`](/metadata.typ) file: 
 * Degree (Bachelor or Master)
 * Your study program
 * English and German title
-* Advisor and supervisor
+* Examiner and supervisor(s)
 * Your name (without e-mail address or matriculation number)
 * The start and submission date
+
+### Choose Reference Format
+The template supports two reference formats:
+
+1. **YAML** (`thesis.yml`):
+      - Recommended for precise control over reference formatting and styling
+
+2. **BibTeX** (`thesis.bib`):
+      - This is the default export format of Zotero's BibTeX plugin
+      - If you choose this format, you need to update all occurrences of `thesis.yml` to `thesis.bib` in the template files
+      - You can also convert BibTeX to YAML using the [Hayagriva CLI tool](https://github.com/typst/hayagriva):
+      ```bash 
+      hayagriva thesis.bib > thesis.yml
+      ```
+
+To cite a single source, use `@sourcekey` (e.g. `@bruegge2004object`). To cite multiple sources at once, list them consecutively: `@source1 @source2`.
 
 ### Write your thesis
 For the actual content of your thesis, there is a dedicated folder named [`/content`](/content) which includes all the chapters and sections of your thesis. This applies for the proposal as well as the thesis (see [`/content/proposal`](/content/proposal) for proposal content). 
 You can add or remove chapters as needed (adapt the [`thesis.typ`](/thesis.typ) with the `#include(...)` accordingly).
 If you need to customize the layout of the template, you can do so by modifying the corresponding file in the [`layout`](/layout) directory.
+
+
 
 ### Build PDFs locally 
 Once you have installed Typst, you can use it like this:
@@ -115,7 +141,49 @@ If you prefer to have a more integrated experience with your favorite code edito
 2. Set the correct file (`thesis.typ` or `proposal.typ`) as the main file. This can be done by opening the respective file and running the command `Typst: Pin the main file to the currently opened document`. Just hit `CMD + Shift + P` and search for the command.
 
 
+## Working with GitHub Copilot
+
+GitHub Copilot can significantly enhance your thesis workflow, especially for proposal review and development. As a student, you can access GitHub Copilot for free through GitHub Education.
+
+### Getting GitHub Copilot (Free for Students)
+
+1. Visit [GitHub Education](https://education.github.com/pack) and sign up for the GitHub Student Developer Pack using your university email
+2. After verification, you'll get free access to GitHub Copilot
+3. Install the GitHub Copilot extension:
+   - Open VS Code
+   - Go to Extensions (or press `Cmd+Shift+X` on Mac)
+   - Search for "GitHub Copilot"
+   - Click "Install"
+4. After installation, you'll need to sign in to your GitHub account in VS Code
+
+### Thesis Proposal Review Assistant
+
+This template includes custom Copilot instructions specifically designed to help evaluate thesis proposals against academic standards. The instructions help Copilot provide detailed feedback on:
+
+- Structure and completeness of all required sections
+- Scientific rigor and citation quality
+- Diagram and figure requirements
+- Writing quality and style issues
+
+These custom instructions are located in `.github/copilot-instructions.md`. You can modify or remove this file if you prefer different Copilot behavior.
+
+### Using Copilot for Proposal Review
+
+For the best thesis proposal feedback experience:
+
+1. Open Copilot Chat by clicking the Copilot icon or use `Ctrl+Cmd+I` on Mac
+2. In the chat use the "Ask" mode (default) and select "Claude 3.7 Sonnet Thinking" as your model for comprehensive academic feedback (you might need to enable this in your GitHub settings)
+3. Ask questions such as:
+   - "Do you have any feedback for my proposal?"
+   - "Review my problem description section for academic rigor"
+   - "Check if my citations follow proper academic standards"
+4. Also try out the "Agent" mode for applying the feedback directly to your document. This mode can help you make changes based on Copilot's suggestions.
+
+> [!NOTE]
+> Remember to acknowledge AI assistance in your transparency statement if you used GitHub Copilot extensively for your thesis work.
+
 ---
+
 ## Further Resources
 
 - [Typst Documentation](https://typst.app/docs/)

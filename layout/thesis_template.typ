@@ -14,8 +14,8 @@
   titleGerman: "",
   degree: "",
   program: "",
-  supervisor: "",
-  advisors: (),
+  examiner: "",
+  supervisors: (),
   author: "",
   startDate: datetime,
   submissionDate: datetime,
@@ -40,8 +40,8 @@
     titleGerman: titleGerman,
     degree: degree,
     program: program,
-    supervisor: supervisor,
-    advisors: advisors,
+    examiner: examiner,
+    supervisors: supervisors,
     author: author,
     startDate: startDate,
     submissionDate: submissionDate
@@ -150,6 +150,11 @@
   counter(page).update(1)
   set par(justify: true, first-line-indent: 2em)
 
+  // Start each chapter on a new page
+  show heading.where(level: 1): it => {
+    pagebreak(weak: true)
+    it
+  }
   body
 
   // List of figures.
@@ -183,5 +188,5 @@
   include("/layout/appendix.typ")
 
   pagebreak()
-  bibliography("/thesis.bib")
+  bibliography("/thesis.yml")
 }

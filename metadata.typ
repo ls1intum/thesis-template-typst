@@ -3,8 +3,8 @@
 #let titleGerman = "(Title German)"
 #let degree = "Bachelor"
 #let program = "Information Systems"
-#let supervisor = "Prof. Dr. Stephan Krusche"
-#let advisors = ("Jolanda Krümelmonster, M.Sc.",)
+#let examiner = "Prof. Dr. Stephan Krusche"
+#let supervisors = ("Jolanda Krümelmonster, M.Sc.",)
 #let author = "(Author)"
 #let birthdate = datetime(day: 01, month: 01, year: 2002) // only necessary for registration certificate
 #let startDate = datetime(day: 1, month: 1, year: 2024)

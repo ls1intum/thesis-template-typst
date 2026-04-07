@@ -6,8 +6,8 @@
 
 #show: feedbacklog.with(
   titleEnglish: titleEnglish,
-  supervisor: supervisor,
-  advisors: advisors,
+  examiner: examiner,
+  supervisors: supervisors,
   author: author,
   presentationDate: presentationDate,
   feedbacklogSubmissionDate: feedbacklogSubmissionDate,
