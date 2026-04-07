@@ -7,7 +7,11 @@ This repository provides a comprehensive Typst template for writing your Bachelo
 
 ## Guidelines 
 > [!TIP]
-> __Please thoroughly read our guidelines and hints on [Outline](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a)!__ (TUM Login Required) 
+> __Please thoroughly read the relevant guidelines and hints!__
+>
+> - Applied Education Technologies [link](https://outline.aet.cit.tum.de/doc/thesis-XCYjpC8q1a) (TUM Login Required)
+> - Informatics [link](https://www.cit.tum.de/en/cit/studies/students/thesis-completing-your-studies/informatics/)
+> - Chair of Connected Mobility [link](https://cmvm32.cit.tum.de/lib/exe/fetch.php?media=pdf:public:thesis_guidelines_2017_12_13.pdf)
 
 
 ## Installation
