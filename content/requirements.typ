@@ -1,4 +1,5 @@
 #import "/utils/todo.typ": TODO
+#import "/utils/fr_qa_c.typ": FR, QA, C
 
 = Requirements
 #TODO[
@@ -25,19 +26,20 @@
 #TODO[
   List and describe all functional requirements of your system. Also mention requirements that you were not able to realize. The short title should be in the form “verb objective”
 
-  - FR1 Short Title: Short Description. 
-  - FR2 Short Title: Short Description. 
-  - FR3 Short Title: Short Description.
+  You can use the FR macro to create a new functional requirement:
+  #FR("Short Title")[Short Description]
+  #FR("Short Title")[Short Description]
+  #FR("Short Title")[Short Description]
 ]
 
 === Quality Attributes
 #TODO[
   List and describe all quality attributes of your system. All your quality attributes should fall into the URPS categories mentioned in @bruegge2004object. Also mention requirements that you were not able to realize.
 
-  - QA1 Category: Short Description. 
-  - QA2 Category: Short Description. 
-  - QA3 Category: Short Description.
-
+  You can use the QA macro to create a new quality attribute:
+  #QA("Category")[Short Description]
+  #QA("Category")[Short Description]
+  #QA("Category")[Short Description]
 ]
 
 === Constraints
@@ -45,10 +47,10 @@
 #TODO[
   List and describe all pseudo requirements of your system. Also mention requirements that you were not able to realize.
 
-  - C1 Category: Short Description. 
-  - C2 Category: Short Description. 
-  - C3 Category: Short Description.
-
+  You can use the C macro to create a new constraint:
+  #C("Category")[Short Description]
+  #C("Category")[Short Description]
+  #C("Category")[Short Description]
 ]
 
 == System Models
