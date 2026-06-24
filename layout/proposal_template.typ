@@ -68,6 +68,8 @@
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
+  show figure.caption: set text(size: 9.2pt)
+  show figure.caption: set par(leading: 0.5em)
 
   body
 
