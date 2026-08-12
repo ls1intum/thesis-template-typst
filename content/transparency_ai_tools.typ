@@ -1,38 +1,47 @@
 #import "/utils/todo.typ": TODO
+#import "/utils/ai_usage.typ": ai_usage, ai_usage_table
 
 #TODO[
-  Change this paragraph to reflect the tools you used in your thesis
+  Replace the example entries below with the generative AI tools you actually used in your thesis, and adapt the verification statement. If you did not use generative AI at all, replace the table with a sentence stating this.
+
+  *Report for every tool:* provider and product, the exact model or version (state it explicitly if the model is not exposed instead of guessing), the date or period of use, the level of AI use in writing (see below, use "n/a" for tools that did not contribute text), the purpose (e.g. language revision, ideation, drafting, coding, literature discovery, data analysis), and the affected scope (chapters, source files, experiments, analyses).
+
+  *Levels of AI use in writing* (report the highest level used, and report sections separately if the level differs substantially between them):
+  + *Human-authored:* No generative AI contributed to the submitted text
+  + *Language editing:* AI improves human-written text (grammar, style, translation, paraphrasing)
+  + *Ideation and outlining:* AI helps develop or organize ideas (brainstorming, outlines, research questions)
+  + *AI-generated drafts:* AI generates substantive text that you review and revise
+  + *Predominantly AI-generated:* AI generates most substantive content, you mainly curate and edit it
+  + *AI-orchestrated:* AI performs most of the writing process with limited human intervention
+
+  *If an LLM contributed to your research method, implementation, experiments, data analysis, evaluation, or results*, document this in the respective chapter (e.g. System Design or Evaluation) in addition to this statement: exact model, version, date and configuration; the role of the LLM in the research process; prompts or prompt templates that materially influence results; system instructions, tools, retrieval, or agent configuration; interaction logs or traces where feasible; how outputs were validated; and limitations regarding reproducibility and non-determinism. Follow the #link("https://llm-guidelines.org/")[LLM Guidelines for Software Engineering]. Keep the documentation proportional to the role of AI.
+
+  *Do not pass confidential, personal, or otherwise protected information to external AI services* without the consent of everyone concerned.
+
+  A statement such as "I carefully checked all generated text" alone is *not* sufficient. Details: #link("https://outline.aet.cit.tum.de/doc/guidelines-for-transparent-use-of-generative-ai-UGJcMrOa3N")[Guidelines for Transparent Use of Generative AI].
 ]
-/*
-Categories of AI Usage:
-  Grammar and Style Correction
-    Tools: Grammarly, Hemingway
-    Purpose: To correct grammatical errors, improve sentence structure, and enhance overall writing style.
 
-  Translation and Language Enhancement
-    Tools: DeepL, Google Translate
-    Purpose: To translate texts or improve the quality and fluency of the writing in a different language.
+I used the following generative AI tools while preparing this thesis. The levels refer to the six-level taxonomy of generative AI use in writing by Ucan and Demirel Ucan @ucan2026generative.
 
-  Content Generation and Idea Expansion
-    Tools: ChatGPT, OpenAI Codex
-    Purpose: To generate initial drafts, expand on ideas, provide suggestions for content, and offer examples.
+#ai_usage_table(
+  ai_usage(
+    tool: "OpenAI ChatGPT",
+    model: "GPT-5.1 Thinking",
+    dates: "02.03.2026 - 28.05.2026",
+    level: "4",
+    purpose: "Ideation, drafting, language revision",
+    scope: "Abstract, Chapters 1-3",
+  ),
+  ai_usage(
+    tool: "Anthropic Claude Code",
+    model: "[exact version/model]",
+    dates: "[date range]",
+    level: "n/a",
+    purpose: "Code generation, Typst editing",
+    scope: "Chapters 1-3, code in [repository]",
+  ),
+)
 
-  Coding Assistance
-    Tools: GitHub Copilot
-    Purpose: To help with coding tasks, generate code snippets, and provide programming solutions and explanations.
+#v(6pt)
 
-  Citation Assistance
-    Tools: Citation Machine
-    Purpose: To assist in proper citation formatting.
-  
-  Data Analysis and Visualization
-    Tools: MATLAB, Python libraries (e.g., pandas, matplotlib), e.g. with ChatGPT or DataSpell
-    Purpose: To assist in analyzing data sets, generating graphs, and visualizing data.
-
-What You Need to Do
-  - Use AI Tools Wisely: Feel encouraged to use AI tools for grammar correction, translation, content generation, coding assistance, plagiarism detection, data analysis and more, but make sure that you have the competencies to judge about the correctness and integrity of the generated content. You are responsible for the output!
-  - Be Transparent: Include a short paragraph at the end of your proposal, thesis, seminar paper, project report, or any other text that is assessed describing how you used AI. Specify which tools you used, how extensively, for what purposes, and in which sections of your work you have used them.
-  - Review: Make sure you review all text generated by AI tools and mention this as part of the transparency statement
-*/
-
-In preparing this thesis, I utilized Grammarly for grammar and style correction across the Abstract, Introduction, and Conclusion sections, ensuring clarity and coherence in my writing. I used DeepL to enhance language quality and translate parts of the Literature Review. I used ChatGPT to generate initial drafts and expand on ideas in the Introduction and Discussion sections, providing valuable suggestions and examples. Additionally, I used GitHub Copilot to generate code snippets for the developed functionality and code snippets in the Methodology section. I have carefully checked all texts created with these tools to ensure that they are correct and make sense.
+I reviewed and revised all AI-generated or AI-modified content. I verified factual claims and citations against the original sources and inspected and tested generated code, analyses, and visualizations where applicable. I remain fully responsible for the submitted work.

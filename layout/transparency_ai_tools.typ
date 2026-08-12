@@ -14,8 +14,9 @@
   )
 
   set par(
-    leading: 1em, 
-    justify: true
+    leading: 1em,
+    justify: true,
+    first-line-indent: 0pt
   )
 
   // --- AI Usage ---

@@ -7,6 +7,23 @@ bruegge2004object:
   date: 2009
   publisher: Prentice Hall
 
+ucan2026generative:
+  type: article
+  title: "Generative AI in Student Writing: A Six-Level Taxonomy for Responsible Use in Higher Education Assessment"
+  author:
+    - Ucan, Serkan
+    - Demirel Ucan, Ayse
+  date: 2026
+  page-range: 63
+  serial-number:
+    doi: 10.1007/s10805-026-09739-y
+    issn: 1572-8544
+  parent:
+    type: periodical
+    title: Journal of Academic Ethics
+    volume: 24
+    issue: 2
+
 mustermann2020design:
   type: thesis
   title: "Design and Implementation of a Scalable Microservice Architecture"
