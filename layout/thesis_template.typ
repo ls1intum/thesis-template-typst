@@ -130,17 +130,19 @@
   show figure.caption: set par(leading: 0.5em)
   
   // --- Table of Contents ---
-  show outline.entry.where(level: 1): it => {
-    v(15pt, weak: true)
-    strong(it)
+  {
+    show outline.entry.where(level: 1): it => {
+      v(15pt, weak: true)
+      strong(it)
+    }
+    outline(
+      title: {
+        text(font: fonts.body, 1.5em, weight: 700, "Contents")
+        v(15mm)
+      },
+      indent: 2em
+    )
   }
-  outline(
-    title: {
-      text(font: fonts.body, 1.5em, weight: 700, "Contents")
-      v(15mm)
-    },
-    indent: 2em
-  )
   
   
   v(2.4fr)
@@ -153,11 +155,13 @@
   set par(justify: true, first-line-indent: 2em)
 
   // Start each chapter on a new page
-  show heading.where(level: 1): it => {
-    pagebreak(weak: true)
-    it
+  {
+    show heading.where(level: 1): it => {
+      pagebreak(weak: true)
+      it
+    }
+    body
   }
-  body
 
   // List of figures.
   pagebreak()
@@ -168,7 +172,7 @@
     in-outline.update(false)
   }
   outline(
-    title:"",
+    title: none,
     target: figure.where(kind: image),
   )
 
@@ -178,7 +182,7 @@
       pagebreak()
       heading(numbering: none)[List of Tables]
       outline(
-        title: "",
+        title: none,
         target: figure.where(kind: table)
       )
     }
