@@ -61,7 +61,32 @@ For the actual content of your thesis, there is a dedicated folder named [`/cont
 You can add or remove chapters as needed (adapt the [`thesis.typ`](/thesis.typ) with the `#include(...)` accordingly).
 If you need to customize the layout of the template, you can do so by modifying the corresponding file in the [`layout`](/layout) directory.
 
+### Transparency in the Use of AI Tools
+Both the proposal and the thesis contain a mandatory statement _Transparency in the Use of AI Tools_ if you used generative AI. Edit it in [`/content/proposal/transparency_ai_tools.typ`](/content/proposal/transparency_ai_tools.typ) and [`/content/transparency_ai_tools.typ`](/content/transparency_ai_tools.typ).
 
+The statement consists of a table of all generative AI tools you used and a short verification statement. Add one `ai_usage(...)` entry per tool:
+
+```typst
+#import "/utils/ai_usage.typ": ai_usage, ai_usage_table
+
+#ai_usage_table(
+  ai_usage(
+    tool: "OpenAI ChatGPT",           // provider and product
+    model: "GPT-5.1 Thinking",        // exact model or version, do not guess
+    dates: "02.03.2026 – 28.05.2026", // date or period of use
+    level: "4",                       // level of AI use in writing, "n/a" if no text was generated
+    purpose: "Ideation, drafting, language revision",
+    scope: "Abstract, Chapters 1–3",
+  ),
+)
+```
+
+The `level` column refers to the six levels of the taxonomy by [Ucan and Demirel Ucan (2026)](https://doi.org/10.1007/s10805-026-09739-y): (1) human-authored, (2) language editing, (3) ideation and outlining, (4) AI-generated drafts, (5) predominantly AI-generated, (6) AI-orchestrated. Report the highest level you used. The statement cites this paper as `@ucan2026generative`, which is part of both [`thesis.yml`](/thesis.yml) and [`thesis.bib`](/thesis.bib).
+
+If an LLM contributed to your research method, implementation, experiments, data analysis, evaluation, or results, document this in the respective chapter in addition to the statement and follow the [LLM Guidelines for Software Engineering](https://llm-guidelines.org/).
+
+> [!IMPORTANT]
+> Read the [Guidelines for Transparent Use of Generative AI](https://outline.aet.cit.tum.de/doc/guidelines-for-transparent-use-of-generative-ai-UGJcMrOa3N) (TUM Login required). You remain fully responsible for everything you submit, and a statement such as "I carefully checked all generated text" alone is not sufficient.
 
 ### Build PDFs locally 
 Once you have installed Typst, you can use it like this:
@@ -180,7 +205,7 @@ For the best thesis proposal feedback experience:
 4. Also try out the "Agent" mode for applying the feedback directly to your document. This mode can help you make changes based on Copilot's suggestions.
 
 > [!NOTE]
-> Remember to acknowledge AI assistance in your transparency statement if you used GitHub Copilot extensively for your thesis work.
+> Remember to document GitHub Copilot, including the exact model you used, in your [transparency statement](#transparency-in-the-use-of-ai-tools).
 
 ---
 

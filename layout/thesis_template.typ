@@ -26,6 +26,11 @@
   is_print: false,
   body,
 ) = {
+  // --- Citations ---
+  // Set before the front matter, so that citations in the transparency
+  // statement use the same style as the ones in the body
+  set cite(style: "alphanumeric")
+
   cover(
     title: title,
     degree: degree,
@@ -120,9 +125,6 @@
 
   // --- Paragraphs ---
   set par(leading: 1em)
-
-  // --- Citations ---
-  set cite(style: "alphanumeric")
 
   // --- Figures ---
   show figure: set text(size: 0.85em)
